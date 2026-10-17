@@ -35,6 +35,17 @@ for n, item in enumerate(ITEMS, 1):
     audio, sample_rate = tts.create(phonemes, voice='ff_siwis', speed=0.91, is_phonemes=True)
     if len(audio) < sample_rate * 0.12:
         raise RuntimeError(f'Audio appears empty for #{n}: {fr}')
+    # Manual QA: Kokoro ff_siwis sometimes produces a stray voiced onset
+    # (~0.12 s) on isolated 'je suis'. The v1.2.0 published clip was checked
+    # acoustically against neighboring phrases and the expected /ʒə sɥi/.
+    # Remove the extra onset, retaining the voiced fricative starting near 0.13 s.
+    if fr.casefold() == 'je suis':
+        cutoff = int(sample_rate * 0.125)
+        audio = audio[cutoff:].copy()
+        fade = min(int(sample_rate * 0.012), len(audio))
+        if fade > 1:
+            import numpy as np
+            audio[:fade] *= np.linspace(0.0, 1.0, fade, dtype=audio.dtype)
     buffer = io.BytesIO()
     sf.write(buffer, audio, sample_rate, format='WAV', subtype='PCM_16')
     result = subprocess.run(
