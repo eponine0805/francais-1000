@@ -466,7 +466,7 @@
     "lesson": 1,
     "fr": "à",
     "ja": "〜へ・〜に",
-    "ipa": "/aaksɑ̃ɡʁav/"
+    "ipa": "/a/"
   },
   {
     "id": 68,
@@ -970,7 +970,7 @@
     "lesson": 2,
     "fr": "plus",
     "ja": "より多く",
-    "ipa": "/ply/"
+    "ipa": "/ply/・/plys/"
   },
   {
     "id": 140,
@@ -1726,7 +1726,7 @@
     "lesson": 3,
     "fr": "un âge",
     "ja": "年齢",
-    "ipa": "/œ̃.n‿aʒ/"
+    "ipa": "/œ̃n‿aʒ/"
   },
   {
     "id": 248,
@@ -2538,7 +2538,7 @@
     "lesson": 4,
     "fr": "un shampooing",
     "ja": "シャンプー",
-    "ipa": "/œ̃ ʃɑ̃pɔwɛ̃ɡ/"
+    "ipa": "/œ̃ ʃɑ̃pwɛ̃/"
   },
   {
     "id": 364,
@@ -2587,7 +2587,7 @@
     "lesson": 4,
     "fr": "un tee-shirt",
     "ja": "Tシャツ",
-    "ipa": "/œ̃tiʃœʁt/"
+    "ipa": "/œ̃ tiʃœʁt/"
   },
   {
     "id": 371,
@@ -3049,7 +3049,7 @@
     "lesson": 5,
     "fr": "un sandwich",
     "ja": "サンドイッチ",
-    "ipa": "/œ̃ sɑ̃dwit‍ʃ/"
+    "ipa": "/œ̃ sɑ̃dwitʃ/"
   },
   {
     "id": 437,
@@ -4638,7 +4638,7 @@
     "lesson": 7,
     "fr": "l'est",
     "ja": "東",
-    "ipa": "/lɛ/"
+    "ipa": "/lɛst/"
   },
   {
     "id": 664,
@@ -4708,7 +4708,7 @@
     "lesson": 7,
     "fr": "un parking",
     "ja": "駐車場",
-    "ipa": "/œ̃paʁkɪŋ/"
+    "ipa": "/œ̃ paʁkiŋ/"
   },
   {
     "id": 674,
@@ -6073,7 +6073,7 @@
     "lesson": 9,
     "fr": "un week-end",
     "ja": "週末",
-    "ipa": "/œ̃wikɛnd/"
+    "ipa": "/œ̃ wikɛnd/"
   },
   {
     "id": 869,
@@ -6115,7 +6115,7 @@
     "lesson": 9,
     "fr": "le baseball",
     "ja": "野球",
-    "ipa": "/lə bɛjsbɔl/"
+    "ipa": "/lə bɛzbɔl/"
   },
   {
     "id": 875,
@@ -6962,7 +6962,7 @@
     "lesson": 10,
     "fr": "les États-Unis",
     "ja": "アメリカ合衆国",
-    "ipa": "/le z etazyni/"
+    "ipa": "/lez‿etazyni/"
   },
   {
     "id": 996,
