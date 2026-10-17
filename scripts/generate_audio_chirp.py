@@ -4,7 +4,7 @@
 Cloud authentication exists only during build. Never package or print credentials.
 Run --samples to audition oui, non, je suis BEFORE creating a complete set.
 
-Requires GOOGLE_TTS_SERVICE_ACCOUNT_JSON secret and enabled Cloud Text-to-Speech API.
+Requires GOOGLE_TTS_API_KEY or GOOGLE_TTS_SERVICE_ACCOUNT_JSON secret, and enabled Cloud Text-to-Speech API.
 """
 import argparse
 import base64
@@ -28,9 +28,11 @@ SAMPLE={'oui','non','je suis','bonjour','merci'}
 
 
 def auth():
+    if os.environ.get('GOOGLE_TTS_API_KEY','').strip():
+        return None  # Restricted Google Cloud TTS API key stored only as an Actions secret.
     secret=os.environ.get('GOOGLE_TTS_SERVICE_ACCOUNT_JSON','').strip()
     if not secret:
-        raise SystemExit('Google TTS service-account secret is missing; no premium audio was generated.')
+        raise SystemExit('Set GOOGLE_TTS_API_KEY or GOOGLE_TTS_SERVICE_ACCOUNT_JSON; no premium audio generated.')
     data=json.loads(secret)
     if data.get('type')!='service_account':
         raise SystemExit('Expected a service account JSON document')
@@ -46,9 +48,15 @@ def obtain_audio(session,credentials,word):
       'audioConfig':{'audioEncoding':'MP3','speakingRate':0.92},
     }
     for attempt in range(7):
-        if not credentials.valid:
-            credentials.refresh(Request())
-        resp=session.post(API_URL,json=payload,headers={'Authorization':'Bearer '+credentials.token},timeout=90)
+        key=os.environ.get('GOOGLE_TTS_API_KEY','').strip()
+        if key:
+            headers={}
+            params={'key':key}
+        else:
+            if not credentials.valid:credentials.refresh(Request())
+            headers={'Authorization':'Bearer '+credentials.token}
+            params=None
+        resp=session.post(API_URL,json=payload,headers=headers,params=params,timeout=90)
         if resp.ok:
             result=resp.json()
             raw=base64.b64decode(result['audioContent'],validate=True)

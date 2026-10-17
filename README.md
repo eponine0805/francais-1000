@@ -14,7 +14,7 @@
 
 フランス語初級の短い語で Kokoro の合成音声に余分な子音・母音が混入する事例が確認されたため、クラウドのフランス語専用高品質女性音声を使う選択肢を追加しました。クラウド利用は **音声ファイル生成時のみ**。Androidアプリは生成済み Ogg 音声を内包し、オフラインのまま使えます。
 
-このワークフローは、**有効なGoogle Cloud プロジェクト・Cloud Text-to-Speech API・請求設定、およびアクセス権限を持つサービスアカウント**が必要です。料金が発生する場合があるため、こちらから自動的に有効化しません。GitHub リポジトリの [Actions secrets](https://github.com/eponine0805/francais-1000/settings/secrets/actions) に `GOOGLE_TTS_SERVICE_ACCOUNT_JSON` の名前で、サービスアカウントのJSONキーを登録します。**JSONキーやAPIキーをチャット・ソースコード・READMEに貼らないでください。**
+このワークフローは、**有効なGoogle Cloud プロジェクト・Cloud Text-to-Speech API・請求設定、およびAPIの認証情報**が必要です。料金が発生する場合があるため、こちらから自動的に有効化しません。GitHub リポジトリの [Actions secrets](https://github.com/eponine0805/francais-1000/settings/secrets/actions) に、Cloud Text-to-Speech API に限定したAPIキーを `GOOGLE_TTS_API_KEY` の名前で登録します。サービスアカウントを使う場合は、代わりに `GOOGLE_TTS_SERVICE_ACCOUNT_JSON` を登録できます。**JSONキーやAPIキーをチャット・ソースコード・READMEに貼らないでください。**
 
 1. [Actions → Premium French audio - audition and build](https://github.com/eponine0805/francais-1000/actions/workflows/premium-french-audio.yml) から `mode = samples` を実行。
 2. `oui`, `non`, `je suis`, `bonjour`, `merci` の試聴用 Ogg ファイルを Artifacts で取得して、余計な音が入らないか確認。
