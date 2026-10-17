@@ -165,10 +165,10 @@ public final class MainActivity extends Activity {
     private void spaceEnd(View v){LinearLayout.LayoutParams lp=(LinearLayout.LayoutParams)v.getLayoutParams();lp.bottomMargin=dp(10);v.setLayoutParams(lp);}
     private void add(LinearLayout p,View child){p.addView(child,new LinearLayout.LayoutParams(-1,-2));}
     private Button button(String label,boolean primary,Runnable action){
-        Button b=new Button(this);b.setAllCaps(false);b.setText(label);b.setTextSize(15);b.setTypeface(Typeface.DEFAULT,Typeface.BOLD);
+        Button b=new Button(this);b.setAllCaps(false);b.setText(label);b.setTextSize(16);b.setTypeface(Typeface.DEFAULT,Typeface.BOLD);
         b.setTextColor(primary?WHITE:INK);b.setBackground(outline(primary?INK:WHITE,primary?INK:LINE));
         b.setForeground(new RippleDrawable(ColorStateList.valueOf(primary?0x44FFFFFF:0x14000000),null,bg(WHITE,18)));
-        b.setGravity(Gravity.CENTER);b.setPadding(dp(16),dp(11),dp(16),dp(11));b.setMinHeight(dp(52));
+        b.setGravity(Gravity.CENTER);b.setPadding(dp(16),dp(14),dp(16),dp(14));b.setMinHeight(dp(58));
         b.setOnClickListener(v->action.run());return b;
     }
     private void heading(String title,String subtitle){
@@ -189,13 +189,13 @@ public final class MainActivity extends Activity {
         body=vertical();pad(body,19,21);sc.addView(body);
         shell.addView(sc,new LinearLayout.LayoutParams(-1,0,1));
         if(destination==0||destination==2||destination==4||destination==6||destination==7){
-            LinearLayout bar=row();bar.setBackgroundColor(WHITE);pad(bar,9,10);
+            LinearLayout bar=row();bar.setBackgroundColor(WHITE);pad(bar,9,12);
             String[] labels={"学ぶ","テスト","単語帳","記録"};
             Runnable[] actions={this::showHome,this::showTestSetup,()->showDictionary(false),this::showStats};
             int selected=destination==0||destination==4?0:destination==2?1:destination==7?2:3;
             for(int i=0;i<labels.length;i++){
-                final int n=i;TextView item=text(labels[i],12,i==selected?INK:MUTED,i==selected);
-                item.setGravity(Gravity.CENTER);pad(item,4,9);bar.addView(item,new LinearLayout.LayoutParams(0,dp(39),1));
+                final int n=i;TextView item=text(labels[i],14,i==selected?INK:MUTED,i==selected);
+                item.setGravity(Gravity.CENTER);pad(item,4,12);bar.addView(item,new LinearLayout.LayoutParams(0,dp(48),1));
                 item.setOnClickListener(v->actions[n].run());
             }
             View border=new View(this);border.setBackgroundColor(LINE);shell.addView(border,new LinearLayout.LayoutParams(-1,dp(1)));
@@ -208,23 +208,18 @@ public final class MainActivity extends Activity {
         .setNegativeButton("続ける",(d,w)->{}).setPositiveButton("終了する",(d,w)->showHome()).show();}
     private int countKnown(int lesson){int n=0;for(int id:known)if((id-1)/100+1==lesson)n++;return n;}
     private void showHome(){stopAudio();mount("Français 1000",0);
-        add(body,eyebrow("BONJOUR  ·  EVERYDAY FRENCH"));gap(body,10);
-        add(body,text("少しずつ、確実に。",28,INK,true));gap(body,7);
-        add(body,text("聞いて、覚えて、試して、定着させる。",14,MUTED,false));gap(body,19);
+        add(body,text("学習",24,INK,true));gap(body,16);
         LinearLayout hero=panel();hero.setBackground(bg(WHITE,18));
         LinearLayout top=row();TextView label=eyebrow("習得した単語");top.addView(label,new LinearLayout.LayoutParams(0,-2,1));
         top.addView(text("連続 "+streak()+" 日",12,MUTED,true));add(hero,top);gap(hero,6);
         add(hero,text(known.size()+" / 1,000",31,INK,true));gap(hero,14);
         add(hero,progressBar(known.size()/10f));gap(hero,13);
         add(hero,text("学習済み  "+seen.size()+"語     復習待ち  "+review.size()+"語     テスト  "+history.length()+"回",12,MUTED,false));
-        gap(body,15);add(body,button("続きから学ぶ   →",true,()->startLesson(lastLesson)));
-        gap(body,10);
+        gap(body,16);
         LinearLayout quick=row();Button test=button("4択テスト",false,this::showTestSetup);
         Button wrong=button("苦手を復習  "+review.size(),false,this::startReview);
         quick.addView(test,weight());View sep=new View(this);quick.addView(sep,new LinearLayout.LayoutParams(dp(9),1));quick.addView(wrong,weight());add(body,quick);
-        gap(body,24);add(body,eyebrow("LESSONS"));gap(body,6);
-        add(body,text("100語ずつ、10ステップ",21,INK,true));gap(body,6);
-        add(body,text("レッスンを選択すると自動で発音します。",12,MUTED,false));gap(body,14);
+        gap(body,24);add(body,text("レッスン",21,INK,true));gap(body,14);
         for(int l=1;l<=10;l++){
             final int lesson=l;LinearLayout item=panel();
             LinearLayout line=row();TextView name=text(String.format(Locale.JAPAN,"%02d   %s",l,LESSON_NAMES[l-1]),15,INK,true);
@@ -233,7 +228,6 @@ public final class MainActivity extends Activity {
             add(item,text("習得済み "+countKnown(l)+" / 100",12,MUTED,false));
             item.setOnClickListener(v->startLesson(lesson));gap(body,9);
         }
-        gap(body,15);add(body,text("1000項目と女性音声はすべて端末内に収録。通信やログインは必要ありません。",12,MUTED,false));
     }
     private void showLessonPicker(boolean forTest){mount("レッスンを選ぶ",4);heading("100語ずつ学習","まずは最初の100語から。後のレッスンも自由に選べます。");
         for(int l=1;l<=10;l++){
@@ -244,6 +238,7 @@ public final class MainActivity extends Activity {
     }
     private void startLesson(int lesson){
         reviewing=false;flashIds=new ArrayList<>();for(int i=(lesson-1)*100+1;i<=lesson*100;i++)flashIds.add(i);
+        Collections.shuffle(flashIds, random);
         lastLesson=lesson;cardIndex=0;revealed=false;saveProgress();showFlash();
     }
     private void startReview(){
@@ -258,7 +253,18 @@ public final class MainActivity extends Activity {
         int id=flashIds.get(cardIndex);Word w=words.get(id-1);if(seen.add(id))recordDaily();saveProgress();
         mount(reviewing?"苦手単語の復習":"フラッシュカード",1);
         TextView counter=text((cardIndex+1)+" / "+flashIds.size()+"     •     "+(reviewing?"復習カード":"Lesson "+w.lesson),14,MUTED,true);add(body,counter);gap(body,13);
-        LinearLayout card=vertical();card.setGravity(Gravity.CENTER);pad(card,20,40);card.setMinimumHeight(dp(295));card.setBackground(outline(WHITE,Color.rgb(228,228,228)));add(body,card);
+        FrameLayout cardFrame=new FrameLayout(this);
+        add(body,cardFrame);
+        LinearLayout card=vertical();card.setGravity(Gravity.CENTER);pad(card,25,48);
+        card.setMinimumHeight(dp(300));card.setBackground(outline(WHITE,LINE));
+        cardFrame.addView(card,new FrameLayout.LayoutParams(-1,-2));
+        TextView star=text(isFavorite(id)?"★":"☆",28,INK,false);
+        star.setGravity(Gravity.CENTER);
+        star.setContentDescription("お気に入りを切り替える");
+        FrameLayout.LayoutParams starLp=new FrameLayout.LayoutParams(dp(54),dp(54),Gravity.RIGHT|Gravity.TOP);
+        starLp.setMargins(0,dp(9),dp(9),0);
+        cardFrame.addView(star,starLp);
+        star.setOnClickListener(v->{toggleFavorite(id);star.setText(isFavorite(id)?"★":"☆");});
         TextView word=text(w.fr,34,INK,true);word.setGravity(Gravity.CENTER);add(card,word);gap(card,11);
         TextView ipa=text(w.ipa,17,MUTED,false);ipa.setGravity(Gravity.CENTER);add(card,ipa);gap(card,22);
         TextView meaning=text(revealed?w.ja:"タップして日本語を表示",revealed?23:15,revealed?INK:MUTED,revealed);
@@ -266,16 +272,13 @@ public final class MainActivity extends Activity {
         if(reviewing){TextView prompt=text("過去の間違い "+wrongCounts.getOrDefault(id,0)+"回",12,MUTED,false);prompt.setGravity(Gravity.CENTER);add(card,prompt);}
         card.setOnClickListener(v->{revealed=!revealed;meaning.setText(revealed?w.ja:"タップして日本語を表示");meaning.setTextSize(revealed?23:15);meaning.setTextColor(revealed?INK:MUTED);});
         gap(body,12);
-        LinearLayout audioActions=row();
-        Button play=button("▶  発音を聞く",false,()->playAudio(id));
-        Button star=button(isFavorite(id)?"★ お気に入り":"☆ お気に入り",false,()->{toggleFavorite(id);showFlash();});
-        audioActions.addView(play,weight());View gap=new View(this);audioActions.addView(gap,new LinearLayout.LayoutParams(dp(8),1));audioActions.addView(star,weight());add(body,audioActions);gap(body,13);
+        Button play=button("▶     発音を聞く",false,()->playAudio(id));
+        play.setMinHeight(dp(68));play.setTextSize(17);add(body,play);gap(body,14);
         LinearLayout nav=row();Button prev=button("← 前へ",false,()->moveCard(-1));Button next=button("次へ →",true,()->moveCard(1));
         nav.addView(prev,weight());View sp=new View(this);nav.addView(sp,new LinearLayout.LayoutParams(dp(9),1));nav.addView(next,weight());add(body,nav);
         gap(body,14);LinearLayout actions=row();
         Button later=button("まだ覚えていない",false,()->markCard(false));Button yes=button("✓ 覚えた",true,()->markCard(true));
         actions.addView(later,weight());View mid=new View(this);actions.addView(mid,new LinearLayout.LayoutParams(dp(9),1));actions.addView(yes,weight());add(body,actions);
-        gap(body,14);TextView help=text("カードをタップして意味を確認。開くたびに発音が自動再生されます。",12,MUTED,false);add(body,help);
         body.post(()->{if(screen==1 && !flashIds.isEmpty() && flashIds.get(cardIndex)==id)playAudio(id);});
     }
     private void moveCard(int diff){
@@ -363,7 +366,7 @@ public final class MainActivity extends Activity {
             Button option=button(meaning,false,()->chooseAnswer(meaning,w));
             option.setGravity(Gravity.CENTER);
             option.setTextColor(INK);option.setBackground(outline(WHITE,Color.rgb(224,224,224)));
-            option.setTextSize(16);option.setMinHeight(dp(62));option.setPadding(dp(18),dp(14),dp(18),dp(14));
+            option.setTextSize(16);option.setMinHeight(dp(68));option.setPadding(dp(18),dp(16),dp(18),dp(16));
             add(body,option);gap(body,10);
         }
         gap(body,10);add(body,text("採点は全問終了後にまとめて表示されます。",12,MUTED,false));
@@ -436,8 +439,7 @@ public final class MainActivity extends Activity {
     }
     private void showDictionary(boolean favoriteOnly){
         stopAudio();mount("単語帳",7);
-        add(body,eyebrow("ALL VOCABULARY"));gap(body,8);
-        add(body,text("探して、聞いて、保存する。",22,INK,true));gap(body,13);
+        add(body,text("単語を探す",22,INK,true));gap(body,13);
         EditText search=new EditText(this);search.setSingleLine(true);search.setTextSize(16);
         search.setHint("フランス語・日本語で検索");search.setTextColor(INK);search.setHintTextColor(MUTED);
         search.setPadding(dp(16),dp(12),dp(16),dp(12));search.setBackground(outline(WHITE,LINE));add(body,search);

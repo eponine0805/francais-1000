@@ -55,8 +55,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp app/build/outputs/apk/debug/app-debug.apk Francais1000.apk
-          if gh release view v1.3.0 >/dev/null 2>&1; then
-            gh release upload v1.3.0 Francais1000.apk --clobber
+          if gh release view v1.4.0 >/dev/null 2>&1; then
+            gh release upload v1.4.0 Francais1000.apk --clobber
           else
-            gh release create v1.3.0 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.3.0' --notes 'IPA for all 1000 entries, refined monochrome interface, searchable dictionary, favorites, learning streaks and a correction to the Je suis sound. All lessons and audio offline.'
+            gh release create v1.4.0 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.4.0' --notes 'Redesigned flashcards: larger audio and bottom navigation, corner bookmark, randomized lessons, reduced copy. Audio still uses Kokoro; separate premium voice workflow is opt-in and needs credentials.'
           fi
