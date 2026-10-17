@@ -1,0 +1,16 @@
+フランス語1000・Android版
+
+このZIPはAndroidアプリの「ソースコード一式」です。APKではありません。
+フランス語1000語と音声1000件は全て入っています。
+
+GitHubへ公開すると Actions がAPKをビルドし、Releasesからインストールできます。
+リポジトリ所有者は「eponine0805」の個人アカウントにしてください。
+リポジトリの候補名は「francais-1000」です。
+
+GitHub Actionsが利用できるように、通常のgit pushでリポジトリに中身を登録してください。
+アップロード後、GitHubの「Actions」→「Build Android APK」を開きます。
+成功すると「Releases」の v1.0.0 に Francais1000.apk が表示されます。
+詳細は README.md をお読みください。
+
+Androidアプリにはインターネット接続権限がありません。
+端末内の学習記録は、アプリの削除時に失われる可能性があります。

@@ -40,20 +40,25 @@ import java.util.Set;
 
 /** Native, local-only vocabulary trainer. No permissions, network or external dependencies. */
 public final class MainActivity extends Activity {
-    private static final int BLUE=Color.rgb(31,90,212), INK=Color.rgb(25,38,61), MUTED=Color.rgb(101,115,136),
-        BACK=Color.rgb(247,249,252), WHITE=Color.WHITE, PALE=Color.rgb(230,237,253), GREEN=Color.rgb(19,130,93), RED=Color.rgb(199,59,75);
+    private static final int BLUE=Color.rgb(20,20,20), INK=Color.rgb(24,24,24), MUTED=Color.rgb(108,108,108),
+        BACK=Color.WHITE, WHITE=Color.WHITE, PALE=Color.rgb(245,245,245), GREEN=Color.rgb(18,110,68), RED=Color.rgb(175,38,38);
     private static final String[] LESSON_NAMES={
-        "最重要表現・動詞", "基本動詞・数", "人・家族・身体", "家と暮らし", "食べ物・買い物",
-        "時間・自然", "街・旅行", "形容詞・副詞", "学校・仕事・趣味", "もっと広がる言葉"};
+        "はじめての会話", "数字・毎日の動詞", "人・家族・身体", "家と暮らし", "食べ物・買い物",
+        "日時・天気・自然", "街・旅行", "色・形容詞・副詞", "学校・仕事・趣味", "発展する動詞・表現"};
     private final ArrayList<Word> words=new ArrayList<>();
     private final Set<Integer> seen=new HashSet<>(), known=new HashSet<>(), review=new HashSet<>();
     private final Map<Integer,Integer> wrongCounts=new HashMap<>();
     private JSONArray history=new JSONArray();
+    private final Map<Integer,Integer> legacyIds=new HashMap<>();
+    private boolean migrateOldProgress=false;
     private SharedPreferences prefs;
     private LinearLayout shell, body;
     private MediaPlayer player;
     private int screen=0, cardIndex=0, questionIndex=0, correctCount=0, startLesson=1, endLesson=1;
     private boolean revealed=false, reviewing=false, answered=false;
+    private final ArrayList<String> testAnswers=new ArrayList<>();
+    private final ArrayList<Integer> lastWrongIds=new ArrayList<>();
+    private boolean wrongOnlyTest=false;
     private ArrayList<Integer> flashIds=new ArrayList<>(), testIds=new ArrayList<>();
     private int[] choices=new int[4];
     private final Random random=new Random();
@@ -70,7 +75,8 @@ public final class MainActivity extends Activity {
 
     @Override public void onCreate(Bundle bundle){
         super.onCreate(bundle);
-        getWindow().setStatusBarColor(Color.rgb(20,54,115));
+        getWindow().setStatusBarColor(Color.WHITE);
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
         getWindow().setNavigationBarColor(BACK);
         prefs=getSharedPreferences("learning_v1",MODE_PRIVATE);
         try {
@@ -80,26 +86,37 @@ public final class MainActivity extends Activity {
             JSONArray arr=new JSONArray(new String(bytes.toByteArray(),StandardCharsets.UTF_8));
             for(int i=0;i<arr.length();i++)words.add(new Word(arr.getJSONObject(i)));
             if(words.size()!=1000)throw new IllegalStateException("Expected 1000 words");
-            readProgress();showHome();
+            readProgress();if(migrateOldProgress)saveProgress();showHome();
         }catch(Exception e){TextView t=new TextView(this);t.setPadding(dp(24),dp(30),dp(24),dp(30));t.setText("単語データを読み込めませんでした。\n"+e.getMessage());setContentView(t);}
     }
 
     private void readProgress(){
         try {
             JSONObject obj=new JSONObject(prefs.getString("state","{}"));
+            migrateOldProgress=obj.optInt("catalog_version",1)<2;
+            if(migrateOldProgress){
+                try{
+                    InputStream f=getAssets().open("migration.json");
+                    ByteArrayOutputStream buff=new ByteArrayOutputStream();byte[] b=new byte[4096];int count;
+                    while((count=f.read(b))!=-1)buff.write(b,0,count);f.close();
+                    JSONObject mapping=new JSONObject(new String(buff.toByteArray(),StandardCharsets.UTF_8));
+                    for(int i=1;i<=1000;i++)legacyIds.put(i,mapping.optInt(String.valueOf(i),0));
+                }catch(Exception ignored){migrateOldProgress=false;}
+            }
             readSet(obj.optJSONArray("seen"),seen);readSet(obj.optJSONArray("known"),known);readSet(obj.optJSONArray("review"),review);
             JSONObject errors=obj.optJSONObject("mistakes");
-            if(errors!=null){java.util.Iterator<String> it=errors.keys();while(it.hasNext()){String k=it.next();wrongCounts.put(Integer.parseInt(k),errors.optInt(k));}}
+            if(errors!=null){java.util.Iterator<String> it=errors.keys();while(it.hasNext()){String k=it.next();{int old=Integer.parseInt(k),id=upgradeId(old);if(id>0)wrongCounts.put(id,errors.optInt(k));}}}
             history=obj.optJSONArray("history");if(history==null)history=new JSONArray();
         }catch(Exception ignored) { /* A damaged local record must not prevent study. */ }
     }
-    private void readSet(JSONArray a,Set<Integer> target){if(a==null)return;for(int i=0;i<a.length();i++){int id=a.optInt(i);if(id>=1&&id<=1000)target.add(id);}}
+    private int upgradeId(int id){return migrateOldProgress?legacyIds.getOrDefault(id,0):id;}
+    private void readSet(JSONArray a,Set<Integer> target){if(a==null)return;for(int i=0;i<a.length();i++){int id=upgradeId(a.optInt(i));if(id>=1&&id<=1000)target.add(id);}}
     private JSONArray toArray(Set<Integer> ids){JSONArray a=new JSONArray();ArrayList<Integer> sorted=new ArrayList<>(ids);Collections.sort(sorted);for(int id:sorted)a.put(id);return a;}
     private void saveProgress(){
         try{
             JSONObject out=new JSONObject();out.put("seen",toArray(seen));out.put("known",toArray(known));out.put("review",toArray(review));
             JSONObject mistakes=new JSONObject();for(Map.Entry<Integer,Integer> e:wrongCounts.entrySet())mistakes.put(String.valueOf(e.getKey()),e.getValue());
-            out.put("mistakes",mistakes);out.put("history",history);
+            out.put("mistakes",mistakes);out.put("history",history);out.put("catalog_version",2);
             prefs.edit().putString("state",out.toString()).apply();
         }catch(Exception ignored){}
     }
@@ -117,7 +134,8 @@ public final class MainActivity extends Activity {
     private void add(LinearLayout p,View child){p.addView(child,new LinearLayout.LayoutParams(-1,-2));}
     private Button button(String label,boolean primary,Runnable action){
         Button b=new Button(this);b.setAllCaps(false);b.setText(label);b.setTextSize(15);b.setTypeface(Typeface.DEFAULT,Typeface.BOLD);
-        b.setTextColor(primary?WHITE:BLUE);b.setBackground(bg(primary?BLUE:PALE,13));b.setMinHeight(dp(52));
+        b.setTextColor(primary?WHITE:INK);b.setBackground(outline(primary?INK:PALE,primary?INK:Color.rgb(227,227,227)));
+        b.setGravity(Gravity.CENTER);b.setPadding(dp(16),dp(11),dp(16),dp(11));b.setMinHeight(dp(52));
         b.setOnClickListener(v->action.run());return b;
     }
     private void heading(String title,String subtitle){
@@ -128,9 +146,9 @@ public final class MainActivity extends Activity {
     private void mount(String title,int destination){
         screen=destination;
         shell=vertical();shell.setBackgroundColor(BACK);
-        LinearLayout top=row();top.setBackgroundColor(Color.rgb(26,64,134));pad(top,18,13);
-        TextView titleText=text("🇫🇷  "+title,18,WHITE,true);top.addView(titleText,new LinearLayout.LayoutParams(0,-2,1));
-        if(destination!=0){TextView home=text("ホーム  ⌂",14,WHITE,true);pad(home,10,8);home.setOnClickListener(v->showHome());top.addView(home);}
+        LinearLayout top=row();top.setBackgroundColor(WHITE);pad(top,18,13);
+        TextView titleText=text(title,18,INK,true);top.addView(titleText,new LinearLayout.LayoutParams(0,-2,1));
+        if(destination!=0){TextView home=text("ホーム  ⌂",14,INK,true);pad(home,10,8);home.setOnClickListener(v->showHome());top.addView(home);}
         add(shell,top);
         ScrollView sc=new ScrollView(this);sc.setFillViewport(true);sc.setClipToPadding(false);
         body=vertical();pad(body,18,20);sc.addView(body);
@@ -139,15 +157,16 @@ public final class MainActivity extends Activity {
     }
     private int countKnown(int lesson){int n=0;for(int id:known)if((id-1)/100+1==lesson)n++;return n;}
     private void showHome(){stopAudio();mount("フランス語1000",0);
-        LinearLayout hero=panel();hero.setBackground(bg(Color.rgb(26,64,134),20));
-        TextView title=text("Bonjour !",25,WHITE,true);add(hero,title);
-        TextView sub=text("毎日少しずつ、フランス語を身につけよう。",13,Color.rgb(220,231,252),false);add(hero,sub);gap(hero,14);
-        TextView count=text("覚えた単語  "+known.size()+" / 1000",22,WHITE,true);add(hero,count);
-        TextView rest=text("学習した単語 "+seen.size()+"   ·   復習待ち "+review.size()+"   ·   テスト "+history.length()+"回",12,WHITE,false);add(hero,rest);
+        LinearLayout hero=panel();hero.setBackground(bg(PALE,20));
+        TextView title=text("Bonjour !",25,INK,true);add(hero,title);
+        TextView sub=text("毎日少しずつ、フランス語を身につけよう。",13,MUTED,false);add(hero,sub);gap(hero,14);
+        TextView count=text("覚えた単語  "+known.size()+" / 1000",22,INK,true);add(hero,count);
+        TextView rest=text("学習した単語 "+seen.size()+"   ·   復習待ち "+review.size()+"   ·   テスト "+history.length()+"回",12,MUTED,false);add(hero,rest);
         gap(body,16);
         add(body,button("▶  フラッシュカードを始める",true,()->showLessonPicker(false)));
         gap(body,10);add(body,button("✎  ランダムテスト",false,this::showTestSetup));
         gap(body,10);add(body,button("↺  間違えた単語を復習（"+review.size()+"）",false,this::startReview));
+        gap(body,10);add(body,button("✎  間違えた単語だけテスト（"+review.size()+"）",false,()->startWrongTest(false)));
         gap(body,10);add(body,button("▤  学習記録",false,this::showStats));
         gap(body,26);heading("100語ずつ学ぶ", "やさしい順に10レッスン。タップしてすぐ学習できます。");
         for(int l=1;l<=10;l++){
@@ -184,11 +203,11 @@ public final class MainActivity extends Activity {
         int id=flashIds.get(cardIndex);Word w=words.get(id-1);seen.add(id);saveProgress();
         mount(reviewing?"苦手単語の復習":"フラッシュカード",1);
         TextView counter=text((cardIndex+1)+" / "+flashIds.size()+"     •     "+(reviewing?"復習カード":"Lesson "+w.lesson),14,MUTED,true);add(body,counter);gap(body,13);
-        LinearLayout card=vertical();card.setGravity(Gravity.CENTER);pad(card,20,40);card.setMinimumHeight(dp(295));card.setBackground(outline(WHITE,Color.rgb(218,226,240)));add(body,card);
+        LinearLayout card=vertical();card.setGravity(Gravity.CENTER);pad(card,20,40);card.setMinimumHeight(dp(295));card.setBackground(outline(WHITE,Color.rgb(228,228,228)));add(body,card);
         TextView word=text(w.fr,33,INK,true);word.setGravity(Gravity.CENTER);add(card,word);gap(card,20);
         TextView meaning=text(revealed?w.ja:"タップして日本語を表示",revealed?23:15,revealed?INK:MUTED,revealed);
         meaning.setGravity(Gravity.CENTER);add(card,meaning);gap(card,14);
-        TextView prompt=text("No. "+w.id+(reviewing?"   •   過去の間違い "+wrongCounts.getOrDefault(id,0)+"回":""),12,MUTED,false);prompt.setGravity(Gravity.CENTER);add(card,prompt);
+        if(reviewing){TextView prompt=text("過去の間違い "+wrongCounts.getOrDefault(id,0)+"回",12,MUTED,false);prompt.setGravity(Gravity.CENTER);add(card,prompt);}
         card.setOnClickListener(v->{revealed=!revealed;meaning.setText(revealed?w.ja:"タップして日本語を表示");meaning.setTextSize(revealed?23:15);meaning.setTextColor(revealed?INK:MUTED);});
         gap(body,15);add(body,button("🔊  もう一度発音を聞く",false,()->playAudio(id)));gap(body,14);
         LinearLayout nav=row();Button prev=button("← 前へ",false,()->moveCard(-1));Button next=button("次へ →",true,()->moveCard(1));
@@ -218,7 +237,7 @@ public final class MainActivity extends Activity {
     }
     private Spinner dropdown(String[] options){
         Spinner sp=new Spinner(this);ArrayAdapter<String> adapter=new ArrayAdapter<>(this,android.R.layout.simple_spinner_dropdown_item,options);
-        sp.setAdapter(adapter);sp.setBackground(outline(WHITE,Color.rgb(214,224,239)));sp.setPadding(dp(8),0,dp(8),0);sp.setMinimumHeight(dp(54));return sp;
+        sp.setAdapter(adapter);sp.setBackground(outline(WHITE,Color.rgb(220,220,220)));sp.setPadding(dp(8),0,dp(8),0);sp.setMinimumHeight(dp(54));return sp;
     }
     private void showTestSetup(){mount("テスト設定",2);heading("テストする範囲","指定した範囲からランダムに出題。4択で意味を答えます。");
         String[] lessons=new String[10];for(int l=1;l<=10;l++)lessons[l-1]="Lesson "+l+"  ("+((l-1)*100+1)+"〜"+(l*100)+")";
@@ -248,62 +267,95 @@ public final class MainActivity extends Activity {
         ArrayList<Integer> candidates=new ArrayList<>();for(int i=(a-1)*100+1;i<=b*100;i++)candidates.add(i);
         Collections.shuffle(candidates,random);
         int n=allCheck.isChecked()?candidates.size():20+countSeek.getProgress();
-        testIds=new ArrayList<>(candidates.subList(0,Math.min(n,candidates.size())));
-        questionIndex=0;correctCount=0;answered=false;quizStart=System.currentTimeMillis();showQuestion();
+        beginTest(new ArrayList<>(candidates.subList(0,Math.min(n,candidates.size()))),false);
+    }
+    private void beginTest(ArrayList<Integer> selected,boolean mistakesOnly){
+        if(selected.isEmpty()){Toast.makeText(this,"出題する単語がありません",Toast.LENGTH_SHORT).show();return;}
+        stopAudio();testIds=selected;wrongOnlyTest=mistakesOnly;
+        testAnswers.clear();questionIndex=0;correctCount=0;answered=false;
+        quizStart=System.currentTimeMillis();showQuestion();
+    }
+    private void startWrongTest(boolean lastOnly){
+        ArrayList<Integer> ids=new ArrayList<>(lastOnly?lastWrongIds:review);
+        if(ids.isEmpty()){Toast.makeText(this,"間違えた単語はありません",Toast.LENGTH_SHORT).show();return;}
+        Collections.shuffle(ids,random);
+        if(ids.size()>100)ids=new ArrayList<>(ids.subList(0,100));
+        beginTest(ids,true);
     }
     private void showQuestion(){
         if(questionIndex>=testIds.size()){showResults();return;}
-        int id=testIds.get(questionIndex);Word w=words.get(id-1);seen.add(id);saveProgress();
+        int id=testIds.get(questionIndex);Word w=words.get(id-1);
         answered=false;mount("単語テスト",3);
-        TextView progress=text("第 "+(questionIndex+1)+" 問 / "+testIds.size()+"     正解 "+correctCount,14,MUTED,true);add(body,progress);gap(body,12);
-        LinearLayout card=panel();card.setMinimumHeight(dp(155));card.setGravity(Gravity.CENTER);
-        TextView word=text(w.fr,30,INK,true);word.setGravity(Gravity.CENTER);add(card,word);gap(card,10);
-        TextView question=text("このフランス語の意味は？",14,MUTED,false);add(card,question);
-        gap(body,12);add(body,button("🔊  発音をもう一度聞く",false,()->playAudio(id)));gap(body,17);
-        ArrayList<Integer> distractors=new ArrayList<>();for(int i=1;i<=1000;i++)if(i!=id&&words.get(i-1).lesson==w.lesson&&!words.get(i-1).ja.equals(w.ja))distractors.add(i);
+        TextView progress=text((questionIndex+1)+" / "+testIds.size(),14,MUTED,true);add(body,progress);gap(body,12);
+        LinearLayout card=panel();card.setMinimumHeight(dp(150));card.setGravity(Gravity.CENTER);
+        TextView word=text(w.fr,31,INK,true);word.setGravity(Gravity.CENTER);add(card,word);gap(card,10);
+        TextView question=text("この単語の意味は？",14,MUTED,false);question.setGravity(Gravity.CENTER);add(card,question);
+        gap(body,12);add(body,button("🔊  発音を聞く",false,()->playAudio(id)));gap(body,17);
+        ArrayList<Integer> distractors=new ArrayList<>();
+        for(int i=1;i<=1000;i++)if(i!=id&&words.get(i-1).lesson==w.lesson&&!words.get(i-1).ja.equals(w.ja))distractors.add(i);
         Collections.shuffle(distractors,random);
         ArrayList<String> picked=new ArrayList<>();picked.add(w.ja);
-        for(int cid:distractors){String s=words.get(cid-1).ja;if(!picked.contains(s)){picked.add(s);if(picked.size()==4)break;}}
+        for(int cid:distractors){String a=words.get(cid-1).ja;if(!picked.contains(a)){picked.add(a);if(picked.size()==4)break;}}
+        if(picked.size()<4)throw new IllegalStateException("選択肢が不足しています");
         Collections.shuffle(picked,random);
-        for(int i=0;i<4;i++){
-            String meaning=picked.get(i);Button option=button((i+1)+".  "+meaning,false,()->chooseAnswer(meaning,w));
-            option.setGravity(Gravity.CENTER_VERTICAL|Gravity.LEFT);option.setTextColor(INK);option.setBackground(outline(WHITE,Color.rgb(218,226,240)));
-            add(body,option);gap(body,9);
+        for(String meaning:picked){
+            Button option=button(meaning,false,()->chooseAnswer(meaning,w));
+            option.setGravity(Gravity.CENTER_VERTICAL|Gravity.LEFT);
+            option.setTextColor(INK);option.setBackground(outline(WHITE,Color.rgb(224,224,224)));
+            option.setTextSize(16);option.setPadding(dp(18),dp(12),dp(14),dp(12));
+            add(body,option);gap(body,10);
         }
-        gap(body,10);add(body,text("間違えた単語は自動的に復習リストに入ります。",12,MUTED,false));
+        gap(body,10);add(body,text("採点は全問終了後にまとめて表示されます。",12,MUTED,false));
         body.post(()->{if(screen==3 && questionIndex<testIds.size() && testIds.get(questionIndex)==id)playAudio(id);});
     }
     private void chooseAnswer(String selected,Word w){
         if(answered)return;answered=true;
-        boolean right=selected.equals(w.ja);
-        if(right){correctCount++;known.add(w.id);}
-        else{known.remove(w.id);review.add(w.id);wrongCounts.put(w.id,wrongCounts.getOrDefault(w.id,0)+1);}
-        seen.add(w.id);saveProgress();
-        stopAudio();mount("解答結果",3);
-        LinearLayout c=panel();TextView verdict=text(right?"✓  正解！":"✕  不正解",26,right?GREEN:RED,true);add(c,verdict);gap(c,14);
-        add(c,text(w.fr,28,INK,true));gap(c,10);
-        add(c,text("正しい意味："+w.ja,19,INK,true));
-        if(!right){gap(c,8);add(c,text("あなたの回答："+selected,15,RED,false));}
-        gap(body,15);add(body,button("🔊  発音を聞く",false,()->playAudio(w.id)));
-        gap(body,16);add(body,button(questionIndex==testIds.size()-1?"テスト結果を見る →":"次の問題へ →",true,()->{questionIndex++;showQuestion();}));
-        gap(body,12);add(body,text(""+(questionIndex+1)+" / "+testIds.size()+" 問が終了",13,MUTED,false));
+        testAnswers.add(selected);
+        seen.add(w.id);
+        questionIndex++;
+        stopAudio();showQuestion();
     }
     private void showResults(){
-        int total=testIds.size();int pct=total==0?0:(int)Math.round(correctCount*100.0/total);
+        correctCount=0;lastWrongIds.clear();
+        for(int i=0;i<testIds.size();i++){
+            int id=testIds.get(i);Word w=words.get(id-1);String selected=testAnswers.get(i);
+            boolean right=selected.equals(w.ja);
+            if(right){correctCount++;known.add(id);review.remove(id);}
+            else{known.remove(id);review.add(id);lastWrongIds.add(id);wrongCounts.put(id,wrongCounts.getOrDefault(id,0)+1);}
+            seen.add(id);
+        }
+        int total=testIds.size(),pct=total==0?0:(int)Math.round(correctCount*100.0/total);
         try{
-            JSONObject record=new JSONObject();record.put("time",System.currentTimeMillis());record.put("from",startLesson);record.put("to",endLesson);
-            record.put("questions",total);record.put("correct",correctCount);record.put("seconds",(System.currentTimeMillis()-quizStart)/1000);
+            JSONObject record=new JSONObject();record.put("time",System.currentTimeMillis());
+            record.put("from",wrongOnlyTest?0:startLesson);record.put("to",wrongOnlyTest?0:endLesson);
+            record.put("questions",total);record.put("correct",correctCount);
+            record.put("seconds",(System.currentTimeMillis()-quizStart)/1000);
             JSONArray last=new JSONArray();last.put(record);
-            for(int i=0;i<Math.min(history.length(),99);i++)last.put(history.get(i));history=last;saveProgress();
+            for(int i=0;i<Math.min(history.length(),99);i++)last.put(history.get(i));history=last;
         }catch(Exception ignored){}
-        stopAudio();mount("テスト完了",5);
-        LinearLayout c=panel();c.setGravity(Gravity.CENTER);
-        TextView grade=text(pct+"%",53,BLUE,true);grade.setGravity(Gravity.CENTER);add(c,grade);
-        TextView result=text(correctCount+" / "+total+" 問 正解",21,INK,true);result.setGravity(Gravity.CENTER);add(c,result);
-        gap(c,10);TextView note=text("間違えた単語は自動保存されました。",14,MUTED,false);note.setGravity(Gravity.CENTER);add(c,note);
-        gap(body,22);add(body,button("間違えた単語を復習",true,this::startReview));
-        gap(body,12);add(body,button("もう一度テストする",false,this::showTestSetup));
-        gap(body,12);add(body,button("ホームへ戻る",false,this::showHome));
+        saveProgress();stopAudio();mount("テスト結果",5);
+        LinearLayout summary=panel();summary.setGravity(Gravity.CENTER);
+        TextView grade=text(pct+"%",51,INK,true);grade.setGravity(Gravity.CENTER);add(summary,grade);
+        TextView detail=text(correctCount+" / "+total+" 問 正解",19,INK,true);detail.setGravity(Gravity.CENTER);add(summary,detail);
+        gap(summary,9);TextView wrong=text("間違い "+lastWrongIds.size()+" 語",14,MUTED,false);wrong.setGravity(Gravity.CENTER);add(summary,wrong);
+        gap(body,16);
+        if(!lastWrongIds.isEmpty()){
+            add(body,button("今回の間違いだけ再テスト（"+lastWrongIds.size()+"）",true,()->startWrongTest(true)));
+            gap(body,9);add(body,button("間違えた単語のカードを開く",false,this::startReview));gap(body,18);
+        }
+        heading("まとめて答え合わせ","全問の正解と自分の回答を確認できます。");
+        for(int i=0;i<total;i++){
+            final int id=testIds.get(i);Word w=words.get(id-1);
+            boolean right=testAnswers.get(i).equals(w.ja);
+            LinearLayout item=panel();item.setBackground(outline(WHITE,Color.rgb(230,230,230)));
+            LinearLayout line=row();TextView fr=text(w.fr,18,INK,true);line.addView(fr,new LinearLayout.LayoutParams(0,-2,1));
+            TextView symbol=text(right?"✓":"×",22,right?GREEN:RED,true);line.addView(symbol);add(item,line);
+            gap(item,5);add(item,text("正解："+w.ja,15,INK,false));
+            if(!right){gap(item,5);add(item,text("回答："+testAnswers.get(i),14,RED,false));}
+            TextView replay=text("▶ 発音を再生",12,MUTED,false);pad(replay,0,11);replay.setOnClickListener(v->playAudio(id));add(item,replay);
+            gap(body,9);
+        }
+        gap(body,12);add(body,button("ホームへ戻る",true,this::showHome));
     }
     private void showStats(){
         stopAudio();mount("学習記録",6);heading("これまでの学習","記録はこの端末内だけに保存されています。");
@@ -320,14 +372,14 @@ public final class MainActivity extends Activity {
             String when=new SimpleDateFormat("yyyy/MM/dd HH:mm",Locale.JAPAN).format(new Date(r.optLong("time")));
             int cor=r.optInt("correct"),n=r.optInt("questions");
             add(item,text(when+"     "+cor+" / "+n+"問",16,INK,true));gap(item,4);
-            add(item,text("Lesson "+r.optInt("from")+"〜"+r.optInt("to")+"   ·   "+(n==0?0:(cor*100/n))+"% 正解",13,MUTED,false));gap(body,10);
+            add(item,text((r.optInt("from")==0?"間違いのみ":"Lesson "+r.optInt("from")+"〜"+r.optInt("to"))+"   ·   "+(n==0?0:(cor*100/n))+"% 正解",13,MUTED,false));gap(body,10);
         }
         gap(body,14);heading("間違いの記録", "累積で間違えた回数の多い順です。復習を終えても履歴は残ります。");
         ArrayList<Integer> ids=new ArrayList<>(wrongCounts.keySet());ids.sort((a,b)->Integer.compare(wrongCounts.get(b),wrongCounts.get(a)));
         if(ids.isEmpty())add(body,text("間違えた単語はまだありません。",14,MUTED,false));
         for(int id:ids){Word w=words.get(id-1);LinearLayout item=panel();
             add(item,text(w.fr+"  —  "+w.ja,15,INK,true));gap(item,4);
-            add(item,text("No."+id+"  ·  "+wrongCounts.get(id)+"回間違い"+(review.contains(id)?"   ·  要復習":"   ·  復習済み"),12,review.contains(id)?RED:MUTED,false));
+            add(item,text(wrongCounts.get(id)+"回間違い"+(review.contains(id)?"   ·  要復習":"   ·  復習済み"),12,review.contains(id)?RED:MUTED,false));
             gap(body,8);
         }
         gap(body,18);add(body,button("復習カードを開く",true,this::startReview));gap(body,16);

@@ -1,48 +1,54 @@
-### 1 最重要表現・動詞
+### 1 はじめての会話
 bonjour|こんにちは
 salut|やあ
 bonsoir|こんばんは
+au revoir|さようなら
 merci|ありがとう
+merci beaucoup|どうもありがとう
+s'il vous plaît|お願いします
+pardon|すみません
+excusez-moi|すみません
 oui|はい
 non|いいえ
-pardon|すみません
-merci beaucoup|どうもありがとう
-au revoir|さようなら
-à bientôt|また近いうちに
-à demain|また明日
-bonne nuit|おやすみ
-bienvenue|ようこそ
-s'il vous plaît|お願いします
-excusez-moi|すみません
+ça va ?|元気ですか？
+je m'appelle|私の名前は〜です
+je suis|私は〜です
+j'ai|私は持っています
+c'est|これは〜です
+je voudrais|〜をいただきたいのですが
+je ne comprends pas|わかりません（理解できません）
+je ne sais pas|知りません・わかりません
+d'accord|了解
 je|私
-j'|私（母音の前）
 tu|君
 vous|あなた・あなたたち
 il|彼
 elle|彼女
 nous|私たち
-ils|彼ら
-elles|彼女たち
 on|私たち・人々
-moi|私（強勢形）
-toi|君（強勢形）
-lui|彼に・彼（強勢形）
+être|〜である
+avoir|持っている
+aller|行く
+faire|する・作る
+venir|来る
+vouloir|欲しい・〜したい
+pouvoir|〜できる
+aimer|好きである
+parler|話す
+manger|食べる
+boire|飲む
+habiter|住む
+travailler|働く
+écouter|聞く
+regarder|眺める
+comprendre|理解する
 qui|誰
 quoi|何
-que|何を・〜ということ
-quel|どの・どんな（男性）
-quelle|どの・どんな（女性）
 où|どこ
-quand|いつ
 comment|どのように
+quand|いつ
 pourquoi|なぜ
 combien|いくつ・いくら
-ici|ここ
-là|そこ・あそこ
-ça|それ
-ce|この・その（男性）
-cette|この・その（女性）
-ces|これらの
 un|1・ある（男性）
 une|1・ある（女性）
 deux|2
@@ -54,52 +60,46 @@ sept|7
 huit|8
 neuf|9
 dix|10
-être|〜である
-avoir|持っている
-faire|する・作る
-aller|行く
-venir|来る
-dire|言う
-vingt|20
-parler|話す
-écouter|聞く
-entendre|聞こえる
-voir|見る
-regarder|眺める
 le|その（男性名詞）
 la|その（女性名詞）
 les|その（複数）
 des|いくつかの
+de|〜の・〜から
+à|〜へ・〜に
+avec|〜と一緒に
+sans|〜なしで
+dans|〜の中に
 et|そして
 ou|または
 mais|しかし
-avec|〜と一緒に
-sans|〜なしで
-pour|〜のために
-dans|〜の中に
-sur|〜の上に
-sous|〜の下に
-savoir|知っている（知識）
-connaître|知っている（面識）
-comprendre|理解する
-à|〜へ・〜に
-de|〜の・〜から
+ne|否定をつくる語
+pas|〜ない
+très|とても
+bien|よく・元気に
+mal|悪く
+ici|ここ
+là|そこ・あそこ
+aujourd'hui|今日
+demain|明日
+hier|昨日
+ce|この・その（男性）
+voir|見る
 apprendre|学ぶ
 étudier|勉強する
 en|〜で・〜に
-très|とても
+ces|これらの
 lire|読む
 écrire|書く
-bien|よく・元気に
-mal|悪く
-pas|〜ない
-ne|否定をつくる語
+pour|〜のために
+ça|それ
+vingt|20
+entendre|聞こえる
 si|もし・（否定疑問への）はい
 penser|考える
 croire|信じる
-d'accord|了解
+elles|彼女たち
 peut-être|たぶん
-### 2 基本動詞・数
+### 2 数字と毎日の動詞
 onze|11
 douze|12
 treize|13
@@ -111,6 +111,28 @@ quarante|40
 cinquante|50
 cent|100
 mille|1000
+donner|与える
+mettre|置く・着る
+ouvrir|開ける
+fermer|閉める
+acheter|買う
+payer|支払う
+prendre|取る・乗る
+demander|尋ねる・頼む
+répondre|答える
+se lever|起き上がる
+se coucher|寝る
+dormir|眠る
+marcher|歩く
+attendre|待つ
+aider|助ける
+sortir|出る
+entrer|入る
+arriver|到着する
+partir|出発する
+chercher|探す
+trouver|見つける
+dire|言う
 devant|〜の前に
 derrière|〜の後ろに
 entre|〜の間に
@@ -120,52 +142,33 @@ plus|より多く
 moins|より少なく
 voilà|ほら・そこにあります
 voici|こちらです
-vouloir|欲しい・〜したい
-pouvoir|〜できる
+quelle|どの・どんな（女性）
+que|何を・〜ということ
 devoir|〜しなければならない
-aimer|好きである
+quel|どの・どんな（男性）
 adorer|大好きである
 détester|大嫌いである
 préférer|〜を好む
-manger|食べる
-boire|飲む
-dormir|眠る
+à bientôt|また近いうちに
 se réveiller|目を覚ます
-se lever|起き上がる
-se coucher|寝る
-marcher|歩く
 courir|走る
 nager|泳ぐ
 jouer|遊ぶ・競技する
-travailler|働く
-chercher|探す
-trouver|見つける
+sous|〜の下に
 perdre|失う
-prendre|取る・乗る
-donner|与える
 recevoir|受け取る
-mettre|置く・着る
 porter|運ぶ・身に着ける
-ouvrir|開ける
-fermer|閉める
-entrer|入る
-sortir|出る
-arriver|到着する
-partir|出発する
 rester|とどまる
 retourner|戻る
 monter|上がる
 descendre|下りる
-attendre|待つ
 commencer|始める
 finir|終える
 continuer|続ける
 arrêter|止める
 changer|変える
 utiliser|使う
-acheter|買う
 vendre|売る
-payer|支払う
 coûter|値段がする
 choisir|選ぶ
 commander|注文する
@@ -173,9 +176,6 @@ préparer|準備する
 cuisiner|料理する
 laver|洗う
 nettoyer|掃除する
-aider|助ける
-demander|尋ねる・頼む
-répondre|答える
 appeler|呼ぶ・電話する
 téléphoner|電話をかける
 envoyer|送る
@@ -188,7 +188,7 @@ essayer|試す
 réussir|成功する
 tomber|落ちる・転ぶ
 vivre|生きる・暮らす
-habiter|住む
+sur|〜の上に
 naître|生まれる
 mourir|死ぬ
 rire|笑う
@@ -230,7 +230,7 @@ un oncle|おじ
 une tante|おば
 un cousin|男性のいとこ
 une cousine|女性のいとこ
-un ami proche|親友
+bonne nuit|おやすみ
 un couple|カップル
 un invité|招待客
 un collègue|同僚
@@ -244,7 +244,7 @@ une infirmière|女性看護師
 un étudiant|男子学生
 une étudiante|女子学生
 un élève|生徒
-un voisinage|近所
+bienvenue|ようこそ
 un nom|名前
 un prénom|下の名前
 un âge|年齢
@@ -272,7 +272,7 @@ un ventre|おなか
 une jambe|脚
 un genou|膝
 un pied|足
-un orteil|足の指
+j'ai mal|私は痛みがあります
 un cœur|心臓・心
 le sang|血液
 un os|骨
@@ -322,7 +322,7 @@ une fenêtre|窓
 un escalier|階段
 un ascenseur|エレベーター
 une clé|鍵
-une serrure|鍵穴・錠
+toi|君（強勢形）
 une table|テーブル
 une chaise|椅子
 un canapé|ソファ
@@ -402,7 +402,7 @@ un verre|グラス
 une tasse|カップ
 une cuillère|スプーン
 une fourchette|フォーク
-### 5 食べ物・買い物
+### 5 食事・買い物
 un repas|食事
 un petit-déjeuner|朝食
 un déjeuner|昼食
@@ -503,24 +503,8 @@ une réduction|割引
 une promotion|特売
 un reçu|レシート
 un achat|買い物・購入
-### 6 時間・自然
-un temps|時間・天気
-une heure|時間・時刻
-une minute|分
-une seconde|秒
-un jour|日
-une journée|一日
-une nuit|夜
-un matin|朝
-un midi|正午
-un après-midi|午後
-un soir|夕方・夜
-une semaine|週
-un mois|月（期間）
-une année|年
-un an|年
-une date|日付
-un calendrier|カレンダー
+### 6 日時・自然
+maintenant|今
 lundi|月曜日
 mardi|火曜日
 mercredi|水曜日
@@ -540,10 +524,26 @@ septembre|9月
 octobre|10月
 novembre|11月
 décembre|12月
-aujourd'hui|今日
-hier|昨日
-demain|明日
-maintenant|今
+un temps|時間・天気
+une heure|時間・時刻
+une minute|分
+une seconde|秒
+un jour|日
+une journée|一日
+une nuit|夜
+un matin|朝
+un midi|正午
+un après-midi|午後
+un soir|夕方・夜
+une semaine|週
+un mois|月（期間）
+une année|年
+un an|年
+une date|日付
+un calendrier|カレンダー
+savoir|知っている（知識）
+cette|この・その（女性）
+connaître|知っている（面識）
 bientôt|まもなく
 toujours|いつも
 souvent|しばしば
@@ -596,7 +596,7 @@ une île|島
 un désert|砂漠
 une terre|地面・地球
 une pierre|石
-un rocher|岩
+c'est où ?|それはどこですか？
 du sable|砂
 un feu|火
 une fumée|煙
@@ -659,7 +659,7 @@ un visa|ビザ
 un bagage|手荷物
 un siège|座席
 une ceinture de sécurité|シートベルト
-un hublot|飛行機の窓
+tout droit|まっすぐ
 un plan|地図・計画
 une carte|地図・カード
 une direction|方向
@@ -684,7 +684,7 @@ une auberge|宿屋
 une réception|受付
 une chambre simple|シングルルーム
 une chambre double|ダブルルーム
-une nuitée|宿泊一泊
+à demain|また明日
 un musée|博物館
 un cinéma|映画館
 un théâtre|劇場
@@ -705,19 +705,30 @@ une salle de sport|スポーツジム
 un monument|記念碑
 un touriste|観光客
 un guide|案内人・ガイド
-### 8 形容詞・副詞
+### 8 色・形容詞
+rouge|赤い
+bleu|青い
+vert|緑の
+jaune|黄色い
+noir|黒い
+blanc|白い
+gris|灰色の
+rose|ピンク色の
+marron|茶色の
 bon|良い（男性形）
 bonne|良い（女性形）
-mauvais|悪い（男性形）
-mauvaise|悪い（女性形）
 grand|大きい・背が高い（男性形）
 grande|大きい・背が高い（女性形）
 petit|小さい（男性形）
 petite|小さい（女性形）
+beau|美しい（男性形）
+belle|美しい（女性形）
+chaud|熱い・暖かい
+mauvais|悪い（男性形）
+mauvaise|悪い（女性形）
 long|長い
 court|短い
 large|幅広い
-étroit|狭い
 haut|高い
 bas|低い
 jeune|若い
@@ -757,21 +768,15 @@ poli|礼儀正しい
 timide|恥ずかしがりの
 courageux|勇敢な
 intelligent|賢い
-stupide|愚かな
 sérieux|真面目な
 drôle|面白い・滑稽な
 intéressant|興味深い
 ennuyeux|退屈な
-beau|美しい（男性形）
-belle|美しい（女性形）
 joli|きれいな
-laid|醜い
 propre|清潔な
 sale|汚れた
-chaud|熱い・暖かい
 frais|涼しい・新鮮な
 sec|乾いた
-humide|湿った
 plein|いっぱいの
 vide|空の
 lourd|重い
@@ -781,7 +786,6 @@ lent|遅い
 fort|強い
 faible|弱い
 dur|硬い・厳しい
-mou|柔らかい
 cher|値段が高い
 bon marché|安価な
 riche|裕福な
@@ -802,10 +806,6 @@ trop|〜すぎる
 presque|ほとんど
 seulement|〜だけ
 vraiment|本当に
-probablement|おそらく
-certainement|確かに
-exactement|正確に
-rapidement|素早く
 ### 9 学校・仕事・趣味
 une école|学校
 un collège|中学校
@@ -870,7 +870,7 @@ une solution|解決策
 une idée|考え
 un conseil|助言
 une décision|決定
-une responsabilité|責任
+l'anglais|英語
 un effort|努力
 une pause|休憩
 les vacances|休暇
@@ -901,13 +901,13 @@ une peinture|絵画・塗料
 l'art|芸術
 un jeu|ゲーム・遊び
 un jouet|おもちゃ
-un puzzle|パズル
+le français|フランス語
 un roman|小説
 un journal|新聞・日記
 un magazine|雑誌
 une fête|パーティー・祭り
 un cadeau|贈り物
-### 10 生活動作・抽象語
+### 10 応用動詞・表現
 se promener|散歩する
 se reposer|休む
 se dépêcher|急ぐ
@@ -973,11 +973,11 @@ une chance|運・幸運
 un choix|選択
 une raison|理由
 un sens|意味・方向
-une vérité|真実
-un mensonge|うそ
+moi|私（強勢形）
+ils|彼ら
 la liberté|自由
 la paix|平和
-une guerre|戦争
+c'est combien ?|いくらですか？
 la sécurité|安全
 un danger|危険
 un changement|変化
@@ -1002,9 +1002,9 @@ une fin|終わり
 un milieu|真ん中
 une partie|部分
 un ensemble|全体
-une qualité|質・長所
-un défaut|欠点
-une quantité|量
-une valeur|価値
+les États-Unis|アメリカ合衆国
+la France|フランス
+le Japon|日本
+Paris|パリ
 un besoin|必要
 un désir|願望

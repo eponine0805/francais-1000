@@ -1,32 +1,50 @@
 #!/usr/bin/env python3
-"""Embed all 1000 French pronunciations as local Ogg Vorbis files.
+"""Generate bundled *offline* high-quality French female speech using Kokoro-82M.
 
-Requires eSpeak (French voice) and ffmpeg. Called before Android build in CI.
+Build-time dependencies (not present on Android): kokoro-onnx, misaki-fork,
+onnxruntime, soundfile, ffmpeg, espeak-ng. No user account or API required.
 """
+import io
 import json
 import subprocess
 from pathlib import Path
-import sys
 
-root=Path(__file__).resolve().parents[1]
-items=json.loads((root/'app/src/main/assets/words.json').read_text(encoding='utf-8'))
-out=root/'app/src/main/assets/audio'
-out.mkdir(parents=True, exist_ok=True)
-for n, item in enumerate(items,1):
-    destination=out/f"{item['id']:04d}.ogg"
-    if destination.exists() and destination.stat().st_size>400:
-        continue
-    french=item['fr']
-    # slow and clear for absolute beginners, modest pauses between syllables
-    synth=subprocess.run(['espeak','-v','fr-fr','-s','123','-p','52','--stdout',french],capture_output=True,check=True)
-    enc=subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i','pipe:0',
-                        '-ac','1','-ar','22050','-c:a','libvorbis','-q:a','3',str(destination)],
-                       input=synth.stdout,capture_output=True)
-    if enc.returncode!=0:
-        raise RuntimeError(f'Audio error for {french}: {enc.stderr.decode()}')
-    if n%100==0:
-        print(f'{n}/{len(items)} audio generated',flush=True)
-files=list(out.glob('*.ogg'))
-if len(files)!=len(items):
-    raise RuntimeError(f'expected {len(items)} files; found {len(files)}')
-print(f'Validated {len(files)} audio clips / {sum(p.stat().st_size for p in files)/1024/1024:.2f} MiB')
+import soundfile as sf
+from kokoro_onnx import Kokoro
+from misaki.espeak import EspeakG2P
+
+ROOT = Path(__file__).resolve().parents[1]
+ITEMS = json.loads((ROOT / 'app/src/main/assets/words.json').read_text(encoding='utf-8'))
+OUT = ROOT / 'app/src/main/assets/audio'
+OUT.mkdir(parents=True, exist_ok=True)
+MODEL = ROOT / 'models/kokoro-v1.0.onnx'
+VOICES = ROOT / 'models/voices-v1.0.bin'
+if not (MODEL.exists() and VOICES.exists()):
+    raise RuntimeError('Kokoro voice models not found. Follow README build instructions.')
+
+g2p = EspeakG2P(language='fr-fr')
+tts = Kokoro(str(MODEL), str(VOICES))
+for n, item in enumerate(ITEMS, 1):
+    path = OUT / f"{item['id']:04d}.ogg"
+    # Never reuse eSpeak files from an older build.
+    fr = item['fr'].strip()
+    phonemes, _ = g2p(fr)
+    if not phonemes:
+        raise RuntimeError(f'Unable to phonemize #{n}: {fr}')
+    # ff_siwis is a French, female, neural voice. Slightly slower for beginners.
+    audio, sample_rate = tts.create(phonemes, voice='ff_siwis', speed=0.91, is_phonemes=True)
+    if len(audio) < sample_rate * 0.12:
+        raise RuntimeError(f'Audio appears empty for #{n}: {fr}')
+    buffer = io.BytesIO()
+    sf.write(buffer, audio, sample_rate, format='WAV', subtype='PCM_16')
+    result = subprocess.run(
+        ['ffmpeg', '-hide_banner', '-loglevel', 'error', '-nostdin', '-y',
+         '-i', 'pipe:0', '-ac', '1', '-c:a', 'libvorbis', '-q:a', '6', str(path)],
+        input=buffer.getvalue(), capture_output=True)
+    if result.returncode:
+        raise RuntimeError(f"Encoding failed for {fr}: {result.stderr.decode()}")
+    if n % 50 == 0:
+        print(f'Neural French female audio: {n}/{len(ITEMS)}', flush=True)
+if len(list(OUT.glob('*.ogg'))) != 1000:
+    raise RuntimeError('Exactly 1000 audio clips are required')
+print(f'Complete: {len(ITEMS)} offline female French neural clips')

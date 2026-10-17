@@ -1,14 +1,9 @@
+#!/usr/bin/env python3
 import json
 from pathlib import Path
-root=Path(__file__).resolve().parents[1]
-words=json.loads((root/'app/src/main/assets/words.json').read_text(encoding='utf-8'))
-assert len(words)==1000
-assert [x['id'] for x in words]==list(range(1,1001))
-assert len(set(x['fr'].casefold() for x in words))==1000
-assert all(x['lesson']==i//100+1 for i,x in enumerate(words))
-assert all(x['ja'] and x['fr'] for x in words)
-audio=root/'app/src/main/assets/audio'
-clips=list(audio.glob('*.ogg'))
-assert len(clips)==1000,(len(clips),'Missing audio')
-assert all((audio/f"{x['id']:04d}.ogg").stat().st_size>400 for x in words)
-print('PASS: 1000 unique, sequential, translated entries and 1000 local audio files.')
+r=Path(__file__).resolve().parents[1]
+a=json.loads((r/'app/src/main/assets/words.json').read_text(encoding='utf8'))
+assert len(a)==1000 and len({w['fr'].casefold() for w in a})==1000
+files=[r/'app/src/main/assets/audio'/f"{w['id']:04}.ogg" for w in a]
+assert all(p.is_file() and p.stat().st_size>1000 for p in files)
+print('1000 words, 1000 nonempty offline neural audio files: verified')

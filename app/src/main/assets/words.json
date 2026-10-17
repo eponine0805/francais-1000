@@ -1,1 +1,6002 @@
-[{"id":1,"lesson":1,"fr":"bonjour","ja":"こんにちは"},{"id":2,"lesson":1,"fr":"salut","ja":"やあ"},{"id":3,"lesson":1,"fr":"bonsoir","ja":"こんばんは"},{"id":4,"lesson":1,"fr":"merci","ja":"ありがとう"},{"id":5,"lesson":1,"fr":"oui","ja":"はい"},{"id":6,"lesson":1,"fr":"non","ja":"いいえ"},{"id":7,"lesson":1,"fr":"pardon","ja":"すみません"},{"id":8,"lesson":1,"fr":"merci beaucoup","ja":"どうもありがとう"},{"id":9,"lesson":1,"fr":"au revoir","ja":"さようなら"},{"id":10,"lesson":1,"fr":"à bientôt","ja":"また近いうちに"},{"id":11,"lesson":1,"fr":"à demain","ja":"また明日"},{"id":12,"lesson":1,"fr":"bonne nuit","ja":"おやすみ"},{"id":13,"lesson":1,"fr":"bienvenue","ja":"ようこそ"},{"id":14,"lesson":1,"fr":"s'il vous plaît","ja":"お願いします"},{"id":15,"lesson":1,"fr":"excusez-moi","ja":"すみません"},{"id":16,"lesson":1,"fr":"je","ja":"私"},{"id":17,"lesson":1,"fr":"j'","ja":"私（母音の前）"},{"id":18,"lesson":1,"fr":"tu","ja":"君"},{"id":19,"lesson":1,"fr":"vous","ja":"あなた・あなたたち"},{"id":20,"lesson":1,"fr":"il","ja":"彼"},{"id":21,"lesson":1,"fr":"elle","ja":"彼女"},{"id":22,"lesson":1,"fr":"nous","ja":"私たち"},{"id":23,"lesson":1,"fr":"ils","ja":"彼ら"},{"id":24,"lesson":1,"fr":"elles","ja":"彼女たち"},{"id":25,"lesson":1,"fr":"on","ja":"私たち・人々"},{"id":26,"lesson":1,"fr":"moi","ja":"私（強勢形）"},{"id":27,"lesson":1,"fr":"toi","ja":"君（強勢形）"},{"id":28,"lesson":1,"fr":"lui","ja":"彼に・彼（強勢形）"},{"id":29,"lesson":1,"fr":"qui","ja":"誰"},{"id":30,"lesson":1,"fr":"quoi","ja":"何"},{"id":31,"lesson":1,"fr":"que","ja":"何を・〜ということ"},{"id":32,"lesson":1,"fr":"quel","ja":"どの・どんな（男性）"},{"id":33,"lesson":1,"fr":"quelle","ja":"どの・どんな（女性）"},{"id":34,"lesson":1,"fr":"où","ja":"どこ"},{"id":35,"lesson":1,"fr":"quand","ja":"いつ"},{"id":36,"lesson":1,"fr":"comment","ja":"どのように"},{"id":37,"lesson":1,"fr":"pourquoi","ja":"なぜ"},{"id":38,"lesson":1,"fr":"combien","ja":"いくつ・いくら"},{"id":39,"lesson":1,"fr":"ici","ja":"ここ"},{"id":40,"lesson":1,"fr":"là","ja":"そこ・あそこ"},{"id":41,"lesson":1,"fr":"ça","ja":"それ"},{"id":42,"lesson":1,"fr":"ce","ja":"この・その（男性）"},{"id":43,"lesson":1,"fr":"cette","ja":"この・その（女性）"},{"id":44,"lesson":1,"fr":"ces","ja":"これらの"},{"id":45,"lesson":1,"fr":"un","ja":"1・ある（男性）"},{"id":46,"lesson":1,"fr":"une","ja":"1・ある（女性）"},{"id":47,"lesson":1,"fr":"deux","ja":"2"},{"id":48,"lesson":1,"fr":"trois","ja":"3"},{"id":49,"lesson":1,"fr":"quatre","ja":"4"},{"id":50,"lesson":1,"fr":"cinq","ja":"5"},{"id":51,"lesson":1,"fr":"six","ja":"6"},{"id":52,"lesson":1,"fr":"sept","ja":"7"},{"id":53,"lesson":1,"fr":"huit","ja":"8"},{"id":54,"lesson":1,"fr":"neuf","ja":"9"},{"id":55,"lesson":1,"fr":"dix","ja":"10"},{"id":56,"lesson":1,"fr":"être","ja":"〜である"},{"id":57,"lesson":1,"fr":"avoir","ja":"持っている"},{"id":58,"lesson":1,"fr":"faire","ja":"する・作る"},{"id":59,"lesson":1,"fr":"aller","ja":"行く"},{"id":60,"lesson":1,"fr":"venir","ja":"来る"},{"id":61,"lesson":1,"fr":"dire","ja":"言う"},{"id":62,"lesson":1,"fr":"vingt","ja":"20"},{"id":63,"lesson":1,"fr":"parler","ja":"話す"},{"id":64,"lesson":1,"fr":"écouter","ja":"聞く"},{"id":65,"lesson":1,"fr":"entendre","ja":"聞こえる"},{"id":66,"lesson":1,"fr":"voir","ja":"見る"},{"id":67,"lesson":1,"fr":"regarder","ja":"眺める"},{"id":68,"lesson":1,"fr":"le","ja":"その（男性名詞）"},{"id":69,"lesson":1,"fr":"la","ja":"その（女性名詞）"},{"id":70,"lesson":1,"fr":"les","ja":"その（複数）"},{"id":71,"lesson":1,"fr":"des","ja":"いくつかの"},{"id":72,"lesson":1,"fr":"et","ja":"そして"},{"id":73,"lesson":1,"fr":"ou","ja":"または"},{"id":74,"lesson":1,"fr":"mais","ja":"しかし"},{"id":75,"lesson":1,"fr":"avec","ja":"〜と一緒に"},{"id":76,"lesson":1,"fr":"sans","ja":"〜なしで"},{"id":77,"lesson":1,"fr":"pour","ja":"〜のために"},{"id":78,"lesson":1,"fr":"dans","ja":"〜の中に"},{"id":79,"lesson":1,"fr":"sur","ja":"〜の上に"},{"id":80,"lesson":1,"fr":"sous","ja":"〜の下に"},{"id":81,"lesson":1,"fr":"savoir","ja":"知っている（知識）"},{"id":82,"lesson":1,"fr":"connaître","ja":"知っている（面識）"},{"id":83,"lesson":1,"fr":"comprendre","ja":"理解する"},{"id":84,"lesson":1,"fr":"à","ja":"〜へ・〜に"},{"id":85,"lesson":1,"fr":"de","ja":"〜の・〜から"},{"id":86,"lesson":1,"fr":"apprendre","ja":"学ぶ"},{"id":87,"lesson":1,"fr":"étudier","ja":"勉強する"},{"id":88,"lesson":1,"fr":"en","ja":"〜で・〜に"},{"id":89,"lesson":1,"fr":"très","ja":"とても"},{"id":90,"lesson":1,"fr":"lire","ja":"読む"},{"id":91,"lesson":1,"fr":"écrire","ja":"書く"},{"id":92,"lesson":1,"fr":"bien","ja":"よく・元気に"},{"id":93,"lesson":1,"fr":"mal","ja":"悪く"},{"id":94,"lesson":1,"fr":"pas","ja":"〜ない"},{"id":95,"lesson":1,"fr":"ne","ja":"否定をつくる語"},{"id":96,"lesson":1,"fr":"si","ja":"もし・（否定疑問への）はい"},{"id":97,"lesson":1,"fr":"penser","ja":"考える"},{"id":98,"lesson":1,"fr":"croire","ja":"信じる"},{"id":99,"lesson":1,"fr":"d'accord","ja":"了解"},{"id":100,"lesson":1,"fr":"peut-être","ja":"たぶん"},{"id":101,"lesson":2,"fr":"onze","ja":"11"},{"id":102,"lesson":2,"fr":"douze","ja":"12"},{"id":103,"lesson":2,"fr":"treize","ja":"13"},{"id":104,"lesson":2,"fr":"quatorze","ja":"14"},{"id":105,"lesson":2,"fr":"quinze","ja":"15"},{"id":106,"lesson":2,"fr":"seize","ja":"16"},{"id":107,"lesson":2,"fr":"trente","ja":"30"},{"id":108,"lesson":2,"fr":"quarante","ja":"40"},{"id":109,"lesson":2,"fr":"cinquante","ja":"50"},{"id":110,"lesson":2,"fr":"cent","ja":"100"},{"id":111,"lesson":2,"fr":"mille","ja":"1000"},{"id":112,"lesson":2,"fr":"devant","ja":"〜の前に"},{"id":113,"lesson":2,"fr":"derrière","ja":"〜の後ろに"},{"id":114,"lesson":2,"fr":"entre","ja":"〜の間に"},{"id":115,"lesson":2,"fr":"chez","ja":"〜の家で"},{"id":116,"lesson":2,"fr":"par","ja":"〜によって"},{"id":117,"lesson":2,"fr":"plus","ja":"より多く"},{"id":118,"lesson":2,"fr":"moins","ja":"より少なく"},{"id":119,"lesson":2,"fr":"voilà","ja":"ほら・そこにあります"},{"id":120,"lesson":2,"fr":"voici","ja":"こちらです"},{"id":121,"lesson":2,"fr":"vouloir","ja":"欲しい・〜したい"},{"id":122,"lesson":2,"fr":"pouvoir","ja":"〜できる"},{"id":123,"lesson":2,"fr":"devoir","ja":"〜しなければならない"},{"id":124,"lesson":2,"fr":"aimer","ja":"好きである"},{"id":125,"lesson":2,"fr":"adorer","ja":"大好きである"},{"id":126,"lesson":2,"fr":"détester","ja":"大嫌いである"},{"id":127,"lesson":2,"fr":"préférer","ja":"〜を好む"},{"id":128,"lesson":2,"fr":"manger","ja":"食べる"},{"id":129,"lesson":2,"fr":"boire","ja":"飲む"},{"id":130,"lesson":2,"fr":"dormir","ja":"眠る"},{"id":131,"lesson":2,"fr":"se réveiller","ja":"目を覚ます"},{"id":132,"lesson":2,"fr":"se lever","ja":"起き上がる"},{"id":133,"lesson":2,"fr":"se coucher","ja":"寝る"},{"id":134,"lesson":2,"fr":"marcher","ja":"歩く"},{"id":135,"lesson":2,"fr":"courir","ja":"走る"},{"id":136,"lesson":2,"fr":"nager","ja":"泳ぐ"},{"id":137,"lesson":2,"fr":"jouer","ja":"遊ぶ・競技する"},{"id":138,"lesson":2,"fr":"travailler","ja":"働く"},{"id":139,"lesson":2,"fr":"chercher","ja":"探す"},{"id":140,"lesson":2,"fr":"trouver","ja":"見つける"},{"id":141,"lesson":2,"fr":"perdre","ja":"失う"},{"id":142,"lesson":2,"fr":"prendre","ja":"取る・乗る"},{"id":143,"lesson":2,"fr":"donner","ja":"与える"},{"id":144,"lesson":2,"fr":"recevoir","ja":"受け取る"},{"id":145,"lesson":2,"fr":"mettre","ja":"置く・着る"},{"id":146,"lesson":2,"fr":"porter","ja":"運ぶ・身に着ける"},{"id":147,"lesson":2,"fr":"ouvrir","ja":"開ける"},{"id":148,"lesson":2,"fr":"fermer","ja":"閉める"},{"id":149,"lesson":2,"fr":"entrer","ja":"入る"},{"id":150,"lesson":2,"fr":"sortir","ja":"出る"},{"id":151,"lesson":2,"fr":"arriver","ja":"到着する"},{"id":152,"lesson":2,"fr":"partir","ja":"出発する"},{"id":153,"lesson":2,"fr":"rester","ja":"とどまる"},{"id":154,"lesson":2,"fr":"retourner","ja":"戻る"},{"id":155,"lesson":2,"fr":"monter","ja":"上がる"},{"id":156,"lesson":2,"fr":"descendre","ja":"下りる"},{"id":157,"lesson":2,"fr":"attendre","ja":"待つ"},{"id":158,"lesson":2,"fr":"commencer","ja":"始める"},{"id":159,"lesson":2,"fr":"finir","ja":"終える"},{"id":160,"lesson":2,"fr":"continuer","ja":"続ける"},{"id":161,"lesson":2,"fr":"arrêter","ja":"止める"},{"id":162,"lesson":2,"fr":"changer","ja":"変える"},{"id":163,"lesson":2,"fr":"utiliser","ja":"使う"},{"id":164,"lesson":2,"fr":"acheter","ja":"買う"},{"id":165,"lesson":2,"fr":"vendre","ja":"売る"},{"id":166,"lesson":2,"fr":"payer","ja":"支払う"},{"id":167,"lesson":2,"fr":"coûter","ja":"値段がする"},{"id":168,"lesson":2,"fr":"choisir","ja":"選ぶ"},{"id":169,"lesson":2,"fr":"commander","ja":"注文する"},{"id":170,"lesson":2,"fr":"préparer","ja":"準備する"},{"id":171,"lesson":2,"fr":"cuisiner","ja":"料理する"},{"id":172,"lesson":2,"fr":"laver","ja":"洗う"},{"id":173,"lesson":2,"fr":"nettoyer","ja":"掃除する"},{"id":174,"lesson":2,"fr":"aider","ja":"助ける"},{"id":175,"lesson":2,"fr":"demander","ja":"尋ねる・頼む"},{"id":176,"lesson":2,"fr":"répondre","ja":"答える"},{"id":177,"lesson":2,"fr":"appeler","ja":"呼ぶ・電話する"},{"id":178,"lesson":2,"fr":"téléphoner","ja":"電話をかける"},{"id":179,"lesson":2,"fr":"envoyer","ja":"送る"},{"id":180,"lesson":2,"fr":"montrer","ja":"見せる"},{"id":181,"lesson":2,"fr":"expliquer","ja":"説明する"},{"id":182,"lesson":2,"fr":"raconter","ja":"語る"},{"id":183,"lesson":2,"fr":"oublier","ja":"忘れる"},{"id":184,"lesson":2,"fr":"se souvenir","ja":"覚えている"},{"id":185,"lesson":2,"fr":"essayer","ja":"試す"},{"id":186,"lesson":2,"fr":"réussir","ja":"成功する"},{"id":187,"lesson":2,"fr":"tomber","ja":"落ちる・転ぶ"},{"id":188,"lesson":2,"fr":"vivre","ja":"生きる・暮らす"},{"id":189,"lesson":2,"fr":"habiter","ja":"住む"},{"id":190,"lesson":2,"fr":"naître","ja":"生まれる"},{"id":191,"lesson":2,"fr":"mourir","ja":"死ぬ"},{"id":192,"lesson":2,"fr":"rire","ja":"笑う"},{"id":193,"lesson":2,"fr":"pleurer","ja":"泣く"},{"id":194,"lesson":2,"fr":"sourire","ja":"ほほえむ"},{"id":195,"lesson":2,"fr":"chanter","ja":"歌う"},{"id":196,"lesson":2,"fr":"danser","ja":"踊る"},{"id":197,"lesson":2,"fr":"visiter","ja":"訪れる"},{"id":198,"lesson":2,"fr":"voyager","ja":"旅行する"},{"id":199,"lesson":2,"fr":"conduire","ja":"運転する"},{"id":200,"lesson":2,"fr":"suivre","ja":"ついて行く"},{"id":201,"lesson":3,"fr":"une personne","ja":"人"},{"id":202,"lesson":3,"fr":"un homme","ja":"男性"},{"id":203,"lesson":3,"fr":"une femme","ja":"女性"},{"id":204,"lesson":3,"fr":"un enfant","ja":"子供"},{"id":205,"lesson":3,"fr":"un bébé","ja":"赤ちゃん"},{"id":206,"lesson":3,"fr":"un garçon","ja":"男の子"},{"id":207,"lesson":3,"fr":"une fille","ja":"女の子"},{"id":208,"lesson":3,"fr":"un adulte","ja":"大人"},{"id":209,"lesson":3,"fr":"un ami","ja":"男友達"},{"id":210,"lesson":3,"fr":"une amie","ja":"女友達"},{"id":211,"lesson":3,"fr":"un voisin","ja":"男性の隣人"},{"id":212,"lesson":3,"fr":"une voisine","ja":"女性の隣人"},{"id":213,"lesson":3,"fr":"un père","ja":"父"},{"id":214,"lesson":3,"fr":"une mère","ja":"母"},{"id":215,"lesson":3,"fr":"un papa","ja":"パパ"},{"id":216,"lesson":3,"fr":"une maman","ja":"ママ"},{"id":217,"lesson":3,"fr":"un frère","ja":"兄弟"},{"id":218,"lesson":3,"fr":"une sœur","ja":"姉妹"},{"id":219,"lesson":3,"fr":"un fils","ja":"息子"},{"id":220,"lesson":3,"fr":"une famille","ja":"家族"},{"id":221,"lesson":3,"fr":"un parent","ja":"親・親族"},{"id":222,"lesson":3,"fr":"un mari","ja":"夫"},{"id":223,"lesson":3,"fr":"une épouse","ja":"妻"},{"id":224,"lesson":3,"fr":"un grand-père","ja":"祖父"},{"id":225,"lesson":3,"fr":"une grand-mère","ja":"祖母"},{"id":226,"lesson":3,"fr":"un oncle","ja":"おじ"},{"id":227,"lesson":3,"fr":"une tante","ja":"おば"},{"id":228,"lesson":3,"fr":"un cousin","ja":"男性のいとこ"},{"id":229,"lesson":3,"fr":"une cousine","ja":"女性のいとこ"},{"id":230,"lesson":3,"fr":"un ami proche","ja":"親友"},{"id":231,"lesson":3,"fr":"un couple","ja":"カップル"},{"id":232,"lesson":3,"fr":"un invité","ja":"招待客"},{"id":233,"lesson":3,"fr":"un collègue","ja":"同僚"},{"id":234,"lesson":3,"fr":"un chef","ja":"上司・長"},{"id":235,"lesson":3,"fr":"un client","ja":"男性の客"},{"id":236,"lesson":3,"fr":"une cliente","ja":"女性の客"},{"id":237,"lesson":3,"fr":"un professeur","ja":"先生"},{"id":238,"lesson":3,"fr":"un médecin","ja":"医師"},{"id":239,"lesson":3,"fr":"un infirmier","ja":"男性看護師"},{"id":240,"lesson":3,"fr":"une infirmière","ja":"女性看護師"},{"id":241,"lesson":3,"fr":"un étudiant","ja":"男子学生"},{"id":242,"lesson":3,"fr":"une étudiante","ja":"女子学生"},{"id":243,"lesson":3,"fr":"un élève","ja":"生徒"},{"id":244,"lesson":3,"fr":"un voisinage","ja":"近所"},{"id":245,"lesson":3,"fr":"un nom","ja":"名前"},{"id":246,"lesson":3,"fr":"un prénom","ja":"下の名前"},{"id":247,"lesson":3,"fr":"un âge","ja":"年齢"},{"id":248,"lesson":3,"fr":"une voix","ja":"声"},{"id":249,"lesson":3,"fr":"un corps","ja":"身体"},{"id":250,"lesson":3,"fr":"une tête","ja":"頭"},{"id":251,"lesson":3,"fr":"un visage","ja":"顔"},{"id":252,"lesson":3,"fr":"un œil","ja":"目"},{"id":253,"lesson":3,"fr":"un nez","ja":"鼻"},{"id":254,"lesson":3,"fr":"une bouche","ja":"口"},{"id":255,"lesson":3,"fr":"une oreille","ja":"耳"},{"id":256,"lesson":3,"fr":"un cheveu","ja":"髪の毛1本"},{"id":257,"lesson":3,"fr":"des cheveux","ja":"髪の毛"},{"id":258,"lesson":3,"fr":"une dent","ja":"歯"},{"id":259,"lesson":3,"fr":"une langue","ja":"舌・言語"},{"id":260,"lesson":3,"fr":"un cou","ja":"首"},{"id":261,"lesson":3,"fr":"une épaule","ja":"肩"},{"id":262,"lesson":3,"fr":"un bras","ja":"腕"},{"id":263,"lesson":3,"fr":"une main","ja":"手"},{"id":264,"lesson":3,"fr":"un doigt","ja":"指"},{"id":265,"lesson":3,"fr":"un pouce","ja":"親指"},{"id":266,"lesson":3,"fr":"une poitrine","ja":"胸"},{"id":267,"lesson":3,"fr":"un dos","ja":"背中"},{"id":268,"lesson":3,"fr":"un ventre","ja":"おなか"},{"id":269,"lesson":3,"fr":"une jambe","ja":"脚"},{"id":270,"lesson":3,"fr":"un genou","ja":"膝"},{"id":271,"lesson":3,"fr":"un pied","ja":"足"},{"id":272,"lesson":3,"fr":"un orteil","ja":"足の指"},{"id":273,"lesson":3,"fr":"un cœur","ja":"心臓・心"},{"id":274,"lesson":3,"fr":"le sang","ja":"血液"},{"id":275,"lesson":3,"fr":"un os","ja":"骨"},{"id":276,"lesson":3,"fr":"une peau","ja":"皮膚"},{"id":277,"lesson":3,"fr":"un cerveau","ja":"脳"},{"id":278,"lesson":3,"fr":"la santé","ja":"健康"},{"id":279,"lesson":3,"fr":"une maladie","ja":"病気"},{"id":280,"lesson":3,"fr":"une douleur","ja":"痛み"},{"id":281,"lesson":3,"fr":"de la fièvre","ja":"熱・発熱"},{"id":282,"lesson":3,"fr":"un rhume","ja":"風邪"},{"id":283,"lesson":3,"fr":"une toux","ja":"せき"},{"id":284,"lesson":3,"fr":"un médicament","ja":"薬"},{"id":285,"lesson":3,"fr":"un hôpital","ja":"病院"},{"id":286,"lesson":3,"fr":"une pharmacie","ja":"薬局"},{"id":287,"lesson":3,"fr":"la fatigue","ja":"疲労"},{"id":288,"lesson":3,"fr":"la faim","ja":"空腹"},{"id":289,"lesson":3,"fr":"la soif","ja":"のどの渇き"},{"id":290,"lesson":3,"fr":"le sommeil","ja":"睡眠"},{"id":291,"lesson":3,"fr":"un sourire","ja":"笑顔"},{"id":292,"lesson":3,"fr":"une larme","ja":"涙"},{"id":293,"lesson":3,"fr":"un rire","ja":"笑い"},{"id":294,"lesson":3,"fr":"un sentiment","ja":"感情"},{"id":295,"lesson":3,"fr":"une peur","ja":"恐れ"},{"id":296,"lesson":3,"fr":"une joie","ja":"喜び"},{"id":297,"lesson":3,"fr":"une colère","ja":"怒り"},{"id":298,"lesson":3,"fr":"une tristesse","ja":"悲しみ"},{"id":299,"lesson":3,"fr":"l’amour","ja":"愛"},{"id":300,"lesson":3,"fr":"une amitié","ja":"友情"},{"id":301,"lesson":4,"fr":"une maison","ja":"家"},{"id":302,"lesson":4,"fr":"un appartement","ja":"アパートの一室"},{"id":303,"lesson":4,"fr":"une chambre","ja":"部屋・寝室"},{"id":304,"lesson":4,"fr":"un salon","ja":"居間"},{"id":305,"lesson":4,"fr":"une cuisine","ja":"台所"},{"id":306,"lesson":4,"fr":"une salle de bains","ja":"浴室"},{"id":307,"lesson":4,"fr":"les toilettes","ja":"トイレ"},{"id":308,"lesson":4,"fr":"une entrée","ja":"玄関・入り口"},{"id":309,"lesson":4,"fr":"un couloir","ja":"廊下"},{"id":310,"lesson":4,"fr":"un balcon","ja":"ベランダ"},{"id":311,"lesson":4,"fr":"un jardin","ja":"庭"},{"id":312,"lesson":4,"fr":"un toit","ja":"屋根"},{"id":313,"lesson":4,"fr":"un mur","ja":"壁"},{"id":314,"lesson":4,"fr":"un sol","ja":"床"},{"id":315,"lesson":4,"fr":"un plafond","ja":"天井"},{"id":316,"lesson":4,"fr":"une porte","ja":"ドア"},{"id":317,"lesson":4,"fr":"une fenêtre","ja":"窓"},{"id":318,"lesson":4,"fr":"un escalier","ja":"階段"},{"id":319,"lesson":4,"fr":"un ascenseur","ja":"エレベーター"},{"id":320,"lesson":4,"fr":"une clé","ja":"鍵"},{"id":321,"lesson":4,"fr":"une serrure","ja":"鍵穴・錠"},{"id":322,"lesson":4,"fr":"une table","ja":"テーブル"},{"id":323,"lesson":4,"fr":"une chaise","ja":"椅子"},{"id":324,"lesson":4,"fr":"un canapé","ja":"ソファ"},{"id":325,"lesson":4,"fr":"un lit","ja":"ベッド"},{"id":326,"lesson":4,"fr":"un oreiller","ja":"枕"},{"id":327,"lesson":4,"fr":"une couverture","ja":"毛布"},{"id":328,"lesson":4,"fr":"un drap","ja":"シーツ"},{"id":329,"lesson":4,"fr":"une armoire","ja":"たんす"},{"id":330,"lesson":4,"fr":"une étagère","ja":"棚"},{"id":331,"lesson":4,"fr":"un bureau","ja":"机・オフィス"},{"id":332,"lesson":4,"fr":"une lampe","ja":"ランプ"},{"id":333,"lesson":4,"fr":"une lumière","ja":"明かり"},{"id":334,"lesson":4,"fr":"une ampoule","ja":"電球"},{"id":335,"lesson":4,"fr":"un miroir","ja":"鏡"},{"id":336,"lesson":4,"fr":"un rideau","ja":"カーテン"},{"id":337,"lesson":4,"fr":"un tapis","ja":"じゅうたん"},{"id":338,"lesson":4,"fr":"une horloge","ja":"掛け時計"},{"id":339,"lesson":4,"fr":"une montre","ja":"腕時計"},{"id":340,"lesson":4,"fr":"un réveil","ja":"目覚まし時計"},{"id":341,"lesson":4,"fr":"un téléphone","ja":"電話"},{"id":342,"lesson":4,"fr":"un portable","ja":"携帯電話"},{"id":343,"lesson":4,"fr":"un ordinateur","ja":"パソコン"},{"id":344,"lesson":4,"fr":"un écran","ja":"画面"},{"id":345,"lesson":4,"fr":"un clavier","ja":"キーボード"},{"id":346,"lesson":4,"fr":"une souris","ja":"マウス"},{"id":347,"lesson":4,"fr":"une télévision","ja":"テレビ"},{"id":348,"lesson":4,"fr":"une radio","ja":"ラジオ"},{"id":349,"lesson":4,"fr":"un appareil photo","ja":"カメラ"},{"id":350,"lesson":4,"fr":"une photo","ja":"写真"},{"id":351,"lesson":4,"fr":"une vidéo","ja":"動画"},{"id":352,"lesson":4,"fr":"une prise","ja":"コンセント"},{"id":353,"lesson":4,"fr":"un câble","ja":"ケーブル"},{"id":354,"lesson":4,"fr":"une batterie","ja":"バッテリー"},{"id":355,"lesson":4,"fr":"un chargeur","ja":"充電器"},{"id":356,"lesson":4,"fr":"une boîte","ja":"箱"},{"id":357,"lesson":4,"fr":"un sac","ja":"かばん"},{"id":358,"lesson":4,"fr":"un portefeuille","ja":"財布"},{"id":359,"lesson":4,"fr":"une valise","ja":"スーツケース"},{"id":360,"lesson":4,"fr":"un parapluie","ja":"傘"},{"id":361,"lesson":4,"fr":"une serviette","ja":"タオル"},{"id":362,"lesson":4,"fr":"un savon","ja":"石けん"},{"id":363,"lesson":4,"fr":"un shampooing","ja":"シャンプー"},{"id":364,"lesson":4,"fr":"une brosse","ja":"ブラシ"},{"id":365,"lesson":4,"fr":"une brosse à dents","ja":"歯ブラシ"},{"id":366,"lesson":4,"fr":"un dentifrice","ja":"歯磨き粉"},{"id":367,"lesson":4,"fr":"un peigne","ja":"くし"},{"id":368,"lesson":4,"fr":"un vêtement","ja":"衣服"},{"id":369,"lesson":4,"fr":"une chemise","ja":"シャツ"},{"id":370,"lesson":4,"fr":"un tee-shirt","ja":"Tシャツ"},{"id":371,"lesson":4,"fr":"un pantalon","ja":"ズボン"},{"id":372,"lesson":4,"fr":"une jupe","ja":"スカート"},{"id":373,"lesson":4,"fr":"une robe","ja":"ワンピース"},{"id":374,"lesson":4,"fr":"un manteau","ja":"コート"},{"id":375,"lesson":4,"fr":"une veste","ja":"上着"},{"id":376,"lesson":4,"fr":"un pull","ja":"セーター"},{"id":377,"lesson":4,"fr":"une chaussure","ja":"靴"},{"id":378,"lesson":4,"fr":"une chaussette","ja":"靴下"},{"id":379,"lesson":4,"fr":"un chapeau","ja":"帽子"},{"id":380,"lesson":4,"fr":"une casquette","ja":"キャップ"},{"id":381,"lesson":4,"fr":"une ceinture","ja":"ベルト"},{"id":382,"lesson":4,"fr":"une poche","ja":"ポケット"},{"id":383,"lesson":4,"fr":"un bouton","ja":"ボタン"},{"id":384,"lesson":4,"fr":"une fermeture éclair","ja":"ファスナー"},{"id":385,"lesson":4,"fr":"une bague","ja":"指輪"},{"id":386,"lesson":4,"fr":"un couteau","ja":"ナイフ"},{"id":387,"lesson":4,"fr":"un collier","ja":"ネックレス"},{"id":388,"lesson":4,"fr":"une poubelle","ja":"ごみ箱"},{"id":389,"lesson":4,"fr":"un déchet","ja":"ごみ"},{"id":390,"lesson":4,"fr":"un balai","ja":"ほうき"},{"id":391,"lesson":4,"fr":"un aspirateur","ja":"掃除機"},{"id":392,"lesson":4,"fr":"une machine à laver","ja":"洗濯機"},{"id":393,"lesson":4,"fr":"un réfrigérateur","ja":"冷蔵庫"},{"id":394,"lesson":4,"fr":"un four","ja":"オーブン"},{"id":395,"lesson":4,"fr":"un micro-ondes","ja":"電子レンジ"},{"id":396,"lesson":4,"fr":"une assiette","ja":"皿"},{"id":397,"lesson":4,"fr":"un verre","ja":"グラス"},{"id":398,"lesson":4,"fr":"une tasse","ja":"カップ"},{"id":399,"lesson":4,"fr":"une cuillère","ja":"スプーン"},{"id":400,"lesson":4,"fr":"une fourchette","ja":"フォーク"},{"id":401,"lesson":5,"fr":"un repas","ja":"食事"},{"id":402,"lesson":5,"fr":"un petit-déjeuner","ja":"朝食"},{"id":403,"lesson":5,"fr":"un déjeuner","ja":"昼食"},{"id":404,"lesson":5,"fr":"un dîner","ja":"夕食"},{"id":405,"lesson":5,"fr":"un restaurant","ja":"レストラン"},{"id":406,"lesson":5,"fr":"un café","ja":"コーヒー・カフェ"},{"id":407,"lesson":5,"fr":"un thé","ja":"お茶"},{"id":408,"lesson":5,"fr":"de l'eau","ja":"水"},{"id":409,"lesson":5,"fr":"du lait","ja":"牛乳"},{"id":410,"lesson":5,"fr":"un jus","ja":"ジュース"},{"id":411,"lesson":5,"fr":"un jus d'orange","ja":"オレンジジュース"},{"id":412,"lesson":5,"fr":"du chocolat","ja":"チョコレート"},{"id":413,"lesson":5,"fr":"un chocolat chaud","ja":"ホットチョコレート"},{"id":414,"lesson":5,"fr":"du pain","ja":"パン"},{"id":415,"lesson":5,"fr":"une baguette","ja":"バゲット"},{"id":416,"lesson":5,"fr":"un croissant","ja":"クロワッサン"},{"id":417,"lesson":5,"fr":"du beurre","ja":"バター"},{"id":418,"lesson":5,"fr":"de la confiture","ja":"ジャム"},{"id":419,"lesson":5,"fr":"du miel","ja":"蜂蜜"},{"id":420,"lesson":5,"fr":"du fromage","ja":"チーズ"},{"id":421,"lesson":5,"fr":"un œuf","ja":"卵"},{"id":422,"lesson":5,"fr":"de la viande","ja":"肉"},{"id":423,"lesson":5,"fr":"du bœuf","ja":"牛肉"},{"id":424,"lesson":5,"fr":"du porc","ja":"豚肉"},{"id":425,"lesson":5,"fr":"du poulet","ja":"鶏肉"},{"id":426,"lesson":5,"fr":"un poisson","ja":"魚"},{"id":427,"lesson":5,"fr":"une crevette","ja":"エビ"},{"id":428,"lesson":5,"fr":"du jambon","ja":"ハム"},{"id":429,"lesson":5,"fr":"une saucisse","ja":"ソーセージ"},{"id":430,"lesson":5,"fr":"du riz","ja":"米・ご飯"},{"id":431,"lesson":5,"fr":"des pâtes","ja":"パスタ"},{"id":432,"lesson":5,"fr":"une pomme de terre","ja":"じゃがいも"},{"id":433,"lesson":5,"fr":"des frites","ja":"フライドポテト"},{"id":434,"lesson":5,"fr":"une soupe","ja":"スープ"},{"id":435,"lesson":5,"fr":"une salade","ja":"サラダ"},{"id":436,"lesson":5,"fr":"un sandwich","ja":"サンドイッチ"},{"id":437,"lesson":5,"fr":"une pizza","ja":"ピザ"},{"id":438,"lesson":5,"fr":"une sauce","ja":"ソース"},{"id":439,"lesson":5,"fr":"du sel","ja":"塩"},{"id":440,"lesson":5,"fr":"du poivre","ja":"こしょう"},{"id":441,"lesson":5,"fr":"du sucre","ja":"砂糖"},{"id":442,"lesson":5,"fr":"de l'huile","ja":"油"},{"id":443,"lesson":5,"fr":"du vinaigre","ja":"酢"},{"id":444,"lesson":5,"fr":"de la farine","ja":"小麦粉"},{"id":445,"lesson":5,"fr":"un fruit","ja":"果物"},{"id":446,"lesson":5,"fr":"une pomme","ja":"りんご"},{"id":447,"lesson":5,"fr":"une banane","ja":"バナナ"},{"id":448,"lesson":5,"fr":"une orange","ja":"オレンジ"},{"id":449,"lesson":5,"fr":"un citron","ja":"レモン"},{"id":450,"lesson":5,"fr":"une fraise","ja":"いちご"},{"id":451,"lesson":5,"fr":"du raisin","ja":"ぶどう"},{"id":452,"lesson":5,"fr":"une poire","ja":"洋梨"},{"id":453,"lesson":5,"fr":"une pêche","ja":"桃"},{"id":454,"lesson":5,"fr":"une cerise","ja":"さくらんぼ"},{"id":455,"lesson":5,"fr":"une pastèque","ja":"スイカ"},{"id":456,"lesson":5,"fr":"un melon","ja":"メロン"},{"id":457,"lesson":5,"fr":"un ananas","ja":"パイナップル"},{"id":458,"lesson":5,"fr":"une mangue","ja":"マンゴー"},{"id":459,"lesson":5,"fr":"une tomate","ja":"トマト"},{"id":460,"lesson":5,"fr":"une carotte","ja":"にんじん"},{"id":461,"lesson":5,"fr":"un oignon","ja":"玉ねぎ"},{"id":462,"lesson":5,"fr":"de l'ail","ja":"にんにく"},{"id":463,"lesson":5,"fr":"un concombre","ja":"きゅうり"},{"id":464,"lesson":5,"fr":"une laitue","ja":"レタス"},{"id":465,"lesson":5,"fr":"un chou","ja":"キャベツ"},{"id":466,"lesson":5,"fr":"un brocoli","ja":"ブロッコリー"},{"id":467,"lesson":5,"fr":"un champignon","ja":"きのこ"},{"id":468,"lesson":5,"fr":"un légume","ja":"野菜"},{"id":469,"lesson":5,"fr":"un haricot","ja":"豆"},{"id":470,"lesson":5,"fr":"un pois","ja":"えんどう豆"},{"id":471,"lesson":5,"fr":"du maïs","ja":"とうもろこし"},{"id":472,"lesson":5,"fr":"un gâteau","ja":"ケーキ"},{"id":473,"lesson":5,"fr":"un biscuit","ja":"ビスケット"},{"id":474,"lesson":5,"fr":"une glace","ja":"アイスクリーム"},{"id":475,"lesson":5,"fr":"un dessert","ja":"デザート"},{"id":476,"lesson":5,"fr":"une boisson","ja":"飲み物"},{"id":477,"lesson":5,"fr":"une bouteille","ja":"ボトル"},{"id":478,"lesson":5,"fr":"une canette","ja":"缶"},{"id":479,"lesson":5,"fr":"une carafe","ja":"水差し"},{"id":480,"lesson":5,"fr":"une addition","ja":"お勘定"},{"id":481,"lesson":5,"fr":"un prix","ja":"値段"},{"id":482,"lesson":5,"fr":"un euro","ja":"ユーロ"},{"id":483,"lesson":5,"fr":"une monnaie","ja":"小銭・通貨"},{"id":484,"lesson":5,"fr":"un billet","ja":"紙幣・チケット"},{"id":485,"lesson":5,"fr":"une carte bancaire","ja":"銀行カード"},{"id":486,"lesson":5,"fr":"une caisse","ja":"レジ"},{"id":487,"lesson":5,"fr":"un magasin","ja":"店"},{"id":488,"lesson":5,"fr":"un marché","ja":"市場"},{"id":489,"lesson":5,"fr":"un supermarché","ja":"スーパー"},{"id":490,"lesson":5,"fr":"une boulangerie","ja":"パン屋"},{"id":491,"lesson":5,"fr":"une pâtisserie","ja":"菓子店"},{"id":492,"lesson":5,"fr":"une boucherie","ja":"肉屋"},{"id":493,"lesson":5,"fr":"une poissonnerie","ja":"魚屋"},{"id":494,"lesson":5,"fr":"une épicerie","ja":"食料品店"},{"id":495,"lesson":5,"fr":"une librairie","ja":"書店"},{"id":496,"lesson":5,"fr":"une taille","ja":"サイズ"},{"id":497,"lesson":5,"fr":"une réduction","ja":"割引"},{"id":498,"lesson":5,"fr":"une promotion","ja":"特売"},{"id":499,"lesson":5,"fr":"un reçu","ja":"レシート"},{"id":500,"lesson":5,"fr":"un achat","ja":"買い物・購入"},{"id":501,"lesson":6,"fr":"un temps","ja":"時間・天気"},{"id":502,"lesson":6,"fr":"une heure","ja":"時間・時刻"},{"id":503,"lesson":6,"fr":"une minute","ja":"分"},{"id":504,"lesson":6,"fr":"une seconde","ja":"秒"},{"id":505,"lesson":6,"fr":"un jour","ja":"日"},{"id":506,"lesson":6,"fr":"une journée","ja":"一日"},{"id":507,"lesson":6,"fr":"une nuit","ja":"夜"},{"id":508,"lesson":6,"fr":"un matin","ja":"朝"},{"id":509,"lesson":6,"fr":"un midi","ja":"正午"},{"id":510,"lesson":6,"fr":"un après-midi","ja":"午後"},{"id":511,"lesson":6,"fr":"un soir","ja":"夕方・夜"},{"id":512,"lesson":6,"fr":"une semaine","ja":"週"},{"id":513,"lesson":6,"fr":"un mois","ja":"月（期間）"},{"id":514,"lesson":6,"fr":"une année","ja":"年"},{"id":515,"lesson":6,"fr":"un an","ja":"年"},{"id":516,"lesson":6,"fr":"une date","ja":"日付"},{"id":517,"lesson":6,"fr":"un calendrier","ja":"カレンダー"},{"id":518,"lesson":6,"fr":"lundi","ja":"月曜日"},{"id":519,"lesson":6,"fr":"mardi","ja":"火曜日"},{"id":520,"lesson":6,"fr":"mercredi","ja":"水曜日"},{"id":521,"lesson":6,"fr":"jeudi","ja":"木曜日"},{"id":522,"lesson":6,"fr":"vendredi","ja":"金曜日"},{"id":523,"lesson":6,"fr":"samedi","ja":"土曜日"},{"id":524,"lesson":6,"fr":"dimanche","ja":"日曜日"},{"id":525,"lesson":6,"fr":"janvier","ja":"1月"},{"id":526,"lesson":6,"fr":"février","ja":"2月"},{"id":527,"lesson":6,"fr":"mars","ja":"3月"},{"id":528,"lesson":6,"fr":"avril","ja":"4月"},{"id":529,"lesson":6,"fr":"mai","ja":"5月"},{"id":530,"lesson":6,"fr":"juin","ja":"6月"},{"id":531,"lesson":6,"fr":"juillet","ja":"7月"},{"id":532,"lesson":6,"fr":"août","ja":"8月"},{"id":533,"lesson":6,"fr":"septembre","ja":"9月"},{"id":534,"lesson":6,"fr":"octobre","ja":"10月"},{"id":535,"lesson":6,"fr":"novembre","ja":"11月"},{"id":536,"lesson":6,"fr":"décembre","ja":"12月"},{"id":537,"lesson":6,"fr":"aujourd'hui","ja":"今日"},{"id":538,"lesson":6,"fr":"hier","ja":"昨日"},{"id":539,"lesson":6,"fr":"demain","ja":"明日"},{"id":540,"lesson":6,"fr":"maintenant","ja":"今"},{"id":541,"lesson":6,"fr":"bientôt","ja":"まもなく"},{"id":542,"lesson":6,"fr":"toujours","ja":"いつも"},{"id":543,"lesson":6,"fr":"souvent","ja":"しばしば"},{"id":544,"lesson":6,"fr":"parfois","ja":"ときどき"},{"id":545,"lesson":6,"fr":"jamais","ja":"決して〜ない"},{"id":546,"lesson":6,"fr":"déjà","ja":"すでに"},{"id":547,"lesson":6,"fr":"ensuite","ja":"それから"},{"id":548,"lesson":6,"fr":"avant","ja":"前に"},{"id":549,"lesson":6,"fr":"après","ja":"後で"},{"id":550,"lesson":6,"fr":"pendant","ja":"〜の間"},{"id":551,"lesson":6,"fr":"une saison","ja":"季節"},{"id":552,"lesson":6,"fr":"le printemps","ja":"春"},{"id":553,"lesson":6,"fr":"l'été","ja":"夏"},{"id":554,"lesson":6,"fr":"l'automne","ja":"秋"},{"id":555,"lesson":6,"fr":"l'hiver","ja":"冬"},{"id":556,"lesson":6,"fr":"le soleil","ja":"太陽"},{"id":557,"lesson":6,"fr":"la lune","ja":"月（天体）"},{"id":558,"lesson":6,"fr":"une étoile","ja":"星"},{"id":559,"lesson":6,"fr":"le ciel","ja":"空"},{"id":560,"lesson":6,"fr":"un nuage","ja":"雲"},{"id":561,"lesson":6,"fr":"la pluie","ja":"雨"},{"id":562,"lesson":6,"fr":"la neige","ja":"雪"},{"id":563,"lesson":6,"fr":"le vent","ja":"風"},{"id":564,"lesson":6,"fr":"un orage","ja":"雷雨"},{"id":565,"lesson":6,"fr":"le tonnerre","ja":"雷鳴"},{"id":566,"lesson":6,"fr":"un éclair","ja":"稲妻"},{"id":567,"lesson":6,"fr":"du brouillard","ja":"霧"},{"id":568,"lesson":6,"fr":"une température","ja":"気温"},{"id":569,"lesson":6,"fr":"une chaleur","ja":"暑さ・熱"},{"id":570,"lesson":6,"fr":"le froid","ja":"寒さ"},{"id":571,"lesson":6,"fr":"la météo","ja":"天気予報"},{"id":572,"lesson":6,"fr":"la nature","ja":"自然"},{"id":573,"lesson":6,"fr":"un arbre","ja":"木"},{"id":574,"lesson":6,"fr":"une fleur","ja":"花"},{"id":575,"lesson":6,"fr":"de l'herbe","ja":"草"},{"id":576,"lesson":6,"fr":"une feuille","ja":"葉"},{"id":577,"lesson":6,"fr":"une branche","ja":"枝"},{"id":578,"lesson":6,"fr":"une racine","ja":"根"},{"id":579,"lesson":6,"fr":"une forêt","ja":"森"},{"id":580,"lesson":6,"fr":"une montagne","ja":"山"},{"id":581,"lesson":6,"fr":"une colline","ja":"丘"},{"id":582,"lesson":6,"fr":"une vallée","ja":"谷"},{"id":583,"lesson":6,"fr":"une rivière","ja":"川"},{"id":584,"lesson":6,"fr":"un fleuve","ja":"大河"},{"id":585,"lesson":6,"fr":"un lac","ja":"湖"},{"id":586,"lesson":6,"fr":"une mer","ja":"海"},{"id":587,"lesson":6,"fr":"un océan","ja":"大洋"},{"id":588,"lesson":6,"fr":"une plage","ja":"浜辺"},{"id":589,"lesson":6,"fr":"une île","ja":"島"},{"id":590,"lesson":6,"fr":"un désert","ja":"砂漠"},{"id":591,"lesson":6,"fr":"une terre","ja":"地面・地球"},{"id":592,"lesson":6,"fr":"une pierre","ja":"石"},{"id":593,"lesson":6,"fr":"un rocher","ja":"岩"},{"id":594,"lesson":6,"fr":"du sable","ja":"砂"},{"id":595,"lesson":6,"fr":"un feu","ja":"火"},{"id":596,"lesson":6,"fr":"une fumée","ja":"煙"},{"id":597,"lesson":6,"fr":"de l'air","ja":"空気"},{"id":598,"lesson":6,"fr":"une ombre","ja":"影"},{"id":599,"lesson":6,"fr":"une couleur","ja":"色"},{"id":600,"lesson":6,"fr":"un bruit","ja":"音・騒音"},{"id":601,"lesson":7,"fr":"une ville","ja":"都市"},{"id":602,"lesson":7,"fr":"un village","ja":"村"},{"id":603,"lesson":7,"fr":"un pays","ja":"国"},{"id":604,"lesson":7,"fr":"une région","ja":"地域"},{"id":605,"lesson":7,"fr":"une capitale","ja":"首都"},{"id":606,"lesson":7,"fr":"un quartier","ja":"地区"},{"id":607,"lesson":7,"fr":"une rue","ja":"通り"},{"id":608,"lesson":7,"fr":"une avenue","ja":"大通り"},{"id":609,"lesson":7,"fr":"une route","ja":"道"},{"id":610,"lesson":7,"fr":"un chemin","ja":"小道"},{"id":611,"lesson":7,"fr":"un trottoir","ja":"歩道"},{"id":612,"lesson":7,"fr":"une place","ja":"広場・場所"},{"id":613,"lesson":7,"fr":"un carrefour","ja":"交差点"},{"id":614,"lesson":7,"fr":"un pont","ja":"橋"},{"id":615,"lesson":7,"fr":"un tunnel","ja":"トンネル"},{"id":616,"lesson":7,"fr":"un bâtiment","ja":"建物"},{"id":617,"lesson":7,"fr":"un immeuble","ja":"集合住宅"},{"id":618,"lesson":7,"fr":"une adresse","ja":"住所"},{"id":619,"lesson":7,"fr":"un numéro","ja":"番号"},{"id":620,"lesson":7,"fr":"un code postal","ja":"郵便番号"},{"id":621,"lesson":7,"fr":"une gare","ja":"駅"},{"id":622,"lesson":7,"fr":"un quai","ja":"ホーム・岸壁"},{"id":623,"lesson":7,"fr":"un train","ja":"列車"},{"id":624,"lesson":7,"fr":"un métro","ja":"地下鉄"},{"id":625,"lesson":7,"fr":"un tramway","ja":"路面電車"},{"id":626,"lesson":7,"fr":"un autobus","ja":"バス"},{"id":627,"lesson":7,"fr":"un bus","ja":"バス（略称）"},{"id":628,"lesson":7,"fr":"un taxi","ja":"タクシー"},{"id":629,"lesson":7,"fr":"une voiture","ja":"自動車"},{"id":630,"lesson":7,"fr":"un vélo","ja":"自転車"},{"id":631,"lesson":7,"fr":"une moto","ja":"オートバイ"},{"id":632,"lesson":7,"fr":"un scooter","ja":"スクーター"},{"id":633,"lesson":7,"fr":"un camion","ja":"トラック"},{"id":634,"lesson":7,"fr":"un bateau","ja":"船"},{"id":635,"lesson":7,"fr":"un avion","ja":"飛行機"},{"id":636,"lesson":7,"fr":"un hélicoptère","ja":"ヘリコプター"},{"id":637,"lesson":7,"fr":"un aéroport","ja":"空港"},{"id":638,"lesson":7,"fr":"un port","ja":"港"},{"id":639,"lesson":7,"fr":"une station","ja":"停留所・駅"},{"id":640,"lesson":7,"fr":"un arrêt","ja":"停留所"},{"id":641,"lesson":7,"fr":"un trajet","ja":"道のり"},{"id":642,"lesson":7,"fr":"un voyage","ja":"旅行"},{"id":643,"lesson":7,"fr":"un départ","ja":"出発"},{"id":644,"lesson":7,"fr":"une arrivée","ja":"到着"},{"id":645,"lesson":7,"fr":"une destination","ja":"目的地"},{"id":646,"lesson":7,"fr":"un billet aller-retour","ja":"往復チケット"},{"id":647,"lesson":7,"fr":"un ticket","ja":"乗車券"},{"id":648,"lesson":7,"fr":"une réservation","ja":"予約"},{"id":649,"lesson":7,"fr":"un passeport","ja":"パスポート"},{"id":650,"lesson":7,"fr":"une carte d'identité","ja":"身分証明書"},{"id":651,"lesson":7,"fr":"un visa","ja":"ビザ"},{"id":652,"lesson":7,"fr":"un bagage","ja":"手荷物"},{"id":653,"lesson":7,"fr":"un siège","ja":"座席"},{"id":654,"lesson":7,"fr":"une ceinture de sécurité","ja":"シートベルト"},{"id":655,"lesson":7,"fr":"un hublot","ja":"飛行機の窓"},{"id":656,"lesson":7,"fr":"un plan","ja":"地図・計画"},{"id":657,"lesson":7,"fr":"une carte","ja":"地図・カード"},{"id":658,"lesson":7,"fr":"une direction","ja":"方向"},{"id":659,"lesson":7,"fr":"à gauche","ja":"左"},{"id":660,"lesson":7,"fr":"à droite","ja":"右"},{"id":661,"lesson":7,"fr":"le nord","ja":"北"},{"id":662,"lesson":7,"fr":"le sud","ja":"南"},{"id":663,"lesson":7,"fr":"l'est","ja":"東"},{"id":664,"lesson":7,"fr":"l'ouest","ja":"西"},{"id":665,"lesson":7,"fr":"un centre","ja":"中心"},{"id":666,"lesson":7,"fr":"un coin","ja":"角"},{"id":667,"lesson":7,"fr":"une distance","ja":"距離"},{"id":668,"lesson":7,"fr":"une vitesse","ja":"速度"},{"id":669,"lesson":7,"fr":"un kilomètre","ja":"キロメートル"},{"id":670,"lesson":7,"fr":"un mètre","ja":"メートル"},{"id":671,"lesson":7,"fr":"un feu rouge","ja":"赤信号"},{"id":672,"lesson":7,"fr":"un passage piéton","ja":"横断歩道"},{"id":673,"lesson":7,"fr":"un parking","ja":"駐車場"},{"id":674,"lesson":7,"fr":"une station-service","ja":"ガソリンスタンド"},{"id":675,"lesson":7,"fr":"un hôtel","ja":"ホテル"},{"id":676,"lesson":7,"fr":"une auberge","ja":"宿屋"},{"id":677,"lesson":7,"fr":"une réception","ja":"受付"},{"id":678,"lesson":7,"fr":"une chambre simple","ja":"シングルルーム"},{"id":679,"lesson":7,"fr":"une chambre double","ja":"ダブルルーム"},{"id":680,"lesson":7,"fr":"une nuitée","ja":"宿泊一泊"},{"id":681,"lesson":7,"fr":"un musée","ja":"博物館"},{"id":682,"lesson":7,"fr":"un cinéma","ja":"映画館"},{"id":683,"lesson":7,"fr":"un théâtre","ja":"劇場"},{"id":684,"lesson":7,"fr":"un parc","ja":"公園"},{"id":685,"lesson":7,"fr":"un zoo","ja":"動物園"},{"id":686,"lesson":7,"fr":"un château","ja":"城"},{"id":687,"lesson":7,"fr":"une église","ja":"教会"},{"id":688,"lesson":7,"fr":"une mairie","ja":"市役所"},{"id":689,"lesson":7,"fr":"la poste","ja":"郵便局"},{"id":690,"lesson":7,"fr":"une banque","ja":"銀行"},{"id":691,"lesson":7,"fr":"un distributeur","ja":"ATM・自動販売機"},{"id":692,"lesson":7,"fr":"un commissariat","ja":"警察署"},{"id":693,"lesson":7,"fr":"la police","ja":"警察"},{"id":694,"lesson":7,"fr":"une bibliothèque","ja":"図書館"},{"id":695,"lesson":7,"fr":"un stade","ja":"競技場"},{"id":696,"lesson":7,"fr":"une piscine","ja":"プール"},{"id":697,"lesson":7,"fr":"une salle de sport","ja":"スポーツジム"},{"id":698,"lesson":7,"fr":"un monument","ja":"記念碑"},{"id":699,"lesson":7,"fr":"un touriste","ja":"観光客"},{"id":700,"lesson":7,"fr":"un guide","ja":"案内人・ガイド"},{"id":701,"lesson":8,"fr":"bon","ja":"良い（男性形）"},{"id":702,"lesson":8,"fr":"bonne","ja":"良い（女性形）"},{"id":703,"lesson":8,"fr":"mauvais","ja":"悪い（男性形）"},{"id":704,"lesson":8,"fr":"mauvaise","ja":"悪い（女性形）"},{"id":705,"lesson":8,"fr":"grand","ja":"大きい・背が高い（男性形）"},{"id":706,"lesson":8,"fr":"grande","ja":"大きい・背が高い（女性形）"},{"id":707,"lesson":8,"fr":"petit","ja":"小さい（男性形）"},{"id":708,"lesson":8,"fr":"petite","ja":"小さい（女性形）"},{"id":709,"lesson":8,"fr":"long","ja":"長い"},{"id":710,"lesson":8,"fr":"court","ja":"短い"},{"id":711,"lesson":8,"fr":"large","ja":"幅広い"},{"id":712,"lesson":8,"fr":"étroit","ja":"狭い"},{"id":713,"lesson":8,"fr":"haut","ja":"高い"},{"id":714,"lesson":8,"fr":"bas","ja":"低い"},{"id":715,"lesson":8,"fr":"jeune","ja":"若い"},{"id":716,"lesson":8,"fr":"vieux","ja":"年老いた（男性形）"},{"id":717,"lesson":8,"fr":"vieille","ja":"年老いた（女性形）"},{"id":718,"lesson":8,"fr":"nouveau","ja":"新しい（男性形）"},{"id":719,"lesson":8,"fr":"nouvelle","ja":"新しい（女性形）"},{"id":720,"lesson":8,"fr":"ancien","ja":"古い・以前の"},{"id":721,"lesson":8,"fr":"moderne","ja":"現代的な"},{"id":722,"lesson":8,"fr":"facile","ja":"簡単な"},{"id":723,"lesson":8,"fr":"difficile","ja":"難しい"},{"id":724,"lesson":8,"fr":"simple","ja":"単純な"},{"id":725,"lesson":8,"fr":"compliqué","ja":"複雑な"},{"id":726,"lesson":8,"fr":"important","ja":"重要な"},{"id":727,"lesson":8,"fr":"nécessaire","ja":"必要な"},{"id":728,"lesson":8,"fr":"possible","ja":"可能な"},{"id":729,"lesson":8,"fr":"impossible","ja":"不可能な"},{"id":730,"lesson":8,"fr":"vrai","ja":"本当の"},{"id":731,"lesson":8,"fr":"faux","ja":"間違った・偽の"},{"id":732,"lesson":8,"fr":"correct","ja":"正しい"},{"id":733,"lesson":8,"fr":"libre","ja":"自由な・空いている"},{"id":734,"lesson":8,"fr":"occupé","ja":"忙しい・使用中の"},{"id":735,"lesson":8,"fr":"prêt","ja":"準備ができた"},{"id":736,"lesson":8,"fr":"fatigué","ja":"疲れた"},{"id":737,"lesson":8,"fr":"malade","ja":"病気の"},{"id":738,"lesson":8,"fr":"en bonne santé","ja":"健康で"},{"id":739,"lesson":8,"fr":"heureux","ja":"幸せな"},{"id":740,"lesson":8,"fr":"heureuse","ja":"幸せな（女性形）"},{"id":741,"lesson":8,"fr":"triste","ja":"悲しい"},{"id":742,"lesson":8,"fr":"content","ja":"満足した"},{"id":743,"lesson":8,"fr":"contente","ja":"満足した（女性形）"},{"id":744,"lesson":8,"fr":"fâché","ja":"怒った"},{"id":745,"lesson":8,"fr":"calme","ja":"落ち着いた"},{"id":746,"lesson":8,"fr":"gentil","ja":"親切な"},{"id":747,"lesson":8,"fr":"méchant","ja":"意地悪な"},{"id":748,"lesson":8,"fr":"poli","ja":"礼儀正しい"},{"id":749,"lesson":8,"fr":"timide","ja":"恥ずかしがりの"},{"id":750,"lesson":8,"fr":"courageux","ja":"勇敢な"},{"id":751,"lesson":8,"fr":"intelligent","ja":"賢い"},{"id":752,"lesson":8,"fr":"stupide","ja":"愚かな"},{"id":753,"lesson":8,"fr":"sérieux","ja":"真面目な"},{"id":754,"lesson":8,"fr":"drôle","ja":"面白い・滑稽な"},{"id":755,"lesson":8,"fr":"intéressant","ja":"興味深い"},{"id":756,"lesson":8,"fr":"ennuyeux","ja":"退屈な"},{"id":757,"lesson":8,"fr":"beau","ja":"美しい（男性形）"},{"id":758,"lesson":8,"fr":"belle","ja":"美しい（女性形）"},{"id":759,"lesson":8,"fr":"joli","ja":"きれいな"},{"id":760,"lesson":8,"fr":"laid","ja":"醜い"},{"id":761,"lesson":8,"fr":"propre","ja":"清潔な"},{"id":762,"lesson":8,"fr":"sale","ja":"汚れた"},{"id":763,"lesson":8,"fr":"chaud","ja":"熱い・暖かい"},{"id":764,"lesson":8,"fr":"frais","ja":"涼しい・新鮮な"},{"id":765,"lesson":8,"fr":"sec","ja":"乾いた"},{"id":766,"lesson":8,"fr":"humide","ja":"湿った"},{"id":767,"lesson":8,"fr":"plein","ja":"いっぱいの"},{"id":768,"lesson":8,"fr":"vide","ja":"空の"},{"id":769,"lesson":8,"fr":"lourd","ja":"重い"},{"id":770,"lesson":8,"fr":"léger","ja":"軽い"},{"id":771,"lesson":8,"fr":"rapide","ja":"速い"},{"id":772,"lesson":8,"fr":"lent","ja":"遅い"},{"id":773,"lesson":8,"fr":"fort","ja":"強い"},{"id":774,"lesson":8,"fr":"faible","ja":"弱い"},{"id":775,"lesson":8,"fr":"dur","ja":"硬い・厳しい"},{"id":776,"lesson":8,"fr":"mou","ja":"柔らかい"},{"id":777,"lesson":8,"fr":"cher","ja":"値段が高い"},{"id":778,"lesson":8,"fr":"bon marché","ja":"安価な"},{"id":779,"lesson":8,"fr":"riche","ja":"裕福な"},{"id":780,"lesson":8,"fr":"pauvre","ja":"貧しい"},{"id":781,"lesson":8,"fr":"sûr","ja":"確かな・安全な"},{"id":782,"lesson":8,"fr":"dangereux","ja":"危険な"},{"id":783,"lesson":8,"fr":"seul","ja":"ひとりの"},{"id":784,"lesson":8,"fr":"même","ja":"同じ"},{"id":785,"lesson":8,"fr":"meilleur","ja":"より良い（男性形）"},{"id":786,"lesson":8,"fr":"premier","ja":"最初の"},{"id":787,"lesson":8,"fr":"dernier","ja":"最後の"},{"id":788,"lesson":8,"fr":"chaque","ja":"それぞれの"},{"id":789,"lesson":8,"fr":"tout","ja":"すべての"},{"id":790,"lesson":8,"fr":"beaucoup","ja":"たくさん"},{"id":791,"lesson":8,"fr":"peu","ja":"少し"},{"id":792,"lesson":8,"fr":"assez","ja":"十分に"},{"id":793,"lesson":8,"fr":"trop","ja":"〜すぎる"},{"id":794,"lesson":8,"fr":"presque","ja":"ほとんど"},{"id":795,"lesson":8,"fr":"seulement","ja":"〜だけ"},{"id":796,"lesson":8,"fr":"vraiment","ja":"本当に"},{"id":797,"lesson":8,"fr":"probablement","ja":"おそらく"},{"id":798,"lesson":8,"fr":"certainement","ja":"確かに"},{"id":799,"lesson":8,"fr":"exactement","ja":"正確に"},{"id":800,"lesson":8,"fr":"rapidement","ja":"素早く"},{"id":801,"lesson":9,"fr":"une école","ja":"学校"},{"id":802,"lesson":9,"fr":"un collège","ja":"中学校"},{"id":803,"lesson":9,"fr":"un lycée","ja":"高校"},{"id":804,"lesson":9,"fr":"une université","ja":"大学"},{"id":805,"lesson":9,"fr":"une classe","ja":"クラス・教室"},{"id":806,"lesson":9,"fr":"une salle","ja":"部屋・ホール"},{"id":807,"lesson":9,"fr":"un cours","ja":"授業"},{"id":808,"lesson":9,"fr":"une leçon","ja":"学課"},{"id":809,"lesson":9,"fr":"un exercice","ja":"練習問題"},{"id":810,"lesson":9,"fr":"un devoir","ja":"宿題"},{"id":811,"lesson":9,"fr":"un examen","ja":"試験"},{"id":812,"lesson":9,"fr":"une question","ja":"質問"},{"id":813,"lesson":9,"fr":"une réponse","ja":"答え"},{"id":814,"lesson":9,"fr":"une note","ja":"成績・メモ"},{"id":815,"lesson":9,"fr":"un résultat","ja":"結果"},{"id":816,"lesson":9,"fr":"une erreur","ja":"誤り"},{"id":817,"lesson":9,"fr":"une faute","ja":"間違い"},{"id":818,"lesson":9,"fr":"une correction","ja":"訂正"},{"id":819,"lesson":9,"fr":"un mot","ja":"単語"},{"id":820,"lesson":9,"fr":"une phrase","ja":"文"},{"id":821,"lesson":9,"fr":"une lettre","ja":"文字・手紙"},{"id":822,"lesson":9,"fr":"un alphabet","ja":"アルファベット"},{"id":823,"lesson":9,"fr":"une grammaire","ja":"文法"},{"id":824,"lesson":9,"fr":"une prononciation","ja":"発音"},{"id":825,"lesson":9,"fr":"une traduction","ja":"翻訳"},{"id":826,"lesson":9,"fr":"un dictionnaire","ja":"辞書"},{"id":827,"lesson":9,"fr":"un livre","ja":"本"},{"id":828,"lesson":9,"fr":"un cahier","ja":"ノート"},{"id":829,"lesson":9,"fr":"un carnet","ja":"手帳"},{"id":830,"lesson":9,"fr":"un papier","ja":"紙"},{"id":831,"lesson":9,"fr":"un stylo","ja":"ペン"},{"id":832,"lesson":9,"fr":"un crayon","ja":"鉛筆"},{"id":833,"lesson":9,"fr":"une gomme","ja":"消しゴム"},{"id":834,"lesson":9,"fr":"une règle","ja":"定規・規則"},{"id":835,"lesson":9,"fr":"un tableau","ja":"黒板・表"},{"id":836,"lesson":9,"fr":"une page","ja":"ページ"},{"id":837,"lesson":9,"fr":"un chapitre","ja":"章"},{"id":838,"lesson":9,"fr":"un titre","ja":"題名"},{"id":839,"lesson":9,"fr":"une histoire","ja":"物語・歴史"},{"id":840,"lesson":9,"fr":"la géographie","ja":"地理"},{"id":841,"lesson":9,"fr":"la science","ja":"科学"},{"id":842,"lesson":9,"fr":"les mathématiques","ja":"数学"},{"id":843,"lesson":9,"fr":"la physique","ja":"物理学"},{"id":844,"lesson":9,"fr":"la chimie","ja":"化学"},{"id":845,"lesson":9,"fr":"la biologie","ja":"生物学"},{"id":846,"lesson":9,"fr":"l'informatique","ja":"情報科学"},{"id":847,"lesson":9,"fr":"un emploi","ja":"仕事・雇用"},{"id":848,"lesson":9,"fr":"un métier","ja":"職業"},{"id":849,"lesson":9,"fr":"une entreprise","ja":"会社"},{"id":850,"lesson":9,"fr":"une société","ja":"企業・社会"},{"id":851,"lesson":9,"fr":"un patron","ja":"社長・雇い主"},{"id":852,"lesson":9,"fr":"un employé","ja":"従業員"},{"id":853,"lesson":9,"fr":"un salaire","ja":"給料"},{"id":854,"lesson":9,"fr":"un contrat","ja":"契約"},{"id":855,"lesson":9,"fr":"une réunion","ja":"会議"},{"id":856,"lesson":9,"fr":"un projet","ja":"計画・プロジェクト"},{"id":857,"lesson":9,"fr":"une tâche","ja":"作業"},{"id":858,"lesson":9,"fr":"un objectif","ja":"目標"},{"id":859,"lesson":9,"fr":"un problème","ja":"問題"},{"id":860,"lesson":9,"fr":"une solution","ja":"解決策"},{"id":861,"lesson":9,"fr":"une idée","ja":"考え"},{"id":862,"lesson":9,"fr":"un conseil","ja":"助言"},{"id":863,"lesson":9,"fr":"une décision","ja":"決定"},{"id":864,"lesson":9,"fr":"une responsabilité","ja":"責任"},{"id":865,"lesson":9,"fr":"un effort","ja":"努力"},{"id":866,"lesson":9,"fr":"une pause","ja":"休憩"},{"id":867,"lesson":9,"fr":"les vacances","ja":"休暇"},{"id":868,"lesson":9,"fr":"un week-end","ja":"週末"},{"id":869,"lesson":9,"fr":"un loisir","ja":"余暇"},{"id":870,"lesson":9,"fr":"un sport","ja":"スポーツ"},{"id":871,"lesson":9,"fr":"le football","ja":"サッカー"},{"id":872,"lesson":9,"fr":"le tennis","ja":"テニス"},{"id":873,"lesson":9,"fr":"le basket-ball","ja":"バスケットボール"},{"id":874,"lesson":9,"fr":"le baseball","ja":"野球"},{"id":875,"lesson":9,"fr":"le badminton","ja":"バドミントン"},{"id":876,"lesson":9,"fr":"le judo","ja":"柔道"},{"id":877,"lesson":9,"fr":"le karaté","ja":"空手"},{"id":878,"lesson":9,"fr":"une course","ja":"競走"},{"id":879,"lesson":9,"fr":"une promenade","ja":"散歩"},{"id":880,"lesson":9,"fr":"une randonnée","ja":"ハイキング"},{"id":881,"lesson":9,"fr":"la musique","ja":"音楽"},{"id":882,"lesson":9,"fr":"une chanson","ja":"歌"},{"id":883,"lesson":9,"fr":"un instrument","ja":"楽器"},{"id":884,"lesson":9,"fr":"une guitare","ja":"ギター"},{"id":885,"lesson":9,"fr":"un piano","ja":"ピアノ"},{"id":886,"lesson":9,"fr":"un violon","ja":"バイオリン"},{"id":887,"lesson":9,"fr":"un concert","ja":"コンサート"},{"id":888,"lesson":9,"fr":"un film","ja":"映画"},{"id":889,"lesson":9,"fr":"une série","ja":"シリーズ・ドラマ"},{"id":890,"lesson":9,"fr":"un dessin","ja":"絵・スケッチ"},{"id":891,"lesson":9,"fr":"une peinture","ja":"絵画・塗料"},{"id":892,"lesson":9,"fr":"l'art","ja":"芸術"},{"id":893,"lesson":9,"fr":"un jeu","ja":"ゲーム・遊び"},{"id":894,"lesson":9,"fr":"un jouet","ja":"おもちゃ"},{"id":895,"lesson":9,"fr":"un puzzle","ja":"パズル"},{"id":896,"lesson":9,"fr":"un roman","ja":"小説"},{"id":897,"lesson":9,"fr":"un journal","ja":"新聞・日記"},{"id":898,"lesson":9,"fr":"un magazine","ja":"雑誌"},{"id":899,"lesson":9,"fr":"une fête","ja":"パーティー・祭り"},{"id":900,"lesson":9,"fr":"un cadeau","ja":"贈り物"},{"id":901,"lesson":10,"fr":"se promener","ja":"散歩する"},{"id":902,"lesson":10,"fr":"se reposer","ja":"休む"},{"id":903,"lesson":10,"fr":"se dépêcher","ja":"急ぐ"},{"id":904,"lesson":10,"fr":"se laver","ja":"体を洗う"},{"id":905,"lesson":10,"fr":"s'habiller","ja":"服を着る"},{"id":906,"lesson":10,"fr":"se déshabiller","ja":"服を脱ぐ"},{"id":907,"lesson":10,"fr":"se brosser","ja":"ブラシをかける"},{"id":908,"lesson":10,"fr":"se doucher","ja":"シャワーを浴びる"},{"id":909,"lesson":10,"fr":"se baigner","ja":"水浴びをする"},{"id":910,"lesson":10,"fr":"respirer","ja":"呼吸する"},{"id":911,"lesson":10,"fr":"toucher","ja":"触れる"},{"id":912,"lesson":10,"fr":"sentir","ja":"感じる・におう"},{"id":913,"lesson":10,"fr":"goûter","ja":"味見する"},{"id":914,"lesson":10,"fr":"couper","ja":"切る"},{"id":915,"lesson":10,"fr":"casser","ja":"壊す"},{"id":916,"lesson":10,"fr":"réparer","ja":"修理する"},{"id":917,"lesson":10,"fr":"construire","ja":"建てる"},{"id":918,"lesson":10,"fr":"détruire","ja":"破壊する"},{"id":919,"lesson":10,"fr":"jeter","ja":"捨てる"},{"id":920,"lesson":10,"fr":"garder","ja":"保つ・預かる"},{"id":921,"lesson":10,"fr":"partager","ja":"分け合う"},{"id":922,"lesson":10,"fr":"ajouter","ja":"加える"},{"id":923,"lesson":10,"fr":"enlever","ja":"取り除く"},{"id":924,"lesson":10,"fr":"remplir","ja":"満たす"},{"id":925,"lesson":10,"fr":"vider","ja":"空にする"},{"id":926,"lesson":10,"fr":"lever","ja":"持ち上げる"},{"id":927,"lesson":10,"fr":"baisser","ja":"下げる"},{"id":928,"lesson":10,"fr":"pousser","ja":"押す"},{"id":929,"lesson":10,"fr":"tirer","ja":"引く"},{"id":930,"lesson":10,"fr":"lancer","ja":"投げる"},{"id":931,"lesson":10,"fr":"attraper","ja":"捕まえる"},{"id":932,"lesson":10,"fr":"sauter","ja":"跳ぶ"},{"id":933,"lesson":10,"fr":"traverser","ja":"横切る"},{"id":934,"lesson":10,"fr":"tourner","ja":"曲がる"},{"id":935,"lesson":10,"fr":"avancer","ja":"進む"},{"id":936,"lesson":10,"fr":"reculer","ja":"後退する"},{"id":937,"lesson":10,"fr":"quitter","ja":"離れる"},{"id":938,"lesson":10,"fr":"rejoindre","ja":"合流する"},{"id":939,"lesson":10,"fr":"rentrer","ja":"帰宅する"},{"id":940,"lesson":10,"fr":"se perdre","ja":"道に迷う"},{"id":941,"lesson":10,"fr":"rencontrer","ja":"会う"},{"id":942,"lesson":10,"fr":"présenter","ja":"紹介する"},{"id":943,"lesson":10,"fr":"inviter","ja":"招待する"},{"id":944,"lesson":10,"fr":"accepter","ja":"受け入れる"},{"id":945,"lesson":10,"fr":"refuser","ja":"断る"},{"id":946,"lesson":10,"fr":"proposer","ja":"提案する"},{"id":947,"lesson":10,"fr":"promettre","ja":"約束する"},{"id":948,"lesson":10,"fr":"remercier","ja":"感謝する"},{"id":949,"lesson":10,"fr":"s'excuser","ja":"謝る"},{"id":950,"lesson":10,"fr":"féliciter","ja":"祝福する"},{"id":951,"lesson":10,"fr":"respecter","ja":"尊重する"},{"id":952,"lesson":10,"fr":"décider","ja":"決める"},{"id":953,"lesson":10,"fr":"espérer","ja":"希望する"},{"id":954,"lesson":10,"fr":"imaginer","ja":"想像する"},{"id":955,"lesson":10,"fr":"rêver","ja":"夢を見る"},{"id":956,"lesson":10,"fr":"l'avenir","ja":"未来"},{"id":957,"lesson":10,"fr":"le passé","ja":"過去"},{"id":958,"lesson":10,"fr":"le présent","ja":"現在"},{"id":959,"lesson":10,"fr":"un souvenir","ja":"記憶・思い出"},{"id":960,"lesson":10,"fr":"un rêve","ja":"夢"},{"id":961,"lesson":10,"fr":"un espoir","ja":"希望"},{"id":962,"lesson":10,"fr":"une chance","ja":"運・幸運"},{"id":963,"lesson":10,"fr":"un choix","ja":"選択"},{"id":964,"lesson":10,"fr":"une raison","ja":"理由"},{"id":965,"lesson":10,"fr":"un sens","ja":"意味・方向"},{"id":966,"lesson":10,"fr":"une vérité","ja":"真実"},{"id":967,"lesson":10,"fr":"un mensonge","ja":"うそ"},{"id":968,"lesson":10,"fr":"la liberté","ja":"自由"},{"id":969,"lesson":10,"fr":"la paix","ja":"平和"},{"id":970,"lesson":10,"fr":"une guerre","ja":"戦争"},{"id":971,"lesson":10,"fr":"la sécurité","ja":"安全"},{"id":972,"lesson":10,"fr":"un danger","ja":"危険"},{"id":973,"lesson":10,"fr":"un changement","ja":"変化"},{"id":974,"lesson":10,"fr":"une différence","ja":"違い"},{"id":975,"lesson":10,"fr":"une habitude","ja":"習慣"},{"id":976,"lesson":10,"fr":"une expérience","ja":"経験"},{"id":977,"lesson":10,"fr":"une occasion","ja":"機会"},{"id":978,"lesson":10,"fr":"une possibilité","ja":"可能性"},{"id":979,"lesson":10,"fr":"un exemple","ja":"例"},{"id":980,"lesson":10,"fr":"une explication","ja":"説明"},{"id":981,"lesson":10,"fr":"un accord","ja":"合意"},{"id":982,"lesson":10,"fr":"un désaccord","ja":"意見の不一致"},{"id":983,"lesson":10,"fr":"un secret","ja":"秘密"},{"id":984,"lesson":10,"fr":"la confiance","ja":"信頼"},{"id":985,"lesson":10,"fr":"la patience","ja":"忍耐"},{"id":986,"lesson":10,"fr":"le courage","ja":"勇気"},{"id":987,"lesson":10,"fr":"le respect","ja":"尊敬"},{"id":988,"lesson":10,"fr":"une réussite","ja":"成功"},{"id":989,"lesson":10,"fr":"un échec","ja":"失敗"},{"id":990,"lesson":10,"fr":"un début","ja":"始まり"},{"id":991,"lesson":10,"fr":"une fin","ja":"終わり"},{"id":992,"lesson":10,"fr":"un milieu","ja":"真ん中"},{"id":993,"lesson":10,"fr":"une partie","ja":"部分"},{"id":994,"lesson":10,"fr":"un ensemble","ja":"全体"},{"id":995,"lesson":10,"fr":"une qualité","ja":"質・長所"},{"id":996,"lesson":10,"fr":"un défaut","ja":"欠点"},{"id":997,"lesson":10,"fr":"une quantité","ja":"量"},{"id":998,"lesson":10,"fr":"une valeur","ja":"価値"},{"id":999,"lesson":10,"fr":"un besoin","ja":"必要"},{"id":1000,"lesson":10,"fr":"un désir","ja":"願望"}]
+[
+{
+"id": 1,
+"lesson": 1,
+"fr": "bonjour",
+"ja": "こんにちは"
+},
+{
+"id": 2,
+"lesson": 1,
+"fr": "salut",
+"ja": "やあ"
+},
+{
+"id": 3,
+"lesson": 1,
+"fr": "bonsoir",
+"ja": "こんばんは"
+},
+{
+"id": 4,
+"lesson": 1,
+"fr": "au revoir",
+"ja": "さようなら"
+},
+{
+"id": 5,
+"lesson": 1,
+"fr": "merci",
+"ja": "ありがとう"
+},
+{
+"id": 6,
+"lesson": 1,
+"fr": "merci beaucoup",
+"ja": "どうもありがとう"
+},
+{
+"id": 7,
+"lesson": 1,
+"fr": "s'il vous plaît",
+"ja": "お願いします"
+},
+{
+"id": 8,
+"lesson": 1,
+"fr": "pardon",
+"ja": "すみません"
+},
+{
+"id": 9,
+"lesson": 1,
+"fr": "excusez-moi",
+"ja": "すみません"
+},
+{
+"id": 10,
+"lesson": 1,
+"fr": "oui",
+"ja": "はい"
+},
+{
+"id": 11,
+"lesson": 1,
+"fr": "non",
+"ja": "いいえ"
+},
+{
+"id": 12,
+"lesson": 1,
+"fr": "ça va ?",
+"ja": "元気ですか？"
+},
+{
+"id": 13,
+"lesson": 1,
+"fr": "je m'appelle",
+"ja": "私の名前は〜です"
+},
+{
+"id": 14,
+"lesson": 1,
+"fr": "je suis",
+"ja": "私は〜です"
+},
+{
+"id": 15,
+"lesson": 1,
+"fr": "j'ai",
+"ja": "私は持っています"
+},
+{
+"id": 16,
+"lesson": 1,
+"fr": "c'est",
+"ja": "これは〜です"
+},
+{
+"id": 17,
+"lesson": 1,
+"fr": "je voudrais",
+"ja": "〜をいただきたいのですが"
+},
+{
+"id": 18,
+"lesson": 1,
+"fr": "je ne comprends pas",
+"ja": "わかりません（理解できません）"
+},
+{
+"id": 19,
+"lesson": 1,
+"fr": "je ne sais pas",
+"ja": "知りません・わかりません"
+},
+{
+"id": 20,
+"lesson": 1,
+"fr": "d'accord",
+"ja": "了解"
+},
+{
+"id": 21,
+"lesson": 1,
+"fr": "je",
+"ja": "私"
+},
+{
+"id": 22,
+"lesson": 1,
+"fr": "tu",
+"ja": "君"
+},
+{
+"id": 23,
+"lesson": 1,
+"fr": "vous",
+"ja": "あなた・あなたたち"
+},
+{
+"id": 24,
+"lesson": 1,
+"fr": "il",
+"ja": "彼"
+},
+{
+"id": 25,
+"lesson": 1,
+"fr": "elle",
+"ja": "彼女"
+},
+{
+"id": 26,
+"lesson": 1,
+"fr": "nous",
+"ja": "私たち"
+},
+{
+"id": 27,
+"lesson": 1,
+"fr": "on",
+"ja": "私たち・人々"
+},
+{
+"id": 28,
+"lesson": 1,
+"fr": "être",
+"ja": "〜である"
+},
+{
+"id": 29,
+"lesson": 1,
+"fr": "avoir",
+"ja": "持っている"
+},
+{
+"id": 30,
+"lesson": 1,
+"fr": "aller",
+"ja": "行く"
+},
+{
+"id": 31,
+"lesson": 1,
+"fr": "faire",
+"ja": "する・作る"
+},
+{
+"id": 32,
+"lesson": 1,
+"fr": "venir",
+"ja": "来る"
+},
+{
+"id": 33,
+"lesson": 1,
+"fr": "vouloir",
+"ja": "欲しい・〜したい"
+},
+{
+"id": 34,
+"lesson": 1,
+"fr": "pouvoir",
+"ja": "〜できる"
+},
+{
+"id": 35,
+"lesson": 1,
+"fr": "aimer",
+"ja": "好きである"
+},
+{
+"id": 36,
+"lesson": 1,
+"fr": "parler",
+"ja": "話す"
+},
+{
+"id": 37,
+"lesson": 1,
+"fr": "manger",
+"ja": "食べる"
+},
+{
+"id": 38,
+"lesson": 1,
+"fr": "boire",
+"ja": "飲む"
+},
+{
+"id": 39,
+"lesson": 1,
+"fr": "habiter",
+"ja": "住む"
+},
+{
+"id": 40,
+"lesson": 1,
+"fr": "travailler",
+"ja": "働く"
+},
+{
+"id": 41,
+"lesson": 1,
+"fr": "écouter",
+"ja": "聞く"
+},
+{
+"id": 42,
+"lesson": 1,
+"fr": "regarder",
+"ja": "眺める"
+},
+{
+"id": 43,
+"lesson": 1,
+"fr": "comprendre",
+"ja": "理解する"
+},
+{
+"id": 44,
+"lesson": 1,
+"fr": "qui",
+"ja": "誰"
+},
+{
+"id": 45,
+"lesson": 1,
+"fr": "quoi",
+"ja": "何"
+},
+{
+"id": 46,
+"lesson": 1,
+"fr": "où",
+"ja": "どこ"
+},
+{
+"id": 47,
+"lesson": 1,
+"fr": "comment",
+"ja": "どのように"
+},
+{
+"id": 48,
+"lesson": 1,
+"fr": "quand",
+"ja": "いつ"
+},
+{
+"id": 49,
+"lesson": 1,
+"fr": "pourquoi",
+"ja": "なぜ"
+},
+{
+"id": 50,
+"lesson": 1,
+"fr": "combien",
+"ja": "いくつ・いくら"
+},
+{
+"id": 51,
+"lesson": 1,
+"fr": "un",
+"ja": "1・ある（男性）"
+},
+{
+"id": 52,
+"lesson": 1,
+"fr": "une",
+"ja": "1・ある（女性）"
+},
+{
+"id": 53,
+"lesson": 1,
+"fr": "deux",
+"ja": "2"
+},
+{
+"id": 54,
+"lesson": 1,
+"fr": "trois",
+"ja": "3"
+},
+{
+"id": 55,
+"lesson": 1,
+"fr": "quatre",
+"ja": "4"
+},
+{
+"id": 56,
+"lesson": 1,
+"fr": "cinq",
+"ja": "5"
+},
+{
+"id": 57,
+"lesson": 1,
+"fr": "six",
+"ja": "6"
+},
+{
+"id": 58,
+"lesson": 1,
+"fr": "sept",
+"ja": "7"
+},
+{
+"id": 59,
+"lesson": 1,
+"fr": "huit",
+"ja": "8"
+},
+{
+"id": 60,
+"lesson": 1,
+"fr": "neuf",
+"ja": "9"
+},
+{
+"id": 61,
+"lesson": 1,
+"fr": "dix",
+"ja": "10"
+},
+{
+"id": 62,
+"lesson": 1,
+"fr": "le",
+"ja": "その（男性名詞）"
+},
+{
+"id": 63,
+"lesson": 1,
+"fr": "la",
+"ja": "その（女性名詞）"
+},
+{
+"id": 64,
+"lesson": 1,
+"fr": "les",
+"ja": "その（複数）"
+},
+{
+"id": 65,
+"lesson": 1,
+"fr": "des",
+"ja": "いくつかの"
+},
+{
+"id": 66,
+"lesson": 1,
+"fr": "de",
+"ja": "〜の・〜から"
+},
+{
+"id": 67,
+"lesson": 1,
+"fr": "à",
+"ja": "〜へ・〜に"
+},
+{
+"id": 68,
+"lesson": 1,
+"fr": "avec",
+"ja": "〜と一緒に"
+},
+{
+"id": 69,
+"lesson": 1,
+"fr": "sans",
+"ja": "〜なしで"
+},
+{
+"id": 70,
+"lesson": 1,
+"fr": "dans",
+"ja": "〜の中に"
+},
+{
+"id": 71,
+"lesson": 1,
+"fr": "et",
+"ja": "そして"
+},
+{
+"id": 72,
+"lesson": 1,
+"fr": "ou",
+"ja": "または"
+},
+{
+"id": 73,
+"lesson": 1,
+"fr": "mais",
+"ja": "しかし"
+},
+{
+"id": 74,
+"lesson": 1,
+"fr": "ne",
+"ja": "否定をつくる語"
+},
+{
+"id": 75,
+"lesson": 1,
+"fr": "pas",
+"ja": "〜ない"
+},
+{
+"id": 76,
+"lesson": 1,
+"fr": "très",
+"ja": "とても"
+},
+{
+"id": 77,
+"lesson": 1,
+"fr": "bien",
+"ja": "よく・元気に"
+},
+{
+"id": 78,
+"lesson": 1,
+"fr": "mal",
+"ja": "悪く"
+},
+{
+"id": 79,
+"lesson": 1,
+"fr": "ici",
+"ja": "ここ"
+},
+{
+"id": 80,
+"lesson": 1,
+"fr": "là",
+"ja": "そこ・あそこ"
+},
+{
+"id": 81,
+"lesson": 1,
+"fr": "aujourd'hui",
+"ja": "今日"
+},
+{
+"id": 82,
+"lesson": 1,
+"fr": "demain",
+"ja": "明日"
+},
+{
+"id": 83,
+"lesson": 1,
+"fr": "hier",
+"ja": "昨日"
+},
+{
+"id": 84,
+"lesson": 1,
+"fr": "ce",
+"ja": "この・その（男性）"
+},
+{
+"id": 85,
+"lesson": 1,
+"fr": "voir",
+"ja": "見る"
+},
+{
+"id": 86,
+"lesson": 1,
+"fr": "apprendre",
+"ja": "学ぶ"
+},
+{
+"id": 87,
+"lesson": 1,
+"fr": "étudier",
+"ja": "勉強する"
+},
+{
+"id": 88,
+"lesson": 1,
+"fr": "en",
+"ja": "〜で・〜に"
+},
+{
+"id": 89,
+"lesson": 1,
+"fr": "ces",
+"ja": "これらの"
+},
+{
+"id": 90,
+"lesson": 1,
+"fr": "lire",
+"ja": "読む"
+},
+{
+"id": 91,
+"lesson": 1,
+"fr": "écrire",
+"ja": "書く"
+},
+{
+"id": 92,
+"lesson": 1,
+"fr": "pour",
+"ja": "〜のために"
+},
+{
+"id": 93,
+"lesson": 1,
+"fr": "ça",
+"ja": "それ"
+},
+{
+"id": 94,
+"lesson": 1,
+"fr": "vingt",
+"ja": "20"
+},
+{
+"id": 95,
+"lesson": 1,
+"fr": "entendre",
+"ja": "聞こえる"
+},
+{
+"id": 96,
+"lesson": 1,
+"fr": "si",
+"ja": "もし・（否定疑問への）はい"
+},
+{
+"id": 97,
+"lesson": 1,
+"fr": "penser",
+"ja": "考える"
+},
+{
+"id": 98,
+"lesson": 1,
+"fr": "croire",
+"ja": "信じる"
+},
+{
+"id": 99,
+"lesson": 1,
+"fr": "elles",
+"ja": "彼女たち"
+},
+{
+"id": 100,
+"lesson": 1,
+"fr": "peut-être",
+"ja": "たぶん"
+},
+{
+"id": 101,
+"lesson": 2,
+"fr": "onze",
+"ja": "11"
+},
+{
+"id": 102,
+"lesson": 2,
+"fr": "douze",
+"ja": "12"
+},
+{
+"id": 103,
+"lesson": 2,
+"fr": "treize",
+"ja": "13"
+},
+{
+"id": 104,
+"lesson": 2,
+"fr": "quatorze",
+"ja": "14"
+},
+{
+"id": 105,
+"lesson": 2,
+"fr": "quinze",
+"ja": "15"
+},
+{
+"id": 106,
+"lesson": 2,
+"fr": "seize",
+"ja": "16"
+},
+{
+"id": 107,
+"lesson": 2,
+"fr": "trente",
+"ja": "30"
+},
+{
+"id": 108,
+"lesson": 2,
+"fr": "quarante",
+"ja": "40"
+},
+{
+"id": 109,
+"lesson": 2,
+"fr": "cinquante",
+"ja": "50"
+},
+{
+"id": 110,
+"lesson": 2,
+"fr": "cent",
+"ja": "100"
+},
+{
+"id": 111,
+"lesson": 2,
+"fr": "mille",
+"ja": "1000"
+},
+{
+"id": 112,
+"lesson": 2,
+"fr": "donner",
+"ja": "与える"
+},
+{
+"id": 113,
+"lesson": 2,
+"fr": "mettre",
+"ja": "置く・着る"
+},
+{
+"id": 114,
+"lesson": 2,
+"fr": "ouvrir",
+"ja": "開ける"
+},
+{
+"id": 115,
+"lesson": 2,
+"fr": "fermer",
+"ja": "閉める"
+},
+{
+"id": 116,
+"lesson": 2,
+"fr": "acheter",
+"ja": "買う"
+},
+{
+"id": 117,
+"lesson": 2,
+"fr": "payer",
+"ja": "支払う"
+},
+{
+"id": 118,
+"lesson": 2,
+"fr": "prendre",
+"ja": "取る・乗る"
+},
+{
+"id": 119,
+"lesson": 2,
+"fr": "demander",
+"ja": "尋ねる・頼む"
+},
+{
+"id": 120,
+"lesson": 2,
+"fr": "répondre",
+"ja": "答える"
+},
+{
+"id": 121,
+"lesson": 2,
+"fr": "se lever",
+"ja": "起き上がる"
+},
+{
+"id": 122,
+"lesson": 2,
+"fr": "se coucher",
+"ja": "寝る"
+},
+{
+"id": 123,
+"lesson": 2,
+"fr": "dormir",
+"ja": "眠る"
+},
+{
+"id": 124,
+"lesson": 2,
+"fr": "marcher",
+"ja": "歩く"
+},
+{
+"id": 125,
+"lesson": 2,
+"fr": "attendre",
+"ja": "待つ"
+},
+{
+"id": 126,
+"lesson": 2,
+"fr": "aider",
+"ja": "助ける"
+},
+{
+"id": 127,
+"lesson": 2,
+"fr": "sortir",
+"ja": "出る"
+},
+{
+"id": 128,
+"lesson": 2,
+"fr": "entrer",
+"ja": "入る"
+},
+{
+"id": 129,
+"lesson": 2,
+"fr": "arriver",
+"ja": "到着する"
+},
+{
+"id": 130,
+"lesson": 2,
+"fr": "partir",
+"ja": "出発する"
+},
+{
+"id": 131,
+"lesson": 2,
+"fr": "chercher",
+"ja": "探す"
+},
+{
+"id": 132,
+"lesson": 2,
+"fr": "trouver",
+"ja": "見つける"
+},
+{
+"id": 133,
+"lesson": 2,
+"fr": "dire",
+"ja": "言う"
+},
+{
+"id": 134,
+"lesson": 2,
+"fr": "devant",
+"ja": "〜の前に"
+},
+{
+"id": 135,
+"lesson": 2,
+"fr": "derrière",
+"ja": "〜の後ろに"
+},
+{
+"id": 136,
+"lesson": 2,
+"fr": "entre",
+"ja": "〜の間に"
+},
+{
+"id": 137,
+"lesson": 2,
+"fr": "chez",
+"ja": "〜の家で"
+},
+{
+"id": 138,
+"lesson": 2,
+"fr": "par",
+"ja": "〜によって"
+},
+{
+"id": 139,
+"lesson": 2,
+"fr": "plus",
+"ja": "より多く"
+},
+{
+"id": 140,
+"lesson": 2,
+"fr": "moins",
+"ja": "より少なく"
+},
+{
+"id": 141,
+"lesson": 2,
+"fr": "voilà",
+"ja": "ほら・そこにあります"
+},
+{
+"id": 142,
+"lesson": 2,
+"fr": "voici",
+"ja": "こちらです"
+},
+{
+"id": 143,
+"lesson": 2,
+"fr": "quelle",
+"ja": "どの・どんな（女性）"
+},
+{
+"id": 144,
+"lesson": 2,
+"fr": "que",
+"ja": "何を・〜ということ"
+},
+{
+"id": 145,
+"lesson": 2,
+"fr": "devoir",
+"ja": "〜しなければならない"
+},
+{
+"id": 146,
+"lesson": 2,
+"fr": "quel",
+"ja": "どの・どんな（男性）"
+},
+{
+"id": 147,
+"lesson": 2,
+"fr": "adorer",
+"ja": "大好きである"
+},
+{
+"id": 148,
+"lesson": 2,
+"fr": "détester",
+"ja": "大嫌いである"
+},
+{
+"id": 149,
+"lesson": 2,
+"fr": "préférer",
+"ja": "〜を好む"
+},
+{
+"id": 150,
+"lesson": 2,
+"fr": "à bientôt",
+"ja": "また近いうちに"
+},
+{
+"id": 151,
+"lesson": 2,
+"fr": "se réveiller",
+"ja": "目を覚ます"
+},
+{
+"id": 152,
+"lesson": 2,
+"fr": "courir",
+"ja": "走る"
+},
+{
+"id": 153,
+"lesson": 2,
+"fr": "nager",
+"ja": "泳ぐ"
+},
+{
+"id": 154,
+"lesson": 2,
+"fr": "jouer",
+"ja": "遊ぶ・競技する"
+},
+{
+"id": 155,
+"lesson": 2,
+"fr": "sous",
+"ja": "〜の下に"
+},
+{
+"id": 156,
+"lesson": 2,
+"fr": "perdre",
+"ja": "失う"
+},
+{
+"id": 157,
+"lesson": 2,
+"fr": "recevoir",
+"ja": "受け取る"
+},
+{
+"id": 158,
+"lesson": 2,
+"fr": "porter",
+"ja": "運ぶ・身に着ける"
+},
+{
+"id": 159,
+"lesson": 2,
+"fr": "rester",
+"ja": "とどまる"
+},
+{
+"id": 160,
+"lesson": 2,
+"fr": "retourner",
+"ja": "戻る"
+},
+{
+"id": 161,
+"lesson": 2,
+"fr": "monter",
+"ja": "上がる"
+},
+{
+"id": 162,
+"lesson": 2,
+"fr": "descendre",
+"ja": "下りる"
+},
+{
+"id": 163,
+"lesson": 2,
+"fr": "commencer",
+"ja": "始める"
+},
+{
+"id": 164,
+"lesson": 2,
+"fr": "finir",
+"ja": "終える"
+},
+{
+"id": 165,
+"lesson": 2,
+"fr": "continuer",
+"ja": "続ける"
+},
+{
+"id": 166,
+"lesson": 2,
+"fr": "arrêter",
+"ja": "止める"
+},
+{
+"id": 167,
+"lesson": 2,
+"fr": "changer",
+"ja": "変える"
+},
+{
+"id": 168,
+"lesson": 2,
+"fr": "utiliser",
+"ja": "使う"
+},
+{
+"id": 169,
+"lesson": 2,
+"fr": "vendre",
+"ja": "売る"
+},
+{
+"id": 170,
+"lesson": 2,
+"fr": "coûter",
+"ja": "値段がする"
+},
+{
+"id": 171,
+"lesson": 2,
+"fr": "choisir",
+"ja": "選ぶ"
+},
+{
+"id": 172,
+"lesson": 2,
+"fr": "commander",
+"ja": "注文する"
+},
+{
+"id": 173,
+"lesson": 2,
+"fr": "préparer",
+"ja": "準備する"
+},
+{
+"id": 174,
+"lesson": 2,
+"fr": "cuisiner",
+"ja": "料理する"
+},
+{
+"id": 175,
+"lesson": 2,
+"fr": "laver",
+"ja": "洗う"
+},
+{
+"id": 176,
+"lesson": 2,
+"fr": "nettoyer",
+"ja": "掃除する"
+},
+{
+"id": 177,
+"lesson": 2,
+"fr": "appeler",
+"ja": "呼ぶ・電話する"
+},
+{
+"id": 178,
+"lesson": 2,
+"fr": "téléphoner",
+"ja": "電話をかける"
+},
+{
+"id": 179,
+"lesson": 2,
+"fr": "envoyer",
+"ja": "送る"
+},
+{
+"id": 180,
+"lesson": 2,
+"fr": "montrer",
+"ja": "見せる"
+},
+{
+"id": 181,
+"lesson": 2,
+"fr": "expliquer",
+"ja": "説明する"
+},
+{
+"id": 182,
+"lesson": 2,
+"fr": "raconter",
+"ja": "語る"
+},
+{
+"id": 183,
+"lesson": 2,
+"fr": "oublier",
+"ja": "忘れる"
+},
+{
+"id": 184,
+"lesson": 2,
+"fr": "se souvenir",
+"ja": "覚えている"
+},
+{
+"id": 185,
+"lesson": 2,
+"fr": "essayer",
+"ja": "試す"
+},
+{
+"id": 186,
+"lesson": 2,
+"fr": "réussir",
+"ja": "成功する"
+},
+{
+"id": 187,
+"lesson": 2,
+"fr": "tomber",
+"ja": "落ちる・転ぶ"
+},
+{
+"id": 188,
+"lesson": 2,
+"fr": "vivre",
+"ja": "生きる・暮らす"
+},
+{
+"id": 189,
+"lesson": 2,
+"fr": "sur",
+"ja": "〜の上に"
+},
+{
+"id": 190,
+"lesson": 2,
+"fr": "naître",
+"ja": "生まれる"
+},
+{
+"id": 191,
+"lesson": 2,
+"fr": "mourir",
+"ja": "死ぬ"
+},
+{
+"id": 192,
+"lesson": 2,
+"fr": "rire",
+"ja": "笑う"
+},
+{
+"id": 193,
+"lesson": 2,
+"fr": "pleurer",
+"ja": "泣く"
+},
+{
+"id": 194,
+"lesson": 2,
+"fr": "sourire",
+"ja": "ほほえむ"
+},
+{
+"id": 195,
+"lesson": 2,
+"fr": "chanter",
+"ja": "歌う"
+},
+{
+"id": 196,
+"lesson": 2,
+"fr": "danser",
+"ja": "踊る"
+},
+{
+"id": 197,
+"lesson": 2,
+"fr": "visiter",
+"ja": "訪れる"
+},
+{
+"id": 198,
+"lesson": 2,
+"fr": "voyager",
+"ja": "旅行する"
+},
+{
+"id": 199,
+"lesson": 2,
+"fr": "conduire",
+"ja": "運転する"
+},
+{
+"id": 200,
+"lesson": 2,
+"fr": "suivre",
+"ja": "ついて行く"
+},
+{
+"id": 201,
+"lesson": 3,
+"fr": "une personne",
+"ja": "人"
+},
+{
+"id": 202,
+"lesson": 3,
+"fr": "un homme",
+"ja": "男性"
+},
+{
+"id": 203,
+"lesson": 3,
+"fr": "une femme",
+"ja": "女性"
+},
+{
+"id": 204,
+"lesson": 3,
+"fr": "un enfant",
+"ja": "子供"
+},
+{
+"id": 205,
+"lesson": 3,
+"fr": "un bébé",
+"ja": "赤ちゃん"
+},
+{
+"id": 206,
+"lesson": 3,
+"fr": "un garçon",
+"ja": "男の子"
+},
+{
+"id": 207,
+"lesson": 3,
+"fr": "une fille",
+"ja": "女の子"
+},
+{
+"id": 208,
+"lesson": 3,
+"fr": "un adulte",
+"ja": "大人"
+},
+{
+"id": 209,
+"lesson": 3,
+"fr": "un ami",
+"ja": "男友達"
+},
+{
+"id": 210,
+"lesson": 3,
+"fr": "une amie",
+"ja": "女友達"
+},
+{
+"id": 211,
+"lesson": 3,
+"fr": "un voisin",
+"ja": "男性の隣人"
+},
+{
+"id": 212,
+"lesson": 3,
+"fr": "une voisine",
+"ja": "女性の隣人"
+},
+{
+"id": 213,
+"lesson": 3,
+"fr": "un père",
+"ja": "父"
+},
+{
+"id": 214,
+"lesson": 3,
+"fr": "une mère",
+"ja": "母"
+},
+{
+"id": 215,
+"lesson": 3,
+"fr": "un papa",
+"ja": "パパ"
+},
+{
+"id": 216,
+"lesson": 3,
+"fr": "une maman",
+"ja": "ママ"
+},
+{
+"id": 217,
+"lesson": 3,
+"fr": "un frère",
+"ja": "兄弟"
+},
+{
+"id": 218,
+"lesson": 3,
+"fr": "une sœur",
+"ja": "姉妹"
+},
+{
+"id": 219,
+"lesson": 3,
+"fr": "un fils",
+"ja": "息子"
+},
+{
+"id": 220,
+"lesson": 3,
+"fr": "une famille",
+"ja": "家族"
+},
+{
+"id": 221,
+"lesson": 3,
+"fr": "un parent",
+"ja": "親・親族"
+},
+{
+"id": 222,
+"lesson": 3,
+"fr": "un mari",
+"ja": "夫"
+},
+{
+"id": 223,
+"lesson": 3,
+"fr": "une épouse",
+"ja": "妻"
+},
+{
+"id": 224,
+"lesson": 3,
+"fr": "un grand-père",
+"ja": "祖父"
+},
+{
+"id": 225,
+"lesson": 3,
+"fr": "une grand-mère",
+"ja": "祖母"
+},
+{
+"id": 226,
+"lesson": 3,
+"fr": "un oncle",
+"ja": "おじ"
+},
+{
+"id": 227,
+"lesson": 3,
+"fr": "une tante",
+"ja": "おば"
+},
+{
+"id": 228,
+"lesson": 3,
+"fr": "un cousin",
+"ja": "男性のいとこ"
+},
+{
+"id": 229,
+"lesson": 3,
+"fr": "une cousine",
+"ja": "女性のいとこ"
+},
+{
+"id": 230,
+"lesson": 3,
+"fr": "bonne nuit",
+"ja": "おやすみ"
+},
+{
+"id": 231,
+"lesson": 3,
+"fr": "un couple",
+"ja": "カップル"
+},
+{
+"id": 232,
+"lesson": 3,
+"fr": "un invité",
+"ja": "招待客"
+},
+{
+"id": 233,
+"lesson": 3,
+"fr": "un collègue",
+"ja": "同僚"
+},
+{
+"id": 234,
+"lesson": 3,
+"fr": "un chef",
+"ja": "上司・長"
+},
+{
+"id": 235,
+"lesson": 3,
+"fr": "un client",
+"ja": "男性の客"
+},
+{
+"id": 236,
+"lesson": 3,
+"fr": "une cliente",
+"ja": "女性の客"
+},
+{
+"id": 237,
+"lesson": 3,
+"fr": "un professeur",
+"ja": "先生"
+},
+{
+"id": 238,
+"lesson": 3,
+"fr": "un médecin",
+"ja": "医師"
+},
+{
+"id": 239,
+"lesson": 3,
+"fr": "un infirmier",
+"ja": "男性看護師"
+},
+{
+"id": 240,
+"lesson": 3,
+"fr": "une infirmière",
+"ja": "女性看護師"
+},
+{
+"id": 241,
+"lesson": 3,
+"fr": "un étudiant",
+"ja": "男子学生"
+},
+{
+"id": 242,
+"lesson": 3,
+"fr": "une étudiante",
+"ja": "女子学生"
+},
+{
+"id": 243,
+"lesson": 3,
+"fr": "un élève",
+"ja": "生徒"
+},
+{
+"id": 244,
+"lesson": 3,
+"fr": "bienvenue",
+"ja": "ようこそ"
+},
+{
+"id": 245,
+"lesson": 3,
+"fr": "un nom",
+"ja": "名前"
+},
+{
+"id": 246,
+"lesson": 3,
+"fr": "un prénom",
+"ja": "下の名前"
+},
+{
+"id": 247,
+"lesson": 3,
+"fr": "un âge",
+"ja": "年齢"
+},
+{
+"id": 248,
+"lesson": 3,
+"fr": "une voix",
+"ja": "声"
+},
+{
+"id": 249,
+"lesson": 3,
+"fr": "un corps",
+"ja": "身体"
+},
+{
+"id": 250,
+"lesson": 3,
+"fr": "une tête",
+"ja": "頭"
+},
+{
+"id": 251,
+"lesson": 3,
+"fr": "un visage",
+"ja": "顔"
+},
+{
+"id": 252,
+"lesson": 3,
+"fr": "un œil",
+"ja": "目"
+},
+{
+"id": 253,
+"lesson": 3,
+"fr": "un nez",
+"ja": "鼻"
+},
+{
+"id": 254,
+"lesson": 3,
+"fr": "une bouche",
+"ja": "口"
+},
+{
+"id": 255,
+"lesson": 3,
+"fr": "une oreille",
+"ja": "耳"
+},
+{
+"id": 256,
+"lesson": 3,
+"fr": "un cheveu",
+"ja": "髪の毛1本"
+},
+{
+"id": 257,
+"lesson": 3,
+"fr": "des cheveux",
+"ja": "髪の毛"
+},
+{
+"id": 258,
+"lesson": 3,
+"fr": "une dent",
+"ja": "歯"
+},
+{
+"id": 259,
+"lesson": 3,
+"fr": "une langue",
+"ja": "舌・言語"
+},
+{
+"id": 260,
+"lesson": 3,
+"fr": "un cou",
+"ja": "首"
+},
+{
+"id": 261,
+"lesson": 3,
+"fr": "une épaule",
+"ja": "肩"
+},
+{
+"id": 262,
+"lesson": 3,
+"fr": "un bras",
+"ja": "腕"
+},
+{
+"id": 263,
+"lesson": 3,
+"fr": "une main",
+"ja": "手"
+},
+{
+"id": 264,
+"lesson": 3,
+"fr": "un doigt",
+"ja": "指"
+},
+{
+"id": 265,
+"lesson": 3,
+"fr": "un pouce",
+"ja": "親指"
+},
+{
+"id": 266,
+"lesson": 3,
+"fr": "une poitrine",
+"ja": "胸"
+},
+{
+"id": 267,
+"lesson": 3,
+"fr": "un dos",
+"ja": "背中"
+},
+{
+"id": 268,
+"lesson": 3,
+"fr": "un ventre",
+"ja": "おなか"
+},
+{
+"id": 269,
+"lesson": 3,
+"fr": "une jambe",
+"ja": "脚"
+},
+{
+"id": 270,
+"lesson": 3,
+"fr": "un genou",
+"ja": "膝"
+},
+{
+"id": 271,
+"lesson": 3,
+"fr": "un pied",
+"ja": "足"
+},
+{
+"id": 272,
+"lesson": 3,
+"fr": "j'ai mal",
+"ja": "私は痛みがあります"
+},
+{
+"id": 273,
+"lesson": 3,
+"fr": "un cœur",
+"ja": "心臓・心"
+},
+{
+"id": 274,
+"lesson": 3,
+"fr": "le sang",
+"ja": "血液"
+},
+{
+"id": 275,
+"lesson": 3,
+"fr": "un os",
+"ja": "骨"
+},
+{
+"id": 276,
+"lesson": 3,
+"fr": "une peau",
+"ja": "皮膚"
+},
+{
+"id": 277,
+"lesson": 3,
+"fr": "un cerveau",
+"ja": "脳"
+},
+{
+"id": 278,
+"lesson": 3,
+"fr": "la santé",
+"ja": "健康"
+},
+{
+"id": 279,
+"lesson": 3,
+"fr": "une maladie",
+"ja": "病気"
+},
+{
+"id": 280,
+"lesson": 3,
+"fr": "une douleur",
+"ja": "痛み"
+},
+{
+"id": 281,
+"lesson": 3,
+"fr": "de la fièvre",
+"ja": "熱・発熱"
+},
+{
+"id": 282,
+"lesson": 3,
+"fr": "un rhume",
+"ja": "風邪"
+},
+{
+"id": 283,
+"lesson": 3,
+"fr": "une toux",
+"ja": "せき"
+},
+{
+"id": 284,
+"lesson": 3,
+"fr": "un médicament",
+"ja": "薬"
+},
+{
+"id": 285,
+"lesson": 3,
+"fr": "un hôpital",
+"ja": "病院"
+},
+{
+"id": 286,
+"lesson": 3,
+"fr": "une pharmacie",
+"ja": "薬局"
+},
+{
+"id": 287,
+"lesson": 3,
+"fr": "la fatigue",
+"ja": "疲労"
+},
+{
+"id": 288,
+"lesson": 3,
+"fr": "la faim",
+"ja": "空腹"
+},
+{
+"id": 289,
+"lesson": 3,
+"fr": "la soif",
+"ja": "のどの渇き"
+},
+{
+"id": 290,
+"lesson": 3,
+"fr": "le sommeil",
+"ja": "睡眠"
+},
+{
+"id": 291,
+"lesson": 3,
+"fr": "un sourire",
+"ja": "笑顔"
+},
+{
+"id": 292,
+"lesson": 3,
+"fr": "une larme",
+"ja": "涙"
+},
+{
+"id": 293,
+"lesson": 3,
+"fr": "un rire",
+"ja": "笑い"
+},
+{
+"id": 294,
+"lesson": 3,
+"fr": "un sentiment",
+"ja": "感情"
+},
+{
+"id": 295,
+"lesson": 3,
+"fr": "une peur",
+"ja": "恐れ"
+},
+{
+"id": 296,
+"lesson": 3,
+"fr": "une joie",
+"ja": "喜び"
+},
+{
+"id": 297,
+"lesson": 3,
+"fr": "une colère",
+"ja": "怒り"
+},
+{
+"id": 298,
+"lesson": 3,
+"fr": "une tristesse",
+"ja": "悲しみ"
+},
+{
+"id": 299,
+"lesson": 3,
+"fr": "l’amour",
+"ja": "愛"
+},
+{
+"id": 300,
+"lesson": 3,
+"fr": "une amitié",
+"ja": "友情"
+},
+{
+"id": 301,
+"lesson": 4,
+"fr": "une maison",
+"ja": "家"
+},
+{
+"id": 302,
+"lesson": 4,
+"fr": "un appartement",
+"ja": "アパートの一室"
+},
+{
+"id": 303,
+"lesson": 4,
+"fr": "une chambre",
+"ja": "部屋・寝室"
+},
+{
+"id": 304,
+"lesson": 4,
+"fr": "un salon",
+"ja": "居間"
+},
+{
+"id": 305,
+"lesson": 4,
+"fr": "une cuisine",
+"ja": "台所"
+},
+{
+"id": 306,
+"lesson": 4,
+"fr": "une salle de bains",
+"ja": "浴室"
+},
+{
+"id": 307,
+"lesson": 4,
+"fr": "les toilettes",
+"ja": "トイレ"
+},
+{
+"id": 308,
+"lesson": 4,
+"fr": "une entrée",
+"ja": "玄関・入り口"
+},
+{
+"id": 309,
+"lesson": 4,
+"fr": "un couloir",
+"ja": "廊下"
+},
+{
+"id": 310,
+"lesson": 4,
+"fr": "un balcon",
+"ja": "ベランダ"
+},
+{
+"id": 311,
+"lesson": 4,
+"fr": "un jardin",
+"ja": "庭"
+},
+{
+"id": 312,
+"lesson": 4,
+"fr": "un toit",
+"ja": "屋根"
+},
+{
+"id": 313,
+"lesson": 4,
+"fr": "un mur",
+"ja": "壁"
+},
+{
+"id": 314,
+"lesson": 4,
+"fr": "un sol",
+"ja": "床"
+},
+{
+"id": 315,
+"lesson": 4,
+"fr": "un plafond",
+"ja": "天井"
+},
+{
+"id": 316,
+"lesson": 4,
+"fr": "une porte",
+"ja": "ドア"
+},
+{
+"id": 317,
+"lesson": 4,
+"fr": "une fenêtre",
+"ja": "窓"
+},
+{
+"id": 318,
+"lesson": 4,
+"fr": "un escalier",
+"ja": "階段"
+},
+{
+"id": 319,
+"lesson": 4,
+"fr": "un ascenseur",
+"ja": "エレベーター"
+},
+{
+"id": 320,
+"lesson": 4,
+"fr": "une clé",
+"ja": "鍵"
+},
+{
+"id": 321,
+"lesson": 4,
+"fr": "toi",
+"ja": "君（強勢形）"
+},
+{
+"id": 322,
+"lesson": 4,
+"fr": "une table",
+"ja": "テーブル"
+},
+{
+"id": 323,
+"lesson": 4,
+"fr": "une chaise",
+"ja": "椅子"
+},
+{
+"id": 324,
+"lesson": 4,
+"fr": "un canapé",
+"ja": "ソファ"
+},
+{
+"id": 325,
+"lesson": 4,
+"fr": "un lit",
+"ja": "ベッド"
+},
+{
+"id": 326,
+"lesson": 4,
+"fr": "un oreiller",
+"ja": "枕"
+},
+{
+"id": 327,
+"lesson": 4,
+"fr": "une couverture",
+"ja": "毛布"
+},
+{
+"id": 328,
+"lesson": 4,
+"fr": "un drap",
+"ja": "シーツ"
+},
+{
+"id": 329,
+"lesson": 4,
+"fr": "une armoire",
+"ja": "たんす"
+},
+{
+"id": 330,
+"lesson": 4,
+"fr": "une étagère",
+"ja": "棚"
+},
+{
+"id": 331,
+"lesson": 4,
+"fr": "un bureau",
+"ja": "机・オフィス"
+},
+{
+"id": 332,
+"lesson": 4,
+"fr": "une lampe",
+"ja": "ランプ"
+},
+{
+"id": 333,
+"lesson": 4,
+"fr": "une lumière",
+"ja": "明かり"
+},
+{
+"id": 334,
+"lesson": 4,
+"fr": "une ampoule",
+"ja": "電球"
+},
+{
+"id": 335,
+"lesson": 4,
+"fr": "un miroir",
+"ja": "鏡"
+},
+{
+"id": 336,
+"lesson": 4,
+"fr": "un rideau",
+"ja": "カーテン"
+},
+{
+"id": 337,
+"lesson": 4,
+"fr": "un tapis",
+"ja": "じゅうたん"
+},
+{
+"id": 338,
+"lesson": 4,
+"fr": "une horloge",
+"ja": "掛け時計"
+},
+{
+"id": 339,
+"lesson": 4,
+"fr": "une montre",
+"ja": "腕時計"
+},
+{
+"id": 340,
+"lesson": 4,
+"fr": "un réveil",
+"ja": "目覚まし時計"
+},
+{
+"id": 341,
+"lesson": 4,
+"fr": "un téléphone",
+"ja": "電話"
+},
+{
+"id": 342,
+"lesson": 4,
+"fr": "un portable",
+"ja": "携帯電話"
+},
+{
+"id": 343,
+"lesson": 4,
+"fr": "un ordinateur",
+"ja": "パソコン"
+},
+{
+"id": 344,
+"lesson": 4,
+"fr": "un écran",
+"ja": "画面"
+},
+{
+"id": 345,
+"lesson": 4,
+"fr": "un clavier",
+"ja": "キーボード"
+},
+{
+"id": 346,
+"lesson": 4,
+"fr": "une souris",
+"ja": "マウス"
+},
+{
+"id": 347,
+"lesson": 4,
+"fr": "une télévision",
+"ja": "テレビ"
+},
+{
+"id": 348,
+"lesson": 4,
+"fr": "une radio",
+"ja": "ラジオ"
+},
+{
+"id": 349,
+"lesson": 4,
+"fr": "un appareil photo",
+"ja": "カメラ"
+},
+{
+"id": 350,
+"lesson": 4,
+"fr": "une photo",
+"ja": "写真"
+},
+{
+"id": 351,
+"lesson": 4,
+"fr": "une vidéo",
+"ja": "動画"
+},
+{
+"id": 352,
+"lesson": 4,
+"fr": "une prise",
+"ja": "コンセント"
+},
+{
+"id": 353,
+"lesson": 4,
+"fr": "un câble",
+"ja": "ケーブル"
+},
+{
+"id": 354,
+"lesson": 4,
+"fr": "une batterie",
+"ja": "バッテリー"
+},
+{
+"id": 355,
+"lesson": 4,
+"fr": "un chargeur",
+"ja": "充電器"
+},
+{
+"id": 356,
+"lesson": 4,
+"fr": "une boîte",
+"ja": "箱"
+},
+{
+"id": 357,
+"lesson": 4,
+"fr": "un sac",
+"ja": "かばん"
+},
+{
+"id": 358,
+"lesson": 4,
+"fr": "un portefeuille",
+"ja": "財布"
+},
+{
+"id": 359,
+"lesson": 4,
+"fr": "une valise",
+"ja": "スーツケース"
+},
+{
+"id": 360,
+"lesson": 4,
+"fr": "un parapluie",
+"ja": "傘"
+},
+{
+"id": 361,
+"lesson": 4,
+"fr": "une serviette",
+"ja": "タオル"
+},
+{
+"id": 362,
+"lesson": 4,
+"fr": "un savon",
+"ja": "石けん"
+},
+{
+"id": 363,
+"lesson": 4,
+"fr": "un shampooing",
+"ja": "シャンプー"
+},
+{
+"id": 364,
+"lesson": 4,
+"fr": "une brosse",
+"ja": "ブラシ"
+},
+{
+"id": 365,
+"lesson": 4,
+"fr": "une brosse à dents",
+"ja": "歯ブラシ"
+},
+{
+"id": 366,
+"lesson": 4,
+"fr": "un dentifrice",
+"ja": "歯磨き粉"
+},
+{
+"id": 367,
+"lesson": 4,
+"fr": "un peigne",
+"ja": "くし"
+},
+{
+"id": 368,
+"lesson": 4,
+"fr": "un vêtement",
+"ja": "衣服"
+},
+{
+"id": 369,
+"lesson": 4,
+"fr": "une chemise",
+"ja": "シャツ"
+},
+{
+"id": 370,
+"lesson": 4,
+"fr": "un tee-shirt",
+"ja": "Tシャツ"
+},
+{
+"id": 371,
+"lesson": 4,
+"fr": "un pantalon",
+"ja": "ズボン"
+},
+{
+"id": 372,
+"lesson": 4,
+"fr": "une jupe",
+"ja": "スカート"
+},
+{
+"id": 373,
+"lesson": 4,
+"fr": "une robe",
+"ja": "ワンピース"
+},
+{
+"id": 374,
+"lesson": 4,
+"fr": "un manteau",
+"ja": "コート"
+},
+{
+"id": 375,
+"lesson": 4,
+"fr": "une veste",
+"ja": "上着"
+},
+{
+"id": 376,
+"lesson": 4,
+"fr": "un pull",
+"ja": "セーター"
+},
+{
+"id": 377,
+"lesson": 4,
+"fr": "une chaussure",
+"ja": "靴"
+},
+{
+"id": 378,
+"lesson": 4,
+"fr": "une chaussette",
+"ja": "靴下"
+},
+{
+"id": 379,
+"lesson": 4,
+"fr": "un chapeau",
+"ja": "帽子"
+},
+{
+"id": 380,
+"lesson": 4,
+"fr": "une casquette",
+"ja": "キャップ"
+},
+{
+"id": 381,
+"lesson": 4,
+"fr": "une ceinture",
+"ja": "ベルト"
+},
+{
+"id": 382,
+"lesson": 4,
+"fr": "une poche",
+"ja": "ポケット"
+},
+{
+"id": 383,
+"lesson": 4,
+"fr": "un bouton",
+"ja": "ボタン"
+},
+{
+"id": 384,
+"lesson": 4,
+"fr": "une fermeture éclair",
+"ja": "ファスナー"
+},
+{
+"id": 385,
+"lesson": 4,
+"fr": "une bague",
+"ja": "指輪"
+},
+{
+"id": 386,
+"lesson": 4,
+"fr": "un couteau",
+"ja": "ナイフ"
+},
+{
+"id": 387,
+"lesson": 4,
+"fr": "un collier",
+"ja": "ネックレス"
+},
+{
+"id": 388,
+"lesson": 4,
+"fr": "une poubelle",
+"ja": "ごみ箱"
+},
+{
+"id": 389,
+"lesson": 4,
+"fr": "un déchet",
+"ja": "ごみ"
+},
+{
+"id": 390,
+"lesson": 4,
+"fr": "un balai",
+"ja": "ほうき"
+},
+{
+"id": 391,
+"lesson": 4,
+"fr": "un aspirateur",
+"ja": "掃除機"
+},
+{
+"id": 392,
+"lesson": 4,
+"fr": "une machine à laver",
+"ja": "洗濯機"
+},
+{
+"id": 393,
+"lesson": 4,
+"fr": "un réfrigérateur",
+"ja": "冷蔵庫"
+},
+{
+"id": 394,
+"lesson": 4,
+"fr": "un four",
+"ja": "オーブン"
+},
+{
+"id": 395,
+"lesson": 4,
+"fr": "un micro-ondes",
+"ja": "電子レンジ"
+},
+{
+"id": 396,
+"lesson": 4,
+"fr": "une assiette",
+"ja": "皿"
+},
+{
+"id": 397,
+"lesson": 4,
+"fr": "un verre",
+"ja": "グラス"
+},
+{
+"id": 398,
+"lesson": 4,
+"fr": "une tasse",
+"ja": "カップ"
+},
+{
+"id": 399,
+"lesson": 4,
+"fr": "une cuillère",
+"ja": "スプーン"
+},
+{
+"id": 400,
+"lesson": 4,
+"fr": "une fourchette",
+"ja": "フォーク"
+},
+{
+"id": 401,
+"lesson": 5,
+"fr": "un repas",
+"ja": "食事"
+},
+{
+"id": 402,
+"lesson": 5,
+"fr": "un petit-déjeuner",
+"ja": "朝食"
+},
+{
+"id": 403,
+"lesson": 5,
+"fr": "un déjeuner",
+"ja": "昼食"
+},
+{
+"id": 404,
+"lesson": 5,
+"fr": "un dîner",
+"ja": "夕食"
+},
+{
+"id": 405,
+"lesson": 5,
+"fr": "un restaurant",
+"ja": "レストラン"
+},
+{
+"id": 406,
+"lesson": 5,
+"fr": "un café",
+"ja": "コーヒー・カフェ"
+},
+{
+"id": 407,
+"lesson": 5,
+"fr": "un thé",
+"ja": "お茶"
+},
+{
+"id": 408,
+"lesson": 5,
+"fr": "de l'eau",
+"ja": "水"
+},
+{
+"id": 409,
+"lesson": 5,
+"fr": "du lait",
+"ja": "牛乳"
+},
+{
+"id": 410,
+"lesson": 5,
+"fr": "un jus",
+"ja": "ジュース"
+},
+{
+"id": 411,
+"lesson": 5,
+"fr": "un jus d'orange",
+"ja": "オレンジジュース"
+},
+{
+"id": 412,
+"lesson": 5,
+"fr": "du chocolat",
+"ja": "チョコレート"
+},
+{
+"id": 413,
+"lesson": 5,
+"fr": "un chocolat chaud",
+"ja": "ホットチョコレート"
+},
+{
+"id": 414,
+"lesson": 5,
+"fr": "du pain",
+"ja": "パン"
+},
+{
+"id": 415,
+"lesson": 5,
+"fr": "une baguette",
+"ja": "バゲット"
+},
+{
+"id": 416,
+"lesson": 5,
+"fr": "un croissant",
+"ja": "クロワッサン"
+},
+{
+"id": 417,
+"lesson": 5,
+"fr": "du beurre",
+"ja": "バター"
+},
+{
+"id": 418,
+"lesson": 5,
+"fr": "de la confiture",
+"ja": "ジャム"
+},
+{
+"id": 419,
+"lesson": 5,
+"fr": "du miel",
+"ja": "蜂蜜"
+},
+{
+"id": 420,
+"lesson": 5,
+"fr": "du fromage",
+"ja": "チーズ"
+},
+{
+"id": 421,
+"lesson": 5,
+"fr": "un œuf",
+"ja": "卵"
+},
+{
+"id": 422,
+"lesson": 5,
+"fr": "de la viande",
+"ja": "肉"
+},
+{
+"id": 423,
+"lesson": 5,
+"fr": "du bœuf",
+"ja": "牛肉"
+},
+{
+"id": 424,
+"lesson": 5,
+"fr": "du porc",
+"ja": "豚肉"
+},
+{
+"id": 425,
+"lesson": 5,
+"fr": "du poulet",
+"ja": "鶏肉"
+},
+{
+"id": 426,
+"lesson": 5,
+"fr": "un poisson",
+"ja": "魚"
+},
+{
+"id": 427,
+"lesson": 5,
+"fr": "une crevette",
+"ja": "エビ"
+},
+{
+"id": 428,
+"lesson": 5,
+"fr": "du jambon",
+"ja": "ハム"
+},
+{
+"id": 429,
+"lesson": 5,
+"fr": "une saucisse",
+"ja": "ソーセージ"
+},
+{
+"id": 430,
+"lesson": 5,
+"fr": "du riz",
+"ja": "米・ご飯"
+},
+{
+"id": 431,
+"lesson": 5,
+"fr": "des pâtes",
+"ja": "パスタ"
+},
+{
+"id": 432,
+"lesson": 5,
+"fr": "une pomme de terre",
+"ja": "じゃがいも"
+},
+{
+"id": 433,
+"lesson": 5,
+"fr": "des frites",
+"ja": "フライドポテト"
+},
+{
+"id": 434,
+"lesson": 5,
+"fr": "une soupe",
+"ja": "スープ"
+},
+{
+"id": 435,
+"lesson": 5,
+"fr": "une salade",
+"ja": "サラダ"
+},
+{
+"id": 436,
+"lesson": 5,
+"fr": "un sandwich",
+"ja": "サンドイッチ"
+},
+{
+"id": 437,
+"lesson": 5,
+"fr": "une pizza",
+"ja": "ピザ"
+},
+{
+"id": 438,
+"lesson": 5,
+"fr": "une sauce",
+"ja": "ソース"
+},
+{
+"id": 439,
+"lesson": 5,
+"fr": "du sel",
+"ja": "塩"
+},
+{
+"id": 440,
+"lesson": 5,
+"fr": "du poivre",
+"ja": "こしょう"
+},
+{
+"id": 441,
+"lesson": 5,
+"fr": "du sucre",
+"ja": "砂糖"
+},
+{
+"id": 442,
+"lesson": 5,
+"fr": "de l'huile",
+"ja": "油"
+},
+{
+"id": 443,
+"lesson": 5,
+"fr": "du vinaigre",
+"ja": "酢"
+},
+{
+"id": 444,
+"lesson": 5,
+"fr": "de la farine",
+"ja": "小麦粉"
+},
+{
+"id": 445,
+"lesson": 5,
+"fr": "un fruit",
+"ja": "果物"
+},
+{
+"id": 446,
+"lesson": 5,
+"fr": "une pomme",
+"ja": "りんご"
+},
+{
+"id": 447,
+"lesson": 5,
+"fr": "une banane",
+"ja": "バナナ"
+},
+{
+"id": 448,
+"lesson": 5,
+"fr": "une orange",
+"ja": "オレンジ"
+},
+{
+"id": 449,
+"lesson": 5,
+"fr": "un citron",
+"ja": "レモン"
+},
+{
+"id": 450,
+"lesson": 5,
+"fr": "une fraise",
+"ja": "いちご"
+},
+{
+"id": 451,
+"lesson": 5,
+"fr": "du raisin",
+"ja": "ぶどう"
+},
+{
+"id": 452,
+"lesson": 5,
+"fr": "une poire",
+"ja": "洋梨"
+},
+{
+"id": 453,
+"lesson": 5,
+"fr": "une pêche",
+"ja": "桃"
+},
+{
+"id": 454,
+"lesson": 5,
+"fr": "une cerise",
+"ja": "さくらんぼ"
+},
+{
+"id": 455,
+"lesson": 5,
+"fr": "une pastèque",
+"ja": "スイカ"
+},
+{
+"id": 456,
+"lesson": 5,
+"fr": "un melon",
+"ja": "メロン"
+},
+{
+"id": 457,
+"lesson": 5,
+"fr": "un ananas",
+"ja": "パイナップル"
+},
+{
+"id": 458,
+"lesson": 5,
+"fr": "une mangue",
+"ja": "マンゴー"
+},
+{
+"id": 459,
+"lesson": 5,
+"fr": "une tomate",
+"ja": "トマト"
+},
+{
+"id": 460,
+"lesson": 5,
+"fr": "une carotte",
+"ja": "にんじん"
+},
+{
+"id": 461,
+"lesson": 5,
+"fr": "un oignon",
+"ja": "玉ねぎ"
+},
+{
+"id": 462,
+"lesson": 5,
+"fr": "de l'ail",
+"ja": "にんにく"
+},
+{
+"id": 463,
+"lesson": 5,
+"fr": "un concombre",
+"ja": "きゅうり"
+},
+{
+"id": 464,
+"lesson": 5,
+"fr": "une laitue",
+"ja": "レタス"
+},
+{
+"id": 465,
+"lesson": 5,
+"fr": "un chou",
+"ja": "キャベツ"
+},
+{
+"id": 466,
+"lesson": 5,
+"fr": "un brocoli",
+"ja": "ブロッコリー"
+},
+{
+"id": 467,
+"lesson": 5,
+"fr": "un champignon",
+"ja": "きのこ"
+},
+{
+"id": 468,
+"lesson": 5,
+"fr": "un légume",
+"ja": "野菜"
+},
+{
+"id": 469,
+"lesson": 5,
+"fr": "un haricot",
+"ja": "豆"
+},
+{
+"id": 470,
+"lesson": 5,
+"fr": "un pois",
+"ja": "えんどう豆"
+},
+{
+"id": 471,
+"lesson": 5,
+"fr": "du maïs",
+"ja": "とうもろこし"
+},
+{
+"id": 472,
+"lesson": 5,
+"fr": "un gâteau",
+"ja": "ケーキ"
+},
+{
+"id": 473,
+"lesson": 5,
+"fr": "un biscuit",
+"ja": "ビスケット"
+},
+{
+"id": 474,
+"lesson": 5,
+"fr": "une glace",
+"ja": "アイスクリーム"
+},
+{
+"id": 475,
+"lesson": 5,
+"fr": "un dessert",
+"ja": "デザート"
+},
+{
+"id": 476,
+"lesson": 5,
+"fr": "une boisson",
+"ja": "飲み物"
+},
+{
+"id": 477,
+"lesson": 5,
+"fr": "une bouteille",
+"ja": "ボトル"
+},
+{
+"id": 478,
+"lesson": 5,
+"fr": "une canette",
+"ja": "缶"
+},
+{
+"id": 479,
+"lesson": 5,
+"fr": "une carafe",
+"ja": "水差し"
+},
+{
+"id": 480,
+"lesson": 5,
+"fr": "une addition",
+"ja": "お勘定"
+},
+{
+"id": 481,
+"lesson": 5,
+"fr": "un prix",
+"ja": "値段"
+},
+{
+"id": 482,
+"lesson": 5,
+"fr": "un euro",
+"ja": "ユーロ"
+},
+{
+"id": 483,
+"lesson": 5,
+"fr": "une monnaie",
+"ja": "小銭・通貨"
+},
+{
+"id": 484,
+"lesson": 5,
+"fr": "un billet",
+"ja": "紙幣・チケット"
+},
+{
+"id": 485,
+"lesson": 5,
+"fr": "une carte bancaire",
+"ja": "銀行カード"
+},
+{
+"id": 486,
+"lesson": 5,
+"fr": "une caisse",
+"ja": "レジ"
+},
+{
+"id": 487,
+"lesson": 5,
+"fr": "un magasin",
+"ja": "店"
+},
+{
+"id": 488,
+"lesson": 5,
+"fr": "un marché",
+"ja": "市場"
+},
+{
+"id": 489,
+"lesson": 5,
+"fr": "un supermarché",
+"ja": "スーパー"
+},
+{
+"id": 490,
+"lesson": 5,
+"fr": "une boulangerie",
+"ja": "パン屋"
+},
+{
+"id": 491,
+"lesson": 5,
+"fr": "une pâtisserie",
+"ja": "菓子店"
+},
+{
+"id": 492,
+"lesson": 5,
+"fr": "une boucherie",
+"ja": "肉屋"
+},
+{
+"id": 493,
+"lesson": 5,
+"fr": "une poissonnerie",
+"ja": "魚屋"
+},
+{
+"id": 494,
+"lesson": 5,
+"fr": "une épicerie",
+"ja": "食料品店"
+},
+{
+"id": 495,
+"lesson": 5,
+"fr": "une librairie",
+"ja": "書店"
+},
+{
+"id": 496,
+"lesson": 5,
+"fr": "une taille",
+"ja": "サイズ"
+},
+{
+"id": 497,
+"lesson": 5,
+"fr": "une réduction",
+"ja": "割引"
+},
+{
+"id": 498,
+"lesson": 5,
+"fr": "une promotion",
+"ja": "特売"
+},
+{
+"id": 499,
+"lesson": 5,
+"fr": "un reçu",
+"ja": "レシート"
+},
+{
+"id": 500,
+"lesson": 5,
+"fr": "un achat",
+"ja": "買い物・購入"
+},
+{
+"id": 501,
+"lesson": 6,
+"fr": "maintenant",
+"ja": "今"
+},
+{
+"id": 502,
+"lesson": 6,
+"fr": "lundi",
+"ja": "月曜日"
+},
+{
+"id": 503,
+"lesson": 6,
+"fr": "mardi",
+"ja": "火曜日"
+},
+{
+"id": 504,
+"lesson": 6,
+"fr": "mercredi",
+"ja": "水曜日"
+},
+{
+"id": 505,
+"lesson": 6,
+"fr": "jeudi",
+"ja": "木曜日"
+},
+{
+"id": 506,
+"lesson": 6,
+"fr": "vendredi",
+"ja": "金曜日"
+},
+{
+"id": 507,
+"lesson": 6,
+"fr": "samedi",
+"ja": "土曜日"
+},
+{
+"id": 508,
+"lesson": 6,
+"fr": "dimanche",
+"ja": "日曜日"
+},
+{
+"id": 509,
+"lesson": 6,
+"fr": "janvier",
+"ja": "1月"
+},
+{
+"id": 510,
+"lesson": 6,
+"fr": "février",
+"ja": "2月"
+},
+{
+"id": 511,
+"lesson": 6,
+"fr": "mars",
+"ja": "3月"
+},
+{
+"id": 512,
+"lesson": 6,
+"fr": "avril",
+"ja": "4月"
+},
+{
+"id": 513,
+"lesson": 6,
+"fr": "mai",
+"ja": "5月"
+},
+{
+"id": 514,
+"lesson": 6,
+"fr": "juin",
+"ja": "6月"
+},
+{
+"id": 515,
+"lesson": 6,
+"fr": "juillet",
+"ja": "7月"
+},
+{
+"id": 516,
+"lesson": 6,
+"fr": "août",
+"ja": "8月"
+},
+{
+"id": 517,
+"lesson": 6,
+"fr": "septembre",
+"ja": "9月"
+},
+{
+"id": 518,
+"lesson": 6,
+"fr": "octobre",
+"ja": "10月"
+},
+{
+"id": 519,
+"lesson": 6,
+"fr": "novembre",
+"ja": "11月"
+},
+{
+"id": 520,
+"lesson": 6,
+"fr": "décembre",
+"ja": "12月"
+},
+{
+"id": 521,
+"lesson": 6,
+"fr": "un temps",
+"ja": "時間・天気"
+},
+{
+"id": 522,
+"lesson": 6,
+"fr": "une heure",
+"ja": "時間・時刻"
+},
+{
+"id": 523,
+"lesson": 6,
+"fr": "une minute",
+"ja": "分"
+},
+{
+"id": 524,
+"lesson": 6,
+"fr": "une seconde",
+"ja": "秒"
+},
+{
+"id": 525,
+"lesson": 6,
+"fr": "un jour",
+"ja": "日"
+},
+{
+"id": 526,
+"lesson": 6,
+"fr": "une journée",
+"ja": "一日"
+},
+{
+"id": 527,
+"lesson": 6,
+"fr": "une nuit",
+"ja": "夜"
+},
+{
+"id": 528,
+"lesson": 6,
+"fr": "un matin",
+"ja": "朝"
+},
+{
+"id": 529,
+"lesson": 6,
+"fr": "un midi",
+"ja": "正午"
+},
+{
+"id": 530,
+"lesson": 6,
+"fr": "un après-midi",
+"ja": "午後"
+},
+{
+"id": 531,
+"lesson": 6,
+"fr": "un soir",
+"ja": "夕方・夜"
+},
+{
+"id": 532,
+"lesson": 6,
+"fr": "une semaine",
+"ja": "週"
+},
+{
+"id": 533,
+"lesson": 6,
+"fr": "un mois",
+"ja": "月（期間）"
+},
+{
+"id": 534,
+"lesson": 6,
+"fr": "une année",
+"ja": "年"
+},
+{
+"id": 535,
+"lesson": 6,
+"fr": "un an",
+"ja": "年"
+},
+{
+"id": 536,
+"lesson": 6,
+"fr": "une date",
+"ja": "日付"
+},
+{
+"id": 537,
+"lesson": 6,
+"fr": "un calendrier",
+"ja": "カレンダー"
+},
+{
+"id": 538,
+"lesson": 6,
+"fr": "savoir",
+"ja": "知っている（知識）"
+},
+{
+"id": 539,
+"lesson": 6,
+"fr": "cette",
+"ja": "この・その（女性）"
+},
+{
+"id": 540,
+"lesson": 6,
+"fr": "connaître",
+"ja": "知っている（面識）"
+},
+{
+"id": 541,
+"lesson": 6,
+"fr": "bientôt",
+"ja": "まもなく"
+},
+{
+"id": 542,
+"lesson": 6,
+"fr": "toujours",
+"ja": "いつも"
+},
+{
+"id": 543,
+"lesson": 6,
+"fr": "souvent",
+"ja": "しばしば"
+},
+{
+"id": 544,
+"lesson": 6,
+"fr": "parfois",
+"ja": "ときどき"
+},
+{
+"id": 545,
+"lesson": 6,
+"fr": "jamais",
+"ja": "決して〜ない"
+},
+{
+"id": 546,
+"lesson": 6,
+"fr": "déjà",
+"ja": "すでに"
+},
+{
+"id": 547,
+"lesson": 6,
+"fr": "ensuite",
+"ja": "それから"
+},
+{
+"id": 548,
+"lesson": 6,
+"fr": "avant",
+"ja": "前に"
+},
+{
+"id": 549,
+"lesson": 6,
+"fr": "après",
+"ja": "後で"
+},
+{
+"id": 550,
+"lesson": 6,
+"fr": "pendant",
+"ja": "〜の間"
+},
+{
+"id": 551,
+"lesson": 6,
+"fr": "une saison",
+"ja": "季節"
+},
+{
+"id": 552,
+"lesson": 6,
+"fr": "le printemps",
+"ja": "春"
+},
+{
+"id": 553,
+"lesson": 6,
+"fr": "l'été",
+"ja": "夏"
+},
+{
+"id": 554,
+"lesson": 6,
+"fr": "l'automne",
+"ja": "秋"
+},
+{
+"id": 555,
+"lesson": 6,
+"fr": "l'hiver",
+"ja": "冬"
+},
+{
+"id": 556,
+"lesson": 6,
+"fr": "le soleil",
+"ja": "太陽"
+},
+{
+"id": 557,
+"lesson": 6,
+"fr": "la lune",
+"ja": "月（天体）"
+},
+{
+"id": 558,
+"lesson": 6,
+"fr": "une étoile",
+"ja": "星"
+},
+{
+"id": 559,
+"lesson": 6,
+"fr": "le ciel",
+"ja": "空"
+},
+{
+"id": 560,
+"lesson": 6,
+"fr": "un nuage",
+"ja": "雲"
+},
+{
+"id": 561,
+"lesson": 6,
+"fr": "la pluie",
+"ja": "雨"
+},
+{
+"id": 562,
+"lesson": 6,
+"fr": "la neige",
+"ja": "雪"
+},
+{
+"id": 563,
+"lesson": 6,
+"fr": "le vent",
+"ja": "風"
+},
+{
+"id": 564,
+"lesson": 6,
+"fr": "un orage",
+"ja": "雷雨"
+},
+{
+"id": 565,
+"lesson": 6,
+"fr": "le tonnerre",
+"ja": "雷鳴"
+},
+{
+"id": 566,
+"lesson": 6,
+"fr": "un éclair",
+"ja": "稲妻"
+},
+{
+"id": 567,
+"lesson": 6,
+"fr": "du brouillard",
+"ja": "霧"
+},
+{
+"id": 568,
+"lesson": 6,
+"fr": "une température",
+"ja": "気温"
+},
+{
+"id": 569,
+"lesson": 6,
+"fr": "une chaleur",
+"ja": "暑さ・熱"
+},
+{
+"id": 570,
+"lesson": 6,
+"fr": "le froid",
+"ja": "寒さ"
+},
+{
+"id": 571,
+"lesson": 6,
+"fr": "la météo",
+"ja": "天気予報"
+},
+{
+"id": 572,
+"lesson": 6,
+"fr": "la nature",
+"ja": "自然"
+},
+{
+"id": 573,
+"lesson": 6,
+"fr": "un arbre",
+"ja": "木"
+},
+{
+"id": 574,
+"lesson": 6,
+"fr": "une fleur",
+"ja": "花"
+},
+{
+"id": 575,
+"lesson": 6,
+"fr": "de l'herbe",
+"ja": "草"
+},
+{
+"id": 576,
+"lesson": 6,
+"fr": "une feuille",
+"ja": "葉"
+},
+{
+"id": 577,
+"lesson": 6,
+"fr": "une branche",
+"ja": "枝"
+},
+{
+"id": 578,
+"lesson": 6,
+"fr": "une racine",
+"ja": "根"
+},
+{
+"id": 579,
+"lesson": 6,
+"fr": "une forêt",
+"ja": "森"
+},
+{
+"id": 580,
+"lesson": 6,
+"fr": "une montagne",
+"ja": "山"
+},
+{
+"id": 581,
+"lesson": 6,
+"fr": "une colline",
+"ja": "丘"
+},
+{
+"id": 582,
+"lesson": 6,
+"fr": "une vallée",
+"ja": "谷"
+},
+{
+"id": 583,
+"lesson": 6,
+"fr": "une rivière",
+"ja": "川"
+},
+{
+"id": 584,
+"lesson": 6,
+"fr": "un fleuve",
+"ja": "大河"
+},
+{
+"id": 585,
+"lesson": 6,
+"fr": "un lac",
+"ja": "湖"
+},
+{
+"id": 586,
+"lesson": 6,
+"fr": "une mer",
+"ja": "海"
+},
+{
+"id": 587,
+"lesson": 6,
+"fr": "un océan",
+"ja": "大洋"
+},
+{
+"id": 588,
+"lesson": 6,
+"fr": "une plage",
+"ja": "浜辺"
+},
+{
+"id": 589,
+"lesson": 6,
+"fr": "une île",
+"ja": "島"
+},
+{
+"id": 590,
+"lesson": 6,
+"fr": "un désert",
+"ja": "砂漠"
+},
+{
+"id": 591,
+"lesson": 6,
+"fr": "une terre",
+"ja": "地面・地球"
+},
+{
+"id": 592,
+"lesson": 6,
+"fr": "une pierre",
+"ja": "石"
+},
+{
+"id": 593,
+"lesson": 6,
+"fr": "c'est où ?",
+"ja": "それはどこですか？"
+},
+{
+"id": 594,
+"lesson": 6,
+"fr": "du sable",
+"ja": "砂"
+},
+{
+"id": 595,
+"lesson": 6,
+"fr": "un feu",
+"ja": "火"
+},
+{
+"id": 596,
+"lesson": 6,
+"fr": "une fumée",
+"ja": "煙"
+},
+{
+"id": 597,
+"lesson": 6,
+"fr": "de l'air",
+"ja": "空気"
+},
+{
+"id": 598,
+"lesson": 6,
+"fr": "une ombre",
+"ja": "影"
+},
+{
+"id": 599,
+"lesson": 6,
+"fr": "une couleur",
+"ja": "色"
+},
+{
+"id": 600,
+"lesson": 6,
+"fr": "un bruit",
+"ja": "音・騒音"
+},
+{
+"id": 601,
+"lesson": 7,
+"fr": "une ville",
+"ja": "都市"
+},
+{
+"id": 602,
+"lesson": 7,
+"fr": "un village",
+"ja": "村"
+},
+{
+"id": 603,
+"lesson": 7,
+"fr": "un pays",
+"ja": "国"
+},
+{
+"id": 604,
+"lesson": 7,
+"fr": "une région",
+"ja": "地域"
+},
+{
+"id": 605,
+"lesson": 7,
+"fr": "une capitale",
+"ja": "首都"
+},
+{
+"id": 606,
+"lesson": 7,
+"fr": "un quartier",
+"ja": "地区"
+},
+{
+"id": 607,
+"lesson": 7,
+"fr": "une rue",
+"ja": "通り"
+},
+{
+"id": 608,
+"lesson": 7,
+"fr": "une avenue",
+"ja": "大通り"
+},
+{
+"id": 609,
+"lesson": 7,
+"fr": "une route",
+"ja": "道"
+},
+{
+"id": 610,
+"lesson": 7,
+"fr": "un chemin",
+"ja": "小道"
+},
+{
+"id": 611,
+"lesson": 7,
+"fr": "un trottoir",
+"ja": "歩道"
+},
+{
+"id": 612,
+"lesson": 7,
+"fr": "une place",
+"ja": "広場・場所"
+},
+{
+"id": 613,
+"lesson": 7,
+"fr": "un carrefour",
+"ja": "交差点"
+},
+{
+"id": 614,
+"lesson": 7,
+"fr": "un pont",
+"ja": "橋"
+},
+{
+"id": 615,
+"lesson": 7,
+"fr": "un tunnel",
+"ja": "トンネル"
+},
+{
+"id": 616,
+"lesson": 7,
+"fr": "un bâtiment",
+"ja": "建物"
+},
+{
+"id": 617,
+"lesson": 7,
+"fr": "un immeuble",
+"ja": "集合住宅"
+},
+{
+"id": 618,
+"lesson": 7,
+"fr": "une adresse",
+"ja": "住所"
+},
+{
+"id": 619,
+"lesson": 7,
+"fr": "un numéro",
+"ja": "番号"
+},
+{
+"id": 620,
+"lesson": 7,
+"fr": "un code postal",
+"ja": "郵便番号"
+},
+{
+"id": 621,
+"lesson": 7,
+"fr": "une gare",
+"ja": "駅"
+},
+{
+"id": 622,
+"lesson": 7,
+"fr": "un quai",
+"ja": "ホーム・岸壁"
+},
+{
+"id": 623,
+"lesson": 7,
+"fr": "un train",
+"ja": "列車"
+},
+{
+"id": 624,
+"lesson": 7,
+"fr": "un métro",
+"ja": "地下鉄"
+},
+{
+"id": 625,
+"lesson": 7,
+"fr": "un tramway",
+"ja": "路面電車"
+},
+{
+"id": 626,
+"lesson": 7,
+"fr": "un autobus",
+"ja": "バス"
+},
+{
+"id": 627,
+"lesson": 7,
+"fr": "un bus",
+"ja": "バス（略称）"
+},
+{
+"id": 628,
+"lesson": 7,
+"fr": "un taxi",
+"ja": "タクシー"
+},
+{
+"id": 629,
+"lesson": 7,
+"fr": "une voiture",
+"ja": "自動車"
+},
+{
+"id": 630,
+"lesson": 7,
+"fr": "un vélo",
+"ja": "自転車"
+},
+{
+"id": 631,
+"lesson": 7,
+"fr": "une moto",
+"ja": "オートバイ"
+},
+{
+"id": 632,
+"lesson": 7,
+"fr": "un scooter",
+"ja": "スクーター"
+},
+{
+"id": 633,
+"lesson": 7,
+"fr": "un camion",
+"ja": "トラック"
+},
+{
+"id": 634,
+"lesson": 7,
+"fr": "un bateau",
+"ja": "船"
+},
+{
+"id": 635,
+"lesson": 7,
+"fr": "un avion",
+"ja": "飛行機"
+},
+{
+"id": 636,
+"lesson": 7,
+"fr": "un hélicoptère",
+"ja": "ヘリコプター"
+},
+{
+"id": 637,
+"lesson": 7,
+"fr": "un aéroport",
+"ja": "空港"
+},
+{
+"id": 638,
+"lesson": 7,
+"fr": "un port",
+"ja": "港"
+},
+{
+"id": 639,
+"lesson": 7,
+"fr": "une station",
+"ja": "停留所・駅"
+},
+{
+"id": 640,
+"lesson": 7,
+"fr": "un arrêt",
+"ja": "停留所"
+},
+{
+"id": 641,
+"lesson": 7,
+"fr": "un trajet",
+"ja": "道のり"
+},
+{
+"id": 642,
+"lesson": 7,
+"fr": "un voyage",
+"ja": "旅行"
+},
+{
+"id": 643,
+"lesson": 7,
+"fr": "un départ",
+"ja": "出発"
+},
+{
+"id": 644,
+"lesson": 7,
+"fr": "une arrivée",
+"ja": "到着"
+},
+{
+"id": 645,
+"lesson": 7,
+"fr": "une destination",
+"ja": "目的地"
+},
+{
+"id": 646,
+"lesson": 7,
+"fr": "un billet aller-retour",
+"ja": "往復チケット"
+},
+{
+"id": 647,
+"lesson": 7,
+"fr": "un ticket",
+"ja": "乗車券"
+},
+{
+"id": 648,
+"lesson": 7,
+"fr": "une réservation",
+"ja": "予約"
+},
+{
+"id": 649,
+"lesson": 7,
+"fr": "un passeport",
+"ja": "パスポート"
+},
+{
+"id": 650,
+"lesson": 7,
+"fr": "une carte d'identité",
+"ja": "身分証明書"
+},
+{
+"id": 651,
+"lesson": 7,
+"fr": "un visa",
+"ja": "ビザ"
+},
+{
+"id": 652,
+"lesson": 7,
+"fr": "un bagage",
+"ja": "手荷物"
+},
+{
+"id": 653,
+"lesson": 7,
+"fr": "un siège",
+"ja": "座席"
+},
+{
+"id": 654,
+"lesson": 7,
+"fr": "une ceinture de sécurité",
+"ja": "シートベルト"
+},
+{
+"id": 655,
+"lesson": 7,
+"fr": "tout droit",
+"ja": "まっすぐ"
+},
+{
+"id": 656,
+"lesson": 7,
+"fr": "un plan",
+"ja": "地図・計画"
+},
+{
+"id": 657,
+"lesson": 7,
+"fr": "une carte",
+"ja": "地図・カード"
+},
+{
+"id": 658,
+"lesson": 7,
+"fr": "une direction",
+"ja": "方向"
+},
+{
+"id": 659,
+"lesson": 7,
+"fr": "à gauche",
+"ja": "左"
+},
+{
+"id": 660,
+"lesson": 7,
+"fr": "à droite",
+"ja": "右"
+},
+{
+"id": 661,
+"lesson": 7,
+"fr": "le nord",
+"ja": "北"
+},
+{
+"id": 662,
+"lesson": 7,
+"fr": "le sud",
+"ja": "南"
+},
+{
+"id": 663,
+"lesson": 7,
+"fr": "l'est",
+"ja": "東"
+},
+{
+"id": 664,
+"lesson": 7,
+"fr": "l'ouest",
+"ja": "西"
+},
+{
+"id": 665,
+"lesson": 7,
+"fr": "un centre",
+"ja": "中心"
+},
+{
+"id": 666,
+"lesson": 7,
+"fr": "un coin",
+"ja": "角"
+},
+{
+"id": 667,
+"lesson": 7,
+"fr": "une distance",
+"ja": "距離"
+},
+{
+"id": 668,
+"lesson": 7,
+"fr": "une vitesse",
+"ja": "速度"
+},
+{
+"id": 669,
+"lesson": 7,
+"fr": "un kilomètre",
+"ja": "キロメートル"
+},
+{
+"id": 670,
+"lesson": 7,
+"fr": "un mètre",
+"ja": "メートル"
+},
+{
+"id": 671,
+"lesson": 7,
+"fr": "un feu rouge",
+"ja": "赤信号"
+},
+{
+"id": 672,
+"lesson": 7,
+"fr": "un passage piéton",
+"ja": "横断歩道"
+},
+{
+"id": 673,
+"lesson": 7,
+"fr": "un parking",
+"ja": "駐車場"
+},
+{
+"id": 674,
+"lesson": 7,
+"fr": "une station-service",
+"ja": "ガソリンスタンド"
+},
+{
+"id": 675,
+"lesson": 7,
+"fr": "un hôtel",
+"ja": "ホテル"
+},
+{
+"id": 676,
+"lesson": 7,
+"fr": "une auberge",
+"ja": "宿屋"
+},
+{
+"id": 677,
+"lesson": 7,
+"fr": "une réception",
+"ja": "受付"
+},
+{
+"id": 678,
+"lesson": 7,
+"fr": "une chambre simple",
+"ja": "シングルルーム"
+},
+{
+"id": 679,
+"lesson": 7,
+"fr": "une chambre double",
+"ja": "ダブルルーム"
+},
+{
+"id": 680,
+"lesson": 7,
+"fr": "à demain",
+"ja": "また明日"
+},
+{
+"id": 681,
+"lesson": 7,
+"fr": "un musée",
+"ja": "博物館"
+},
+{
+"id": 682,
+"lesson": 7,
+"fr": "un cinéma",
+"ja": "映画館"
+},
+{
+"id": 683,
+"lesson": 7,
+"fr": "un théâtre",
+"ja": "劇場"
+},
+{
+"id": 684,
+"lesson": 7,
+"fr": "un parc",
+"ja": "公園"
+},
+{
+"id": 685,
+"lesson": 7,
+"fr": "un zoo",
+"ja": "動物園"
+},
+{
+"id": 686,
+"lesson": 7,
+"fr": "un château",
+"ja": "城"
+},
+{
+"id": 687,
+"lesson": 7,
+"fr": "une église",
+"ja": "教会"
+},
+{
+"id": 688,
+"lesson": 7,
+"fr": "une mairie",
+"ja": "市役所"
+},
+{
+"id": 689,
+"lesson": 7,
+"fr": "la poste",
+"ja": "郵便局"
+},
+{
+"id": 690,
+"lesson": 7,
+"fr": "une banque",
+"ja": "銀行"
+},
+{
+"id": 691,
+"lesson": 7,
+"fr": "un distributeur",
+"ja": "ATM・自動販売機"
+},
+{
+"id": 692,
+"lesson": 7,
+"fr": "un commissariat",
+"ja": "警察署"
+},
+{
+"id": 693,
+"lesson": 7,
+"fr": "la police",
+"ja": "警察"
+},
+{
+"id": 694,
+"lesson": 7,
+"fr": "une bibliothèque",
+"ja": "図書館"
+},
+{
+"id": 695,
+"lesson": 7,
+"fr": "un stade",
+"ja": "競技場"
+},
+{
+"id": 696,
+"lesson": 7,
+"fr": "une piscine",
+"ja": "プール"
+},
+{
+"id": 697,
+"lesson": 7,
+"fr": "une salle de sport",
+"ja": "スポーツジム"
+},
+{
+"id": 698,
+"lesson": 7,
+"fr": "un monument",
+"ja": "記念碑"
+},
+{
+"id": 699,
+"lesson": 7,
+"fr": "un touriste",
+"ja": "観光客"
+},
+{
+"id": 700,
+"lesson": 7,
+"fr": "un guide",
+"ja": "案内人・ガイド"
+},
+{
+"id": 701,
+"lesson": 8,
+"fr": "rouge",
+"ja": "赤い"
+},
+{
+"id": 702,
+"lesson": 8,
+"fr": "bleu",
+"ja": "青い"
+},
+{
+"id": 703,
+"lesson": 8,
+"fr": "vert",
+"ja": "緑の"
+},
+{
+"id": 704,
+"lesson": 8,
+"fr": "jaune",
+"ja": "黄色い"
+},
+{
+"id": 705,
+"lesson": 8,
+"fr": "noir",
+"ja": "黒い"
+},
+{
+"id": 706,
+"lesson": 8,
+"fr": "blanc",
+"ja": "白い"
+},
+{
+"id": 707,
+"lesson": 8,
+"fr": "gris",
+"ja": "灰色の"
+},
+{
+"id": 708,
+"lesson": 8,
+"fr": "rose",
+"ja": "ピンク色の"
+},
+{
+"id": 709,
+"lesson": 8,
+"fr": "marron",
+"ja": "茶色の"
+},
+{
+"id": 710,
+"lesson": 8,
+"fr": "bon",
+"ja": "良い（男性形）"
+},
+{
+"id": 711,
+"lesson": 8,
+"fr": "bonne",
+"ja": "良い（女性形）"
+},
+{
+"id": 712,
+"lesson": 8,
+"fr": "grand",
+"ja": "大きい・背が高い（男性形）"
+},
+{
+"id": 713,
+"lesson": 8,
+"fr": "grande",
+"ja": "大きい・背が高い（女性形）"
+},
+{
+"id": 714,
+"lesson": 8,
+"fr": "petit",
+"ja": "小さい（男性形）"
+},
+{
+"id": 715,
+"lesson": 8,
+"fr": "petite",
+"ja": "小さい（女性形）"
+},
+{
+"id": 716,
+"lesson": 8,
+"fr": "beau",
+"ja": "美しい（男性形）"
+},
+{
+"id": 717,
+"lesson": 8,
+"fr": "belle",
+"ja": "美しい（女性形）"
+},
+{
+"id": 718,
+"lesson": 8,
+"fr": "chaud",
+"ja": "熱い・暖かい"
+},
+{
+"id": 719,
+"lesson": 8,
+"fr": "mauvais",
+"ja": "悪い（男性形）"
+},
+{
+"id": 720,
+"lesson": 8,
+"fr": "mauvaise",
+"ja": "悪い（女性形）"
+},
+{
+"id": 721,
+"lesson": 8,
+"fr": "long",
+"ja": "長い"
+},
+{
+"id": 722,
+"lesson": 8,
+"fr": "court",
+"ja": "短い"
+},
+{
+"id": 723,
+"lesson": 8,
+"fr": "large",
+"ja": "幅広い"
+},
+{
+"id": 724,
+"lesson": 8,
+"fr": "haut",
+"ja": "高い"
+},
+{
+"id": 725,
+"lesson": 8,
+"fr": "bas",
+"ja": "低い"
+},
+{
+"id": 726,
+"lesson": 8,
+"fr": "jeune",
+"ja": "若い"
+},
+{
+"id": 727,
+"lesson": 8,
+"fr": "vieux",
+"ja": "年老いた（男性形）"
+},
+{
+"id": 728,
+"lesson": 8,
+"fr": "vieille",
+"ja": "年老いた（女性形）"
+},
+{
+"id": 729,
+"lesson": 8,
+"fr": "nouveau",
+"ja": "新しい（男性形）"
+},
+{
+"id": 730,
+"lesson": 8,
+"fr": "nouvelle",
+"ja": "新しい（女性形）"
+},
+{
+"id": 731,
+"lesson": 8,
+"fr": "ancien",
+"ja": "古い・以前の"
+},
+{
+"id": 732,
+"lesson": 8,
+"fr": "moderne",
+"ja": "現代的な"
+},
+{
+"id": 733,
+"lesson": 8,
+"fr": "facile",
+"ja": "簡単な"
+},
+{
+"id": 734,
+"lesson": 8,
+"fr": "difficile",
+"ja": "難しい"
+},
+{
+"id": 735,
+"lesson": 8,
+"fr": "simple",
+"ja": "単純な"
+},
+{
+"id": 736,
+"lesson": 8,
+"fr": "compliqué",
+"ja": "複雑な"
+},
+{
+"id": 737,
+"lesson": 8,
+"fr": "important",
+"ja": "重要な"
+},
+{
+"id": 738,
+"lesson": 8,
+"fr": "nécessaire",
+"ja": "必要な"
+},
+{
+"id": 739,
+"lesson": 8,
+"fr": "possible",
+"ja": "可能な"
+},
+{
+"id": 740,
+"lesson": 8,
+"fr": "impossible",
+"ja": "不可能な"
+},
+{
+"id": 741,
+"lesson": 8,
+"fr": "vrai",
+"ja": "本当の"
+},
+{
+"id": 742,
+"lesson": 8,
+"fr": "faux",
+"ja": "間違った・偽の"
+},
+{
+"id": 743,
+"lesson": 8,
+"fr": "correct",
+"ja": "正しい"
+},
+{
+"id": 744,
+"lesson": 8,
+"fr": "libre",
+"ja": "自由な・空いている"
+},
+{
+"id": 745,
+"lesson": 8,
+"fr": "occupé",
+"ja": "忙しい・使用中の"
+},
+{
+"id": 746,
+"lesson": 8,
+"fr": "prêt",
+"ja": "準備ができた"
+},
+{
+"id": 747,
+"lesson": 8,
+"fr": "fatigué",
+"ja": "疲れた"
+},
+{
+"id": 748,
+"lesson": 8,
+"fr": "malade",
+"ja": "病気の"
+},
+{
+"id": 749,
+"lesson": 8,
+"fr": "en bonne santé",
+"ja": "健康で"
+},
+{
+"id": 750,
+"lesson": 8,
+"fr": "heureux",
+"ja": "幸せな"
+},
+{
+"id": 751,
+"lesson": 8,
+"fr": "heureuse",
+"ja": "幸せな（女性形）"
+},
+{
+"id": 752,
+"lesson": 8,
+"fr": "triste",
+"ja": "悲しい"
+},
+{
+"id": 753,
+"lesson": 8,
+"fr": "content",
+"ja": "満足した"
+},
+{
+"id": 754,
+"lesson": 8,
+"fr": "contente",
+"ja": "満足した（女性形）"
+},
+{
+"id": 755,
+"lesson": 8,
+"fr": "fâché",
+"ja": "怒った"
+},
+{
+"id": 756,
+"lesson": 8,
+"fr": "calme",
+"ja": "落ち着いた"
+},
+{
+"id": 757,
+"lesson": 8,
+"fr": "gentil",
+"ja": "親切な"
+},
+{
+"id": 758,
+"lesson": 8,
+"fr": "méchant",
+"ja": "意地悪な"
+},
+{
+"id": 759,
+"lesson": 8,
+"fr": "poli",
+"ja": "礼儀正しい"
+},
+{
+"id": 760,
+"lesson": 8,
+"fr": "timide",
+"ja": "恥ずかしがりの"
+},
+{
+"id": 761,
+"lesson": 8,
+"fr": "courageux",
+"ja": "勇敢な"
+},
+{
+"id": 762,
+"lesson": 8,
+"fr": "intelligent",
+"ja": "賢い"
+},
+{
+"id": 763,
+"lesson": 8,
+"fr": "sérieux",
+"ja": "真面目な"
+},
+{
+"id": 764,
+"lesson": 8,
+"fr": "drôle",
+"ja": "面白い・滑稽な"
+},
+{
+"id": 765,
+"lesson": 8,
+"fr": "intéressant",
+"ja": "興味深い"
+},
+{
+"id": 766,
+"lesson": 8,
+"fr": "ennuyeux",
+"ja": "退屈な"
+},
+{
+"id": 767,
+"lesson": 8,
+"fr": "joli",
+"ja": "きれいな"
+},
+{
+"id": 768,
+"lesson": 8,
+"fr": "propre",
+"ja": "清潔な"
+},
+{
+"id": 769,
+"lesson": 8,
+"fr": "sale",
+"ja": "汚れた"
+},
+{
+"id": 770,
+"lesson": 8,
+"fr": "frais",
+"ja": "涼しい・新鮮な"
+},
+{
+"id": 771,
+"lesson": 8,
+"fr": "sec",
+"ja": "乾いた"
+},
+{
+"id": 772,
+"lesson": 8,
+"fr": "plein",
+"ja": "いっぱいの"
+},
+{
+"id": 773,
+"lesson": 8,
+"fr": "vide",
+"ja": "空の"
+},
+{
+"id": 774,
+"lesson": 8,
+"fr": "lourd",
+"ja": "重い"
+},
+{
+"id": 775,
+"lesson": 8,
+"fr": "léger",
+"ja": "軽い"
+},
+{
+"id": 776,
+"lesson": 8,
+"fr": "rapide",
+"ja": "速い"
+},
+{
+"id": 777,
+"lesson": 8,
+"fr": "lent",
+"ja": "遅い"
+},
+{
+"id": 778,
+"lesson": 8,
+"fr": "fort",
+"ja": "強い"
+},
+{
+"id": 779,
+"lesson": 8,
+"fr": "faible",
+"ja": "弱い"
+},
+{
+"id": 780,
+"lesson": 8,
+"fr": "dur",
+"ja": "硬い・厳しい"
+},
+{
+"id": 781,
+"lesson": 8,
+"fr": "cher",
+"ja": "値段が高い"
+},
+{
+"id": 782,
+"lesson": 8,
+"fr": "bon marché",
+"ja": "安価な"
+},
+{
+"id": 783,
+"lesson": 8,
+"fr": "riche",
+"ja": "裕福な"
+},
+{
+"id": 784,
+"lesson": 8,
+"fr": "pauvre",
+"ja": "貧しい"
+},
+{
+"id": 785,
+"lesson": 8,
+"fr": "sûr",
+"ja": "確かな・安全な"
+},
+{
+"id": 786,
+"lesson": 8,
+"fr": "dangereux",
+"ja": "危険な"
+},
+{
+"id": 787,
+"lesson": 8,
+"fr": "seul",
+"ja": "ひとりの"
+},
+{
+"id": 788,
+"lesson": 8,
+"fr": "même",
+"ja": "同じ"
+},
+{
+"id": 789,
+"lesson": 8,
+"fr": "meilleur",
+"ja": "より良い（男性形）"
+},
+{
+"id": 790,
+"lesson": 8,
+"fr": "premier",
+"ja": "最初の"
+},
+{
+"id": 791,
+"lesson": 8,
+"fr": "dernier",
+"ja": "最後の"
+},
+{
+"id": 792,
+"lesson": 8,
+"fr": "chaque",
+"ja": "それぞれの"
+},
+{
+"id": 793,
+"lesson": 8,
+"fr": "tout",
+"ja": "すべての"
+},
+{
+"id": 794,
+"lesson": 8,
+"fr": "beaucoup",
+"ja": "たくさん"
+},
+{
+"id": 795,
+"lesson": 8,
+"fr": "peu",
+"ja": "少し"
+},
+{
+"id": 796,
+"lesson": 8,
+"fr": "assez",
+"ja": "十分に"
+},
+{
+"id": 797,
+"lesson": 8,
+"fr": "trop",
+"ja": "〜すぎる"
+},
+{
+"id": 798,
+"lesson": 8,
+"fr": "presque",
+"ja": "ほとんど"
+},
+{
+"id": 799,
+"lesson": 8,
+"fr": "seulement",
+"ja": "〜だけ"
+},
+{
+"id": 800,
+"lesson": 8,
+"fr": "vraiment",
+"ja": "本当に"
+},
+{
+"id": 801,
+"lesson": 9,
+"fr": "une école",
+"ja": "学校"
+},
+{
+"id": 802,
+"lesson": 9,
+"fr": "un collège",
+"ja": "中学校"
+},
+{
+"id": 803,
+"lesson": 9,
+"fr": "un lycée",
+"ja": "高校"
+},
+{
+"id": 804,
+"lesson": 9,
+"fr": "une université",
+"ja": "大学"
+},
+{
+"id": 805,
+"lesson": 9,
+"fr": "une classe",
+"ja": "クラス・教室"
+},
+{
+"id": 806,
+"lesson": 9,
+"fr": "une salle",
+"ja": "部屋・ホール"
+},
+{
+"id": 807,
+"lesson": 9,
+"fr": "un cours",
+"ja": "授業"
+},
+{
+"id": 808,
+"lesson": 9,
+"fr": "une leçon",
+"ja": "学課"
+},
+{
+"id": 809,
+"lesson": 9,
+"fr": "un exercice",
+"ja": "練習問題"
+},
+{
+"id": 810,
+"lesson": 9,
+"fr": "un devoir",
+"ja": "宿題"
+},
+{
+"id": 811,
+"lesson": 9,
+"fr": "un examen",
+"ja": "試験"
+},
+{
+"id": 812,
+"lesson": 9,
+"fr": "une question",
+"ja": "質問"
+},
+{
+"id": 813,
+"lesson": 9,
+"fr": "une réponse",
+"ja": "答え"
+},
+{
+"id": 814,
+"lesson": 9,
+"fr": "une note",
+"ja": "成績・メモ"
+},
+{
+"id": 815,
+"lesson": 9,
+"fr": "un résultat",
+"ja": "結果"
+},
+{
+"id": 816,
+"lesson": 9,
+"fr": "une erreur",
+"ja": "誤り"
+},
+{
+"id": 817,
+"lesson": 9,
+"fr": "une faute",
+"ja": "間違い"
+},
+{
+"id": 818,
+"lesson": 9,
+"fr": "une correction",
+"ja": "訂正"
+},
+{
+"id": 819,
+"lesson": 9,
+"fr": "un mot",
+"ja": "単語"
+},
+{
+"id": 820,
+"lesson": 9,
+"fr": "une phrase",
+"ja": "文"
+},
+{
+"id": 821,
+"lesson": 9,
+"fr": "une lettre",
+"ja": "文字・手紙"
+},
+{
+"id": 822,
+"lesson": 9,
+"fr": "un alphabet",
+"ja": "アルファベット"
+},
+{
+"id": 823,
+"lesson": 9,
+"fr": "une grammaire",
+"ja": "文法"
+},
+{
+"id": 824,
+"lesson": 9,
+"fr": "une prononciation",
+"ja": "発音"
+},
+{
+"id": 825,
+"lesson": 9,
+"fr": "une traduction",
+"ja": "翻訳"
+},
+{
+"id": 826,
+"lesson": 9,
+"fr": "un dictionnaire",
+"ja": "辞書"
+},
+{
+"id": 827,
+"lesson": 9,
+"fr": "un livre",
+"ja": "本"
+},
+{
+"id": 828,
+"lesson": 9,
+"fr": "un cahier",
+"ja": "ノート"
+},
+{
+"id": 829,
+"lesson": 9,
+"fr": "un carnet",
+"ja": "手帳"
+},
+{
+"id": 830,
+"lesson": 9,
+"fr": "un papier",
+"ja": "紙"
+},
+{
+"id": 831,
+"lesson": 9,
+"fr": "un stylo",
+"ja": "ペン"
+},
+{
+"id": 832,
+"lesson": 9,
+"fr": "un crayon",
+"ja": "鉛筆"
+},
+{
+"id": 833,
+"lesson": 9,
+"fr": "une gomme",
+"ja": "消しゴム"
+},
+{
+"id": 834,
+"lesson": 9,
+"fr": "une règle",
+"ja": "定規・規則"
+},
+{
+"id": 835,
+"lesson": 9,
+"fr": "un tableau",
+"ja": "黒板・表"
+},
+{
+"id": 836,
+"lesson": 9,
+"fr": "une page",
+"ja": "ページ"
+},
+{
+"id": 837,
+"lesson": 9,
+"fr": "un chapitre",
+"ja": "章"
+},
+{
+"id": 838,
+"lesson": 9,
+"fr": "un titre",
+"ja": "題名"
+},
+{
+"id": 839,
+"lesson": 9,
+"fr": "une histoire",
+"ja": "物語・歴史"
+},
+{
+"id": 840,
+"lesson": 9,
+"fr": "la géographie",
+"ja": "地理"
+},
+{
+"id": 841,
+"lesson": 9,
+"fr": "la science",
+"ja": "科学"
+},
+{
+"id": 842,
+"lesson": 9,
+"fr": "les mathématiques",
+"ja": "数学"
+},
+{
+"id": 843,
+"lesson": 9,
+"fr": "la physique",
+"ja": "物理学"
+},
+{
+"id": 844,
+"lesson": 9,
+"fr": "la chimie",
+"ja": "化学"
+},
+{
+"id": 845,
+"lesson": 9,
+"fr": "la biologie",
+"ja": "生物学"
+},
+{
+"id": 846,
+"lesson": 9,
+"fr": "l'informatique",
+"ja": "情報科学"
+},
+{
+"id": 847,
+"lesson": 9,
+"fr": "un emploi",
+"ja": "仕事・雇用"
+},
+{
+"id": 848,
+"lesson": 9,
+"fr": "un métier",
+"ja": "職業"
+},
+{
+"id": 849,
+"lesson": 9,
+"fr": "une entreprise",
+"ja": "会社"
+},
+{
+"id": 850,
+"lesson": 9,
+"fr": "une société",
+"ja": "企業・社会"
+},
+{
+"id": 851,
+"lesson": 9,
+"fr": "un patron",
+"ja": "社長・雇い主"
+},
+{
+"id": 852,
+"lesson": 9,
+"fr": "un employé",
+"ja": "従業員"
+},
+{
+"id": 853,
+"lesson": 9,
+"fr": "un salaire",
+"ja": "給料"
+},
+{
+"id": 854,
+"lesson": 9,
+"fr": "un contrat",
+"ja": "契約"
+},
+{
+"id": 855,
+"lesson": 9,
+"fr": "une réunion",
+"ja": "会議"
+},
+{
+"id": 856,
+"lesson": 9,
+"fr": "un projet",
+"ja": "計画・プロジェクト"
+},
+{
+"id": 857,
+"lesson": 9,
+"fr": "une tâche",
+"ja": "作業"
+},
+{
+"id": 858,
+"lesson": 9,
+"fr": "un objectif",
+"ja": "目標"
+},
+{
+"id": 859,
+"lesson": 9,
+"fr": "un problème",
+"ja": "問題"
+},
+{
+"id": 860,
+"lesson": 9,
+"fr": "une solution",
+"ja": "解決策"
+},
+{
+"id": 861,
+"lesson": 9,
+"fr": "une idée",
+"ja": "考え"
+},
+{
+"id": 862,
+"lesson": 9,
+"fr": "un conseil",
+"ja": "助言"
+},
+{
+"id": 863,
+"lesson": 9,
+"fr": "une décision",
+"ja": "決定"
+},
+{
+"id": 864,
+"lesson": 9,
+"fr": "l'anglais",
+"ja": "英語"
+},
+{
+"id": 865,
+"lesson": 9,
+"fr": "un effort",
+"ja": "努力"
+},
+{
+"id": 866,
+"lesson": 9,
+"fr": "une pause",
+"ja": "休憩"
+},
+{
+"id": 867,
+"lesson": 9,
+"fr": "les vacances",
+"ja": "休暇"
+},
+{
+"id": 868,
+"lesson": 9,
+"fr": "un week-end",
+"ja": "週末"
+},
+{
+"id": 869,
+"lesson": 9,
+"fr": "un loisir",
+"ja": "余暇"
+},
+{
+"id": 870,
+"lesson": 9,
+"fr": "un sport",
+"ja": "スポーツ"
+},
+{
+"id": 871,
+"lesson": 9,
+"fr": "le football",
+"ja": "サッカー"
+},
+{
+"id": 872,
+"lesson": 9,
+"fr": "le tennis",
+"ja": "テニス"
+},
+{
+"id": 873,
+"lesson": 9,
+"fr": "le basket-ball",
+"ja": "バスケットボール"
+},
+{
+"id": 874,
+"lesson": 9,
+"fr": "le baseball",
+"ja": "野球"
+},
+{
+"id": 875,
+"lesson": 9,
+"fr": "le badminton",
+"ja": "バドミントン"
+},
+{
+"id": 876,
+"lesson": 9,
+"fr": "le judo",
+"ja": "柔道"
+},
+{
+"id": 877,
+"lesson": 9,
+"fr": "le karaté",
+"ja": "空手"
+},
+{
+"id": 878,
+"lesson": 9,
+"fr": "une course",
+"ja": "競走"
+},
+{
+"id": 879,
+"lesson": 9,
+"fr": "une promenade",
+"ja": "散歩"
+},
+{
+"id": 880,
+"lesson": 9,
+"fr": "une randonnée",
+"ja": "ハイキング"
+},
+{
+"id": 881,
+"lesson": 9,
+"fr": "la musique",
+"ja": "音楽"
+},
+{
+"id": 882,
+"lesson": 9,
+"fr": "une chanson",
+"ja": "歌"
+},
+{
+"id": 883,
+"lesson": 9,
+"fr": "un instrument",
+"ja": "楽器"
+},
+{
+"id": 884,
+"lesson": 9,
+"fr": "une guitare",
+"ja": "ギター"
+},
+{
+"id": 885,
+"lesson": 9,
+"fr": "un piano",
+"ja": "ピアノ"
+},
+{
+"id": 886,
+"lesson": 9,
+"fr": "un violon",
+"ja": "バイオリン"
+},
+{
+"id": 887,
+"lesson": 9,
+"fr": "un concert",
+"ja": "コンサート"
+},
+{
+"id": 888,
+"lesson": 9,
+"fr": "un film",
+"ja": "映画"
+},
+{
+"id": 889,
+"lesson": 9,
+"fr": "une série",
+"ja": "シリーズ・ドラマ"
+},
+{
+"id": 890,
+"lesson": 9,
+"fr": "un dessin",
+"ja": "絵・スケッチ"
+},
+{
+"id": 891,
+"lesson": 9,
+"fr": "une peinture",
+"ja": "絵画・塗料"
+},
+{
+"id": 892,
+"lesson": 9,
+"fr": "l'art",
+"ja": "芸術"
+},
+{
+"id": 893,
+"lesson": 9,
+"fr": "un jeu",
+"ja": "ゲーム・遊び"
+},
+{
+"id": 894,
+"lesson": 9,
+"fr": "un jouet",
+"ja": "おもちゃ"
+},
+{
+"id": 895,
+"lesson": 9,
+"fr": "le français",
+"ja": "フランス語"
+},
+{
+"id": 896,
+"lesson": 9,
+"fr": "un roman",
+"ja": "小説"
+},
+{
+"id": 897,
+"lesson": 9,
+"fr": "un journal",
+"ja": "新聞・日記"
+},
+{
+"id": 898,
+"lesson": 9,
+"fr": "un magazine",
+"ja": "雑誌"
+},
+{
+"id": 899,
+"lesson": 9,
+"fr": "une fête",
+"ja": "パーティー・祭り"
+},
+{
+"id": 900,
+"lesson": 9,
+"fr": "un cadeau",
+"ja": "贈り物"
+},
+{
+"id": 901,
+"lesson": 10,
+"fr": "se promener",
+"ja": "散歩する"
+},
+{
+"id": 902,
+"lesson": 10,
+"fr": "se reposer",
+"ja": "休む"
+},
+{
+"id": 903,
+"lesson": 10,
+"fr": "se dépêcher",
+"ja": "急ぐ"
+},
+{
+"id": 904,
+"lesson": 10,
+"fr": "se laver",
+"ja": "体を洗う"
+},
+{
+"id": 905,
+"lesson": 10,
+"fr": "s'habiller",
+"ja": "服を着る"
+},
+{
+"id": 906,
+"lesson": 10,
+"fr": "se déshabiller",
+"ja": "服を脱ぐ"
+},
+{
+"id": 907,
+"lesson": 10,
+"fr": "se brosser",
+"ja": "ブラシをかける"
+},
+{
+"id": 908,
+"lesson": 10,
+"fr": "se doucher",
+"ja": "シャワーを浴びる"
+},
+{
+"id": 909,
+"lesson": 10,
+"fr": "se baigner",
+"ja": "水浴びをする"
+},
+{
+"id": 910,
+"lesson": 10,
+"fr": "respirer",
+"ja": "呼吸する"
+},
+{
+"id": 911,
+"lesson": 10,
+"fr": "toucher",
+"ja": "触れる"
+},
+{
+"id": 912,
+"lesson": 10,
+"fr": "sentir",
+"ja": "感じる・におう"
+},
+{
+"id": 913,
+"lesson": 10,
+"fr": "goûter",
+"ja": "味見する"
+},
+{
+"id": 914,
+"lesson": 10,
+"fr": "couper",
+"ja": "切る"
+},
+{
+"id": 915,
+"lesson": 10,
+"fr": "casser",
+"ja": "壊す"
+},
+{
+"id": 916,
+"lesson": 10,
+"fr": "réparer",
+"ja": "修理する"
+},
+{
+"id": 917,
+"lesson": 10,
+"fr": "construire",
+"ja": "建てる"
+},
+{
+"id": 918,
+"lesson": 10,
+"fr": "détruire",
+"ja": "破壊する"
+},
+{
+"id": 919,
+"lesson": 10,
+"fr": "jeter",
+"ja": "捨てる"
+},
+{
+"id": 920,
+"lesson": 10,
+"fr": "garder",
+"ja": "保つ・預かる"
+},
+{
+"id": 921,
+"lesson": 10,
+"fr": "partager",
+"ja": "分け合う"
+},
+{
+"id": 922,
+"lesson": 10,
+"fr": "ajouter",
+"ja": "加える"
+},
+{
+"id": 923,
+"lesson": 10,
+"fr": "enlever",
+"ja": "取り除く"
+},
+{
+"id": 924,
+"lesson": 10,
+"fr": "remplir",
+"ja": "満たす"
+},
+{
+"id": 925,
+"lesson": 10,
+"fr": "vider",
+"ja": "空にする"
+},
+{
+"id": 926,
+"lesson": 10,
+"fr": "lever",
+"ja": "持ち上げる"
+},
+{
+"id": 927,
+"lesson": 10,
+"fr": "baisser",
+"ja": "下げる"
+},
+{
+"id": 928,
+"lesson": 10,
+"fr": "pousser",
+"ja": "押す"
+},
+{
+"id": 929,
+"lesson": 10,
+"fr": "tirer",
+"ja": "引く"
+},
+{
+"id": 930,
+"lesson": 10,
+"fr": "lancer",
+"ja": "投げる"
+},
+{
+"id": 931,
+"lesson": 10,
+"fr": "attraper",
+"ja": "捕まえる"
+},
+{
+"id": 932,
+"lesson": 10,
+"fr": "sauter",
+"ja": "跳ぶ"
+},
+{
+"id": 933,
+"lesson": 10,
+"fr": "traverser",
+"ja": "横切る"
+},
+{
+"id": 934,
+"lesson": 10,
+"fr": "tourner",
+"ja": "曲がる"
+},
+{
+"id": 935,
+"lesson": 10,
+"fr": "avancer",
+"ja": "進む"
+},
+{
+"id": 936,
+"lesson": 10,
+"fr": "reculer",
+"ja": "後退する"
+},
+{
+"id": 937,
+"lesson": 10,
+"fr": "quitter",
+"ja": "離れる"
+},
+{
+"id": 938,
+"lesson": 10,
+"fr": "rejoindre",
+"ja": "合流する"
+},
+{
+"id": 939,
+"lesson": 10,
+"fr": "rentrer",
+"ja": "帰宅する"
+},
+{
+"id": 940,
+"lesson": 10,
+"fr": "se perdre",
+"ja": "道に迷う"
+},
+{
+"id": 941,
+"lesson": 10,
+"fr": "rencontrer",
+"ja": "会う"
+},
+{
+"id": 942,
+"lesson": 10,
+"fr": "présenter",
+"ja": "紹介する"
+},
+{
+"id": 943,
+"lesson": 10,
+"fr": "inviter",
+"ja": "招待する"
+},
+{
+"id": 944,
+"lesson": 10,
+"fr": "accepter",
+"ja": "受け入れる"
+},
+{
+"id": 945,
+"lesson": 10,
+"fr": "refuser",
+"ja": "断る"
+},
+{
+"id": 946,
+"lesson": 10,
+"fr": "proposer",
+"ja": "提案する"
+},
+{
+"id": 947,
+"lesson": 10,
+"fr": "promettre",
+"ja": "約束する"
+},
+{
+"id": 948,
+"lesson": 10,
+"fr": "remercier",
+"ja": "感謝する"
+},
+{
+"id": 949,
+"lesson": 10,
+"fr": "s'excuser",
+"ja": "謝る"
+},
+{
+"id": 950,
+"lesson": 10,
+"fr": "féliciter",
+"ja": "祝福する"
+},
+{
+"id": 951,
+"lesson": 10,
+"fr": "respecter",
+"ja": "尊重する"
+},
+{
+"id": 952,
+"lesson": 10,
+"fr": "décider",
+"ja": "決める"
+},
+{
+"id": 953,
+"lesson": 10,
+"fr": "espérer",
+"ja": "希望する"
+},
+{
+"id": 954,
+"lesson": 10,
+"fr": "imaginer",
+"ja": "想像する"
+},
+{
+"id": 955,
+"lesson": 10,
+"fr": "rêver",
+"ja": "夢を見る"
+},
+{
+"id": 956,
+"lesson": 10,
+"fr": "l'avenir",
+"ja": "未来"
+},
+{
+"id": 957,
+"lesson": 10,
+"fr": "le passé",
+"ja": "過去"
+},
+{
+"id": 958,
+"lesson": 10,
+"fr": "le présent",
+"ja": "現在"
+},
+{
+"id": 959,
+"lesson": 10,
+"fr": "un souvenir",
+"ja": "記憶・思い出"
+},
+{
+"id": 960,
+"lesson": 10,
+"fr": "un rêve",
+"ja": "夢"
+},
+{
+"id": 961,
+"lesson": 10,
+"fr": "un espoir",
+"ja": "希望"
+},
+{
+"id": 962,
+"lesson": 10,
+"fr": "une chance",
+"ja": "運・幸運"
+},
+{
+"id": 963,
+"lesson": 10,
+"fr": "un choix",
+"ja": "選択"
+},
+{
+"id": 964,
+"lesson": 10,
+"fr": "une raison",
+"ja": "理由"
+},
+{
+"id": 965,
+"lesson": 10,
+"fr": "un sens",
+"ja": "意味・方向"
+},
+{
+"id": 966,
+"lesson": 10,
+"fr": "moi",
+"ja": "私（強勢形）"
+},
+{
+"id": 967,
+"lesson": 10,
+"fr": "ils",
+"ja": "彼ら"
+},
+{
+"id": 968,
+"lesson": 10,
+"fr": "la liberté",
+"ja": "自由"
+},
+{
+"id": 969,
+"lesson": 10,
+"fr": "la paix",
+"ja": "平和"
+},
+{
+"id": 970,
+"lesson": 10,
+"fr": "c'est combien ?",
+"ja": "いくらですか？"
+},
+{
+"id": 971,
+"lesson": 10,
+"fr": "la sécurité",
+"ja": "安全"
+},
+{
+"id": 972,
+"lesson": 10,
+"fr": "un danger",
+"ja": "危険"
+},
+{
+"id": 973,
+"lesson": 10,
+"fr": "un changement",
+"ja": "変化"
+},
+{
+"id": 974,
+"lesson": 10,
+"fr": "une différence",
+"ja": "違い"
+},
+{
+"id": 975,
+"lesson": 10,
+"fr": "une habitude",
+"ja": "習慣"
+},
+{
+"id": 976,
+"lesson": 10,
+"fr": "une expérience",
+"ja": "経験"
+},
+{
+"id": 977,
+"lesson": 10,
+"fr": "une occasion",
+"ja": "機会"
+},
+{
+"id": 978,
+"lesson": 10,
+"fr": "une possibilité",
+"ja": "可能性"
+},
+{
+"id": 979,
+"lesson": 10,
+"fr": "un exemple",
+"ja": "例"
+},
+{
+"id": 980,
+"lesson": 10,
+"fr": "une explication",
+"ja": "説明"
+},
+{
+"id": 981,
+"lesson": 10,
+"fr": "un accord",
+"ja": "合意"
+},
+{
+"id": 982,
+"lesson": 10,
+"fr": "un désaccord",
+"ja": "意見の不一致"
+},
+{
+"id": 983,
+"lesson": 10,
+"fr": "un secret",
+"ja": "秘密"
+},
+{
+"id": 984,
+"lesson": 10,
+"fr": "la confiance",
+"ja": "信頼"
+},
+{
+"id": 985,
+"lesson": 10,
+"fr": "la patience",
+"ja": "忍耐"
+},
+{
+"id": 986,
+"lesson": 10,
+"fr": "le courage",
+"ja": "勇気"
+},
+{
+"id": 987,
+"lesson": 10,
+"fr": "le respect",
+"ja": "尊敬"
+},
+{
+"id": 988,
+"lesson": 10,
+"fr": "une réussite",
+"ja": "成功"
+},
+{
+"id": 989,
+"lesson": 10,
+"fr": "un échec",
+"ja": "失敗"
+},
+{
+"id": 990,
+"lesson": 10,
+"fr": "un début",
+"ja": "始まり"
+},
+{
+"id": 991,
+"lesson": 10,
+"fr": "une fin",
+"ja": "終わり"
+},
+{
+"id": 992,
+"lesson": 10,
+"fr": "un milieu",
+"ja": "真ん中"
+},
+{
+"id": 993,
+"lesson": 10,
+"fr": "une partie",
+"ja": "部分"
+},
+{
+"id": 994,
+"lesson": 10,
+"fr": "un ensemble",
+"ja": "全体"
+},
+{
+"id": 995,
+"lesson": 10,
+"fr": "les États-Unis",
+"ja": "アメリカ合衆国"
+},
+{
+"id": 996,
+"lesson": 10,
+"fr": "la France",
+"ja": "フランス"
+},
+{
+"id": 997,
+"lesson": 10,
+"fr": "le Japon",
+"ja": "日本"
+},
+{
+"id": 998,
+"lesson": 10,
+"fr": "Paris",
+"ja": "パリ"
+},
+{
+"id": 999,
+"lesson": 10,
+"fr": "un besoin",
+"ja": "必要"
+},
+{
+"id": 1000,
+"lesson": 10,
+"fr": "un désir",
+"ja": "願望"
+}
+]

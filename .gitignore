@@ -8,3 +8,5 @@ local.properties
 
 # Offline audio is generated in GitHub Actions before compiling the APK.
 app/src/main/assets/audio/
+models/
+app/src/main/assets/audio/
