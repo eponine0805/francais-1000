@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq --no-install-recommends espeak ffmpeg
-          sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+          "$ANDROID_HOME/cmdline-tools/16.0/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
       - name: Prepare offline audio
         run: |
           python3 scripts/prepare_vocabulary.py
