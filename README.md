@@ -1,36 +1,56 @@
-# Français 1000 — フランス語初心者単語帳
+# Français 1000 — フランス語初心者の単語帳
 
-1000項目の単語・表現、発音記号（IPA）、日本語訳、女性音声を内蔵する完全オフラインAndroidアプリ。通信・ログイン・APIキー・広告は不要です。
+1000の重要単語・基本フレーズ、IPA発音記号、日本語訳、女性音声を内蔵する**完全オフラインAndroidアプリ**。ログイン・広告・APIキー・ネットワーク権限はありません。学習履歴は端末内のみに保存します。
 
-## v1.5.0 — 女性音声を根本的に変更
+## 最新版 v1.6.0 — 指一本で進む単語カード
 
-従来のKokoroでは oui、non、je suis などで余計な音が混入する問題が報告されました。最初の音を機械的に削るのではなく、**Supertone Supertonic 3** のフランス語専用生成モードへ切り替えています。
+- **カードの同じ場所を1回タップで和訳表示、もう1回タップで次の単語へ**。次カードで音声自動再生
+- 通常の100語ランダム学習に加え、未習得単語優先のランダム10枚チャレンジを追加
+- 学習中の進捗バー、完了画面、「もう10枚」で気軽に短い学習セッションを繰り返せる
+- カード右上の星、横長の音声再生ボタン、任意の習得/復習操作も維持
+- **アプリアイコン：利用者が提供した手描きキャラクターの元の線・輪郭を抽出**。キャラクターの形をAIで描き替えず白く塗り、フランス国旗を背景に合成
 
-- 女性 F2、言語 fr、44.1kHz、品質ステップ10
-- 1000件の生成済みOggをAPKに同梱。モデルと認証情報は端末に不要
-- ビルドはGitHub Actionsで実行。利用者のクラウド設定は不要
-- oui、non、je suis、bonjour、merci、j'ai、c'est の実際の音声を Actions の French-Female-Audio-QA に保存
-- 音声の欠落・極端な長さ・音量異常を検証。**余分な音や誤発音を完全に検出できるわけではありません。** 販売前には試聴確認が必要です。
+## 音声エンジン（v1.5.0から継続）
+
+`oui`、`non`、`je suis` 等の短い語に従来の Kokoro フランス語音声で余計な音が混入する報告があったため、単に音声冒頭をカットせず**音声生成モデルそのものを交換**しました。
+
+- 音声モデル：**Supertone Supertonic 3** / `fr` / **女性声 F2** / 44.1kHz / 品質ステップ 10
+- スマートフォンには生成済み Ogg 音声 **1000個すべて**を同梱。アプリでの再生にネット接続もモデルも不要
+- GitHub Actions で `python scripts/generate_audio.py` → 検証 → APK ビルド・Release を自動実行。アカウントやAPIキーの設定は不要
+- `oui`、`non`、`je suis`、`bonjour`、`merci`、`j'ai`、`c'est` の試聴サンプルを Actions の `French-Female-Audio-QA` に保存
+- 自動検証で音声ファイル数、内容の欠落、極端な長さ・音量異常を検出。**音声内容が完全に正しいことを自動検証できるわけではありません。** ネイティブ話者の全件監修は未実施です。
 
 ## 学習機能
 
-100語ずつの10章。開くたびにカードはランダムな順番、表示時に音声を自動再生。右上の星がお気に入り、再生は横長ボタンでいつでもできます。フランス語→日本語の4択テストは範囲と問題数（20〜100または全問）を指定。各問直後の正誤表示はなく、最後に一括採点し、間違いだけ再テストできます。学習記録・検索・苦手単語は端末内保存。白黒デザインです。
+- 基礎から100語ずつ全10章。カードは章を開くたびランダム表示、表示時に発音を自動再生
+- カード右上の星からお気に入り登録。大型の「発音を聞く」ボタンでいつでも再生
+- すべての項目にIPA発音記号を表示（辞書推定＋一部手動修正。全件の専門家監修は未実施）
+- フランス語から日本語訳を選ぶ4択テスト。レッスン範囲指定で20〜100問、または全問
+- 1問ずつ正誤を表示せず連続回答、最後に一括採点。間違った語だけ再テスト
+- 学習進捗・苦手単語・テスト成績・お気に入り・検索、端末内保存
+- 白と黒を基調とするUI。不要なキャッチコピー、章の初めに戻る「続きから学ぶ」はありません
 
-## Androidダウンロード
+## インストール
 
-https://github.com/eponine0805/francais-1000/releases/latest
+Releases: https://github.com/eponine0805/francais-1000/releases/latest
 
-v1.5.0 にある Francais1000.apk をインストールしてください。現在のAPKはデバッグ署名です。旧版と署名が異なって上書きできない場合、アンインストールで学習記録が消える点に注意してください。
+`v1.6.0` 公開後、`Francais1000.apk` を取得して端末でインストールしてください。現状のAPKはデバッグ署名です。署名が異なるAPKは上書きできず、アンインストールすると端末内学習記録が消えることがあります。
 
-## ライセンス
+## 開発と音声ライセンス
 
-生成モデル：Supertone/supertonic-3、**BigScience OpenRAIL-M**（利用制限があります）。
-https://huggingface.co/Supertone/supertonic-3
-https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE
+Android: Java + Android SDK 35 / Gradle 8.9 / OpenJDK 17。
+音声のビルド：Python 3.12、`supertonic==1.3.1`、FFmpeg。
 
-生成SDK：supertonic 1.3.1、MITライセンス。
-https://pypi.org/project/supertonic/
+- モデル：**Supertone/supertonic-3**、BigScience OpenRAIL-M（利用制限つき）
+  - https://huggingface.co/Supertone/supertonic-3
+  - https://huggingface.co/Supertone/supertonic-3/blob/main/LICENSE
+- 推論SDK：Supertone `supertonic`、MIT License
+  - https://pypi.org/project/supertonic/
 
-**音声はAI合成**です。モデルはAPKに同梱しません。100円での販売前には利用条件・教材品質・発音の最終確認が必要です。IPA表記もすべて専門家監修済みではありません。
+本アプリの音声はAI合成です。モデルは**APKに含まず**生成済み音声のみを配布します。OpenRAIL-Mでは生成物の利用に対しても制約があります。販売前には音声データと教材に関する権利・品質の最終確認を行ってください。*「AIが生成した音声」と明示してください。*
 
-初級語彙の編成はCEFR A1、France Éducation international、TV5MONDE等を参照した独自リストで、公式の認定教材ではありません。
+独自の初級語彙選定はCEFR A1と初級学習教材を参考にしていますが、公式CEFR語彙リストではありません。
+参考：
+- https://www.coe.int/fr/web/common-european-framework-reference-languages/cefr-descriptors-search
+- https://www.france-education-international.fr/document/cecrl
+- https://apprendre.tv5monde.com/fr/aides/vocabulaire

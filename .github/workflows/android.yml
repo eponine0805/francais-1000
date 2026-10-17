@@ -26,18 +26,18 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - name: Install speech generator for offline build
+      - name: Install free/offline Supertonic 3 build-time speech tools
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq --no-install-recommends ffmpeg
           python -m pip install -r scripts/requirements-audio.txt
           sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
-      - name: Generate 1000 French female audio clips
+      - name: Generate 1000 premium French female voice recordings
         run: |
           python scripts/prepare_vocabulary.py
           python scripts/generate_audio.py
           python scripts/validate.py
-      - name: Save pronunciation QA samples
+      - name: Save critical word pronunciation samples
         uses: actions/upload-artifact@v4
         with:
           name: French-Female-Audio-QA
@@ -49,13 +49,13 @@ jobs:
         with:
           name: Francais1000-Android-APK
           path: app/build/outputs/apk/debug/app-debug.apk
-      - name: Publish Android APK
+      - name: Publish release
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp app/build/outputs/apk/debug/app-debug.apk Francais1000.apk
-          if gh release view v1.5.0 >/dev/null 2>&1; then
-            gh release upload v1.5.0 Francais1000.apk --clobber
+          if gh release view v1.6.0 >/dev/null 2>&1; then
+            gh release upload v1.6.0 Francais1000.apk --clobber
           else
-            gh release create v1.5.0 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.5.0 — Supertonic 3' --notes 'New French female Supertonic 3 F2 neural voice; 1000 bundled offline clips. No API keys or accounts. Model OpenRAIL-M; speech is AI-generated. Native-speaker review recommended for sale.'
+            gh release create v1.6.0 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.6.0 — One-tap cards + original mascot' --notes 'Tap the same card to reveal Japanese, then tap again to advance. 10-card sprint mode, mini progress, and an app icon extracted from the user-provided hand sketch on the French flag. Existing offline Supertonic 3 voice and quiz features preserved. AI-generated audio is subject to Supertonic 3 licensing.'
           fi

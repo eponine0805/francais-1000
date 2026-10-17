@@ -68,7 +68,7 @@ public final class MainActivity extends Activity {
     private LinearLayout shell, body;
     private MediaPlayer player;
     private int screen=0, cardIndex=0, questionIndex=0, correctCount=0, startLesson=1, endLesson=1;
-    private boolean revealed=false, reviewing=false, answered=false;
+    private boolean revealed=false, reviewing=false, answered=false, shortSession=false;
     private final ArrayList<String> testAnswers=new ArrayList<>();
     private final ArrayList<Integer> lastWrongIds=new ArrayList<>();
     private boolean wrongOnlyTest=false;
@@ -215,7 +215,10 @@ public final class MainActivity extends Activity {
         add(hero,text(known.size()+" / 1,000",31,INK,true));gap(hero,14);
         add(hero,progressBar(known.size()/10f));gap(hero,13);
         add(hero,text("学習済み  "+seen.size()+"語     復習待ち  "+review.size()+"語     テスト  "+history.length()+"回",12,MUTED,false));
-        gap(body,16);
+        gap(body,13);
+        Button sprint=button("10枚チャレンジ    →",true,()->startShortSession(lastLesson));
+        sprint.setMinHeight(dp(62));add(body,sprint);
+        gap(body,10);
         LinearLayout quick=row();Button test=button("4択テスト",false,this::showTestSetup);
         Button wrong=button("苦手を復習  "+review.size(),false,this::startReview);
         quick.addView(test,weight());View sep=new View(this);quick.addView(sep,new LinearLayout.LayoutParams(dp(9),1));quick.addView(wrong,weight());add(body,quick);
@@ -237,11 +240,28 @@ public final class MainActivity extends Activity {
         }
     }
     private void startLesson(int lesson){
-        reviewing=false;flashIds=new ArrayList<>();for(int i=(lesson-1)*100+1;i<=lesson*100;i++)flashIds.add(i);
+        shortSession=false;
+        createLessonDeck(lesson);
+    }
+    private void startShortSession(int lesson){
+        shortSession=true;
+        createLessonDeck(lesson);
+    }
+    private void createLessonDeck(int lesson){
+        reviewing=false;flashIds=new ArrayList<>();
+        for(int i=(lesson-1)*100+1;i<=lesson*100;i++)flashIds.add(i);
         Collections.shuffle(flashIds, random);
+        if(shortSession){
+            // Prefer less familiar words while keeping the sequence random.
+            ArrayList<Integer> unlearned=new ArrayList<>(), learned=new ArrayList<>();
+            for(int id:flashIds){if(known.contains(id))learned.add(id);else unlearned.add(id);}
+            unlearned.addAll(learned);
+            flashIds=new ArrayList<>(unlearned.subList(0,Math.min(10,unlearned.size())));
+        }
         lastLesson=lesson;cardIndex=0;revealed=false;saveProgress();showFlash();
     }
     private void startReview(){
+        shortSession=false;
         if(review.isEmpty()){Toast.makeText(this,"復習待ちの単語はありません",Toast.LENGTH_SHORT).show();return;}
         reviewing=true;flashIds=new ArrayList<>(review);
         flashIds.sort((a,b)->Integer.compare(wrongCounts.getOrDefault(b,0),wrongCounts.getOrDefault(a,0)));
@@ -252,7 +272,9 @@ public final class MainActivity extends Activity {
         if(cardIndex<0)cardIndex=0;if(cardIndex>=flashIds.size())cardIndex=flashIds.size()-1;
         int id=flashIds.get(cardIndex);Word w=words.get(id-1);if(seen.add(id))recordDaily();saveProgress();
         mount(reviewing?"苦手単語の復習":"フラッシュカード",1);
-        TextView counter=text((cardIndex+1)+" / "+flashIds.size()+"     •     "+(reviewing?"復習カード":"Lesson "+w.lesson),14,MUTED,true);add(body,counter);gap(body,13);
+        TextView counter=text((cardIndex+1)+" / "+flashIds.size()+"     ·     "+(reviewing?"復習":"Lesson "+w.lesson+(shortSession?" · 10枚チャレンジ":"")),14,MUTED,true);
+        add(body,counter);gap(body,10);
+        add(body,progressBar((cardIndex+1)*100f/flashIds.size()));gap(body,14);
         FrameLayout cardFrame=new FrameLayout(this);
         add(body,cardFrame);
         LinearLayout card=vertical();card.setGravity(Gravity.CENTER);pad(card,25,48);
@@ -267,23 +289,53 @@ public final class MainActivity extends Activity {
         star.setOnClickListener(v->{toggleFavorite(id);star.setText(isFavorite(id)?"★":"☆");});
         TextView word=text(w.fr,34,INK,true);word.setGravity(Gravity.CENTER);add(card,word);gap(card,11);
         TextView ipa=text(w.ipa,17,MUTED,false);ipa.setGravity(Gravity.CENTER);add(card,ipa);gap(card,22);
-        TextView meaning=text(revealed?w.ja:"タップして日本語を表示",revealed?23:15,revealed?INK:MUTED,revealed);
-        meaning.setGravity(Gravity.CENTER);add(card,meaning);gap(card,14);
+        TextView meaning=text(revealed?w.ja:"タップして意味を見る",revealed?23:15,revealed?INK:MUTED,revealed);
+        meaning.setGravity(Gravity.CENTER);meaning.setMinHeight(dp(62));add(card,meaning);gap(card,14);
+        TextView tapGuide=text(revealed?"もう一度タップで次へ  →":"このカードをタップ",13,MUTED,false);
+        tapGuide.setGravity(Gravity.CENTER);add(card,tapGuide);gap(card,10);
         if(reviewing){TextView prompt=text("過去の間違い "+wrongCounts.getOrDefault(id,0)+"回",12,MUTED,false);prompt.setGravity(Gravity.CENTER);add(card,prompt);}
-        card.setOnClickListener(v->{revealed=!revealed;meaning.setText(revealed?w.ja:"タップして日本語を表示");meaning.setTextSize(revealed?23:15);meaning.setTextColor(revealed?INK:MUTED);});
+        card.setContentDescription(revealed?"次のフランス語へ進む":"日本語訳を見る");
+        card.setOnClickListener(v->{
+            if(!revealed){
+                revealed=true;meaning.setText(w.ja);meaning.setTextSize(23);meaning.setTextColor(INK);
+                tapGuide.setText("もう一度タップで次へ  →");
+                card.setContentDescription("次のフランス語へ進む");
+                // Subtle haptic cue on reveal without disruptive rewards or pop-ups.
+                card.performHapticFeedback(android.view.HapticFeedbackConstants.KEYBOARD_TAP);
+            }else{
+                advanceFlashCard();
+            }
+        });
         gap(body,12);
         Button play=button("▶     発音を聞く",false,()->playAudio(id));
         play.setMinHeight(dp(68));play.setTextSize(17);add(body,play);gap(body,14);
-        LinearLayout nav=row();Button prev=button("← 前へ",false,()->moveCard(-1));Button next=button("次へ →",true,()->moveCard(1));
-        nav.addView(prev,weight());View sp=new View(this);nav.addView(sp,new LinearLayout.LayoutParams(dp(9),1));nav.addView(next,weight());add(body,nav);
-        gap(body,14);LinearLayout actions=row();
+        LinearLayout actions=row();
         Button later=button("まだ覚えていない",false,()->markCard(false));Button yes=button("✓ 覚えた",true,()->markCard(true));
         actions.addView(later,weight());View mid=new View(this);actions.addView(mid,new LinearLayout.LayoutParams(dp(9),1));actions.addView(yes,weight());add(body,actions);
+        gap(body,14);
+        TextView back=text("← 前の単語へ戻る",14,MUTED,false);pad(back,9,10);back.setGravity(Gravity.CENTER);
+        back.setOnClickListener(v->moveCard(-1));add(body,back);
         body.post(()->{if(screen==1 && !flashIds.isEmpty() && flashIds.get(cardIndex)==id)playAudio(id);});
+    }
+    private void advanceFlashCard(){
+        if(flashIds.isEmpty()){showHome();return;}
+        if(cardIndex>=flashIds.size()-1){showStudyComplete();return;}
+        cardIndex++;revealed=false;showFlash();
+    }
+    private void showStudyComplete(){
+        stopAudio();mount(shortSession?"10枚チャレンジ完了":"学習完了",1);
+        LinearLayout content=panel();content.setGravity(Gravity.CENTER);
+        TextView total=text(flashIds.size()+" 枚",43,INK,true);total.setGravity(Gravity.CENTER);add(content,total);
+        gap(content,8);TextView done=text("カードを見終わりました",16,MUTED,false);done.setGravity(Gravity.CENTER);add(content,done);
+        gap(body,17);
+        add(body,button(shortSession?"もう10枚  →":"もう一度シャッフル  →",true,()->{
+            if(shortSession)startShortSession(lastLesson);else if(reviewing)startReview();else startLesson(lastLesson);
+        }));
+        gap(body,11);add(body,button("レッスン一覧へ",false,this::showHome));
     }
     private void moveCard(int diff){
         if(cardIndex+diff<0){Toast.makeText(this,"最初のカードです",Toast.LENGTH_SHORT).show();return;}
-        if(cardIndex+diff>=flashIds.size()){Toast.makeText(this,"最後のカードです",Toast.LENGTH_SHORT).show();return;}
+        if(cardIndex+diff>=flashIds.size()){showStudyComplete();return;}
         cardIndex+=diff;revealed=false;showFlash();
     }
     private void markCard(boolean mastered){
@@ -294,7 +346,7 @@ public final class MainActivity extends Activity {
         if(flashIds.isEmpty()){Toast.makeText(this,"復習完了！",Toast.LENGTH_LONG).show();showHome();return;}
         if(!(mastered&&reviewing)){
             if(cardIndex<flashIds.size()-1)cardIndex++;
-            else{Toast.makeText(this,"最後まで学習しました！",Toast.LENGTH_SHORT).show();showHome();return;}
+            else{showStudyComplete();return;}
         }
         revealed=false;showFlash();
     }
