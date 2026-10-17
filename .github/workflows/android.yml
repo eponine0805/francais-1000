@@ -15,34 +15,33 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: pip
-          cache-dependency-path: scripts/requirements-audio.txt
       - uses: android-actions/setup-android@v4
         with:
           packages: 'platform-tools'
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - name: Install free/offline Supertonic 3 build-time speech tools
+      - name: Install Android SDK
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Reuse the approved 1000 offline Supertonic 3 recordings
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq --no-install-recommends ffmpeg
-          python -m pip install -r scripts/requirements-audio.txt
-          sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
-      - name: Generate 1000 premium French female voice recordings
-        run: |
-          python scripts/prepare_vocabulary.py
-          python scripts/generate_audio.py
-          python scripts/validate.py
-      - name: Save critical word pronunciation samples
-        uses: actions/upload-artifact@v4
-        with:
-          name: French-Female-Audio-QA
-          path: quality-previews/
-          retention-days: 90
+          mkdir -p /tmp/fr1000-voice app/src/main/assets/audio
+          gh release download v1.5.0 --repo "${{ github.repository }}" --pattern Francais1000.apk --dir /tmp/fr1000-voice
+          python3 - <<'PY'
+          import zipfile
+          from pathlib import Path
+          apk = Path('/tmp/fr1000-voice/Francais1000.apk')
+          with zipfile.ZipFile(apk) as archive:
+              names = [name for name in archive.namelist() if name.startswith('assets/audio/') and name.endswith('.ogg')]
+              assert len(names) == 1000, f'Expected 1000 source audio files, got {len(names)}'
+              out = Path('app/src/main/assets/audio')
+              for name in names:
+                  (out / Path(name).name).write_bytes(archive.read(name))
+          PY
+          python3 scripts/prepare_vocabulary.py
+          python3 scripts/validate.py
       - name: Build offline APK
         run: gradle --no-daemon :app:assembleDebug
       - uses: actions/upload-artifact@v4
