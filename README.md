@@ -2,7 +2,7 @@
 
 1000の重要単語・基本フレーズ、IPA発音記号、日本語訳、女性音声を内蔵する**完全オフラインAndroidアプリ**。ログイン・広告・APIキー・ネットワーク権限はありません。学習履歴は端末内のみに保存します。
 
-## 最新版 v1.6.1 — 指一本で進む単語カード
+## 最新版 v1.6.2 — 指一本で進む単語カード
 
 - **カードの同じ場所を1回タップで和訳表示、もう1回タップで次の単語へ**。次カードで音声自動再生
 - 通常の100語ランダム学習に加え、未習得単語優先のランダム10枚チャレンジを追加
@@ -34,7 +34,7 @@
 
 Releases: https://github.com/eponine0805/francais-1000/releases/latest
 
-`v1.6.1` 公開後、`Francais1000.apk` を取得して端末でインストールしてください。現状のAPKはデバッグ署名です。署名が異なるAPKは上書きできず、アンインストールすると端末内学習記録が消えることがあります。
+`v1.6.2` 公開後、`Francais1000.apk` を取得して端末でインストールしてください。現状のAPKはデバッグ署名です。署名が異なるAPKは上書きできず、アンインストールすると端末内学習記録が消えることがあります。
 
 ## 開発と音声ライセンス
 
@@ -54,3 +54,12 @@ Android: Java + Android SDK 35 / Gradle 8.9 / OpenJDK 17。
 - https://www.coe.int/fr/web/common-european-framework-reference-languages/cefr-descriptors-search
 - https://www.france-education-international.fr/document/cecrl
 - https://apprendre.tv5monde.com/fr/aides/vocabulaire
+
+
+## v1.6.2 — 1000語・IPA・意味の監査
+
+- [1000語 Excel／監査とテスト記録](data/Francais1000_1000words_reviewed.xlsx)
+- [検査結果・未完了項目](docs/2026-10-18-audit.md)
+- 特定の /ɥ/ 音を /y/ とした旧IPAの誤り20件と、日本語表記7件を修正。
+- 元の単語ID・レッスン・既存音声ファイルを維持。学習記録の紐付けは変えません。
+- **波形検査1000件と発音の人間による聴感監修1000件は別物です。後者は未実施。**

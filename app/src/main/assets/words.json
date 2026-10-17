@@ -108,7 +108,7 @@
     "id": 16,
     "lesson": 1,
     "fr": "c'est",
-    "ja": "これは〜です",
+    "ja": "これは・それは〜です",
     "ipa": "/sɛ/"
   },
   {
@@ -157,7 +157,7 @@
     "id": 23,
     "lesson": 1,
     "fr": "vous",
-    "ja": "あなた・あなたたち",
+    "ja": "あなた（丁寧）・あなたたち",
     "ipa": "/vu/"
   },
   {
@@ -290,7 +290,7 @@
     "id": 42,
     "lesson": 1,
     "fr": "regarder",
-    "ja": "眺める",
+    "ja": "見る・眺める",
     "ipa": "/ʁəɡaʁde/"
   },
   {
@@ -843,7 +843,7 @@
     "id": 121,
     "lesson": 2,
     "fr": "se lever",
-    "ja": "起き上がる",
+    "ja": "起きる・起床する",
     "ipa": "/sə ləve/"
   },
   {
@@ -1215,7 +1215,7 @@
     "lesson": 2,
     "fr": "cuisiner",
     "ja": "料理する",
-    "ipa": "/kyizine/"
+    "ipa": "/kɥizine/"
   },
   {
     "id": 175,
@@ -1390,14 +1390,14 @@
     "lesson": 2,
     "fr": "conduire",
     "ja": "運転する",
-    "ipa": "/kɔ̃dyiʁ/"
+    "ipa": "/kɔ̃dɥiʁ/"
   },
   {
     "id": 200,
     "lesson": 2,
     "fr": "suivre",
     "ja": "ついて行く",
-    "ipa": "/syivʁ/"
+    "ipa": "/sɥivʁ/"
   },
   {
     "id": 201,
@@ -1607,7 +1607,7 @@
     "lesson": 3,
     "fr": "bonne nuit",
     "ja": "おやすみ",
-    "ipa": "/bɔn nyi/"
+    "ipa": "/bɔn nɥi/"
   },
   {
     "id": 231,
@@ -1900,7 +1900,7 @@
     "id": 272,
     "lesson": 3,
     "fr": "j'ai mal",
-    "ja": "私は痛みがあります",
+    "ja": "痛い・〜が痛む（例：頭が痛い）",
     "ipa": "/ʒe mal/"
   },
   {
@@ -2132,7 +2132,7 @@
     "lesson": 4,
     "fr": "une cuisine",
     "ja": "台所",
-    "ipa": "/yn kyizin/"
+    "ipa": "/yn kɥizin/"
   },
   {
     "id": 306,
@@ -2517,7 +2517,7 @@
     "lesson": 4,
     "fr": "un parapluie",
     "ja": "傘",
-    "ipa": "/œ̃ paʁaplyi/"
+    "ipa": "/œ̃ paʁaplɥi/"
   },
   {
     "id": 361,
@@ -2790,7 +2790,7 @@
     "lesson": 4,
     "fr": "une cuillère",
     "ja": "スプーン",
-    "ipa": "/yn kyijɛʁ/"
+    "ipa": "/yn kɥijɛʁ/"
   },
   {
     "id": 400,
@@ -3091,7 +3091,7 @@
     "lesson": 5,
     "fr": "de l'huile",
     "ja": "油",
-    "ipa": "/də lyil/"
+    "ipa": "/də lɥil/"
   },
   {
     "id": 443,
@@ -3112,7 +3112,7 @@
     "lesson": 5,
     "fr": "un fruit",
     "ja": "果物",
-    "ipa": "/œ̃ fʁyi/"
+    "ipa": "/œ̃ fʁɥi/"
   },
   {
     "id": 446,
@@ -3308,7 +3308,7 @@
     "lesson": 5,
     "fr": "un biscuit",
     "ja": "ビスケット",
-    "ipa": "/œ̃ biskyi/"
+    "ipa": "/œ̃ biskɥi/"
   },
   {
     "id": 474,
@@ -3391,7 +3391,7 @@
     "id": 485,
     "lesson": 5,
     "fr": "une carte bancaire",
-    "ja": "銀行カード",
+    "ja": "銀行カード・決済カード",
     "ipa": "/yn kaʁt bɑ̃kɛʁ/"
   },
   {
@@ -3595,14 +3595,14 @@
     "lesson": 6,
     "fr": "juin",
     "ja": "6月",
-    "ipa": "/ʒyɛ̃/"
+    "ipa": "/ʒɥɛ̃/"
   },
   {
     "id": 515,
     "lesson": 6,
     "fr": "juillet",
     "ja": "7月",
-    "ipa": "/ʒyijɛ/"
+    "ipa": "/ʒɥijɛ/"
   },
   {
     "id": 516,
@@ -3686,7 +3686,7 @@
     "lesson": 6,
     "fr": "une nuit",
     "ja": "夜",
-    "ipa": "/yn nyi/"
+    "ipa": "/yn nɥi/"
   },
   {
     "id": 528,
@@ -3826,7 +3826,7 @@
     "lesson": 6,
     "fr": "ensuite",
     "ja": "それから",
-    "ipa": "/ɑ̃syit/"
+    "ipa": "/ɑ̃sɥit/"
   },
   {
     "id": 548,
@@ -3917,14 +3917,14 @@
     "lesson": 6,
     "fr": "un nuage",
     "ja": "雲",
-    "ipa": "/œ̃ nyaʒ/"
+    "ipa": "/œ̃ nɥaʒ/"
   },
   {
     "id": 561,
     "lesson": 6,
     "fr": "la pluie",
     "ja": "雨",
-    "ipa": "/la plyi/"
+    "ipa": "/la plɥi/"
   },
   {
     "id": 562,
@@ -4197,7 +4197,7 @@
     "lesson": 6,
     "fr": "un bruit",
     "ja": "音・騒音",
-    "ipa": "/œ̃ bʁyi/"
+    "ipa": "/œ̃ bʁɥi/"
   },
   {
     "id": 601,
@@ -4833,7 +4833,7 @@
     "id": 691,
     "lesson": 7,
     "fr": "un distributeur",
-    "ja": "ATM・自動販売機",
+    "ja": "払出機・自動販売機（ATMなど）",
     "ipa": "/œ̃ distʁibytœʁ/"
   },
   {
@@ -5359,7 +5359,7 @@
     "lesson": 8,
     "fr": "ennuyeux",
     "ja": "退屈な",
-    "ipa": "/ɑ̃nyijø/"
+    "ipa": "/ɑ̃nɥijø/"
   },
   {
     "id": 767,
@@ -6416,14 +6416,14 @@
     "lesson": 10,
     "fr": "construire",
     "ja": "建てる",
-    "ipa": "/kɔ̃stʁyiʁ/"
+    "ipa": "/kɔ̃stʁɥiʁ/"
   },
   {
     "id": 918,
     "lesson": 10,
     "fr": "détruire",
     "ja": "破壊する",
-    "ipa": "/detʁyiʁ/"
+    "ipa": "/detʁɥiʁ/"
   },
   {
     "id": 919,

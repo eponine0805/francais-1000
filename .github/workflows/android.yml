@@ -42,6 +42,8 @@ jobs:
           PY
           python3 scripts/prepare_vocabulary.py
           python3 scripts/validate.py
+      - name: Verify vocabulary and quiz invariants
+        run: python3 scripts/check_catalog_v162.py
       - name: Build offline APK
         run: gradle --no-daemon :app:assembleDebug
       - uses: actions/upload-artifact@v4
@@ -53,9 +55,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp app/build/outputs/apk/debug/app-debug.apk Francais1000.apk
-          if gh release view v1.6.1 >/dev/null 2>&1; then
-            echo "ERROR: v1.6.1 is already published. Bump the version instead of overwriting it." >&2
+          if gh release view v1.6.2 >/dev/null 2>&1; then
+            echo "ERROR: v1.6.2 is already published. Bump the version instead of overwriting it." >&2
             exit 1
           else
-            gh release create v1.6.1 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.6.1 — Integrity fixes' --notes 'Audit: corrected legacy-progress migration, review resolution, meaning-aware distractors, quiz/card session restore, and accurate retry labels. Existing learning flow and offline audio preserved.'
+            gh release create v1.6.2 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.6.2 — Language and quality review' --notes 'Updated IPA for twenty glide /ɥ/ pronunciation entries, clarified seven Japanese translations, added a 1000-row audit workbook and catalog simulation tests. Existing offline recordings and learning progress retained.'
           fi
