@@ -1,0 +1,1010 @@
+### 1 最重要表現・動詞
+bonjour|こんにちは
+salut|やあ
+bonsoir|こんばんは
+merci|ありがとう
+oui|はい
+non|いいえ
+pardon|すみません
+merci beaucoup|どうもありがとう
+au revoir|さようなら
+à bientôt|また近いうちに
+à demain|また明日
+bonne nuit|おやすみ
+bienvenue|ようこそ
+s'il vous plaît|お願いします
+excusez-moi|すみません
+je|私
+j'|私（母音の前）
+tu|君
+vous|あなた・あなたたち
+il|彼
+elle|彼女
+nous|私たち
+ils|彼ら
+elles|彼女たち
+on|私たち・人々
+moi|私（強勢形）
+toi|君（強勢形）
+lui|彼に・彼（強勢形）
+qui|誰
+quoi|何
+que|何を・〜ということ
+quel|どの・どんな（男性）
+quelle|どの・どんな（女性）
+où|どこ
+quand|いつ
+comment|どのように
+pourquoi|なぜ
+combien|いくつ・いくら
+ici|ここ
+là|そこ・あそこ
+ça|それ
+ce|この・その（男性）
+cette|この・その（女性）
+ces|これらの
+un|1・ある（男性）
+une|1・ある（女性）
+deux|2
+trois|3
+quatre|4
+cinq|5
+six|6
+sept|7
+huit|8
+neuf|9
+dix|10
+être|〜である
+avoir|持っている
+faire|する・作る
+aller|行く
+venir|来る
+dire|言う
+vingt|20
+parler|話す
+écouter|聞く
+entendre|聞こえる
+voir|見る
+regarder|眺める
+le|その（男性名詞）
+la|その（女性名詞）
+les|その（複数）
+des|いくつかの
+et|そして
+ou|または
+mais|しかし
+avec|〜と一緒に
+sans|〜なしで
+pour|〜のために
+dans|〜の中に
+sur|〜の上に
+sous|〜の下に
+savoir|知っている（知識）
+connaître|知っている（面識）
+comprendre|理解する
+à|〜へ・〜に
+de|〜の・〜から
+apprendre|学ぶ
+étudier|勉強する
+en|〜で・〜に
+très|とても
+lire|読む
+écrire|書く
+bien|よく・元気に
+mal|悪く
+pas|〜ない
+ne|否定をつくる語
+si|もし・（否定疑問への）はい
+penser|考える
+croire|信じる
+d'accord|了解
+peut-être|たぶん
+### 2 基本動詞・数
+onze|11
+douze|12
+treize|13
+quatorze|14
+quinze|15
+seize|16
+trente|30
+quarante|40
+cinquante|50
+cent|100
+mille|1000
+devant|〜の前に
+derrière|〜の後ろに
+entre|〜の間に
+chez|〜の家で
+par|〜によって
+plus|より多く
+moins|より少なく
+voilà|ほら・そこにあります
+voici|こちらです
+vouloir|欲しい・〜したい
+pouvoir|〜できる
+devoir|〜しなければならない
+aimer|好きである
+adorer|大好きである
+détester|大嫌いである
+préférer|〜を好む
+manger|食べる
+boire|飲む
+dormir|眠る
+se réveiller|目を覚ます
+se lever|起き上がる
+se coucher|寝る
+marcher|歩く
+courir|走る
+nager|泳ぐ
+jouer|遊ぶ・競技する
+travailler|働く
+chercher|探す
+trouver|見つける
+perdre|失う
+prendre|取る・乗る
+donner|与える
+recevoir|受け取る
+mettre|置く・着る
+porter|運ぶ・身に着ける
+ouvrir|開ける
+fermer|閉める
+entrer|入る
+sortir|出る
+arriver|到着する
+partir|出発する
+rester|とどまる
+retourner|戻る
+monter|上がる
+descendre|下りる
+attendre|待つ
+commencer|始める
+finir|終える
+continuer|続ける
+arrêter|止める
+changer|変える
+utiliser|使う
+acheter|買う
+vendre|売る
+payer|支払う
+coûter|値段がする
+choisir|選ぶ
+commander|注文する
+préparer|準備する
+cuisiner|料理する
+laver|洗う
+nettoyer|掃除する
+aider|助ける
+demander|尋ねる・頼む
+répondre|答える
+appeler|呼ぶ・電話する
+téléphoner|電話をかける
+envoyer|送る
+montrer|見せる
+expliquer|説明する
+raconter|語る
+oublier|忘れる
+se souvenir|覚えている
+essayer|試す
+réussir|成功する
+tomber|落ちる・転ぶ
+vivre|生きる・暮らす
+habiter|住む
+naître|生まれる
+mourir|死ぬ
+rire|笑う
+pleurer|泣く
+sourire|ほほえむ
+chanter|歌う
+danser|踊る
+visiter|訪れる
+voyager|旅行する
+conduire|運転する
+suivre|ついて行く
+### 3 人・家族・身体
+une personne|人
+un homme|男性
+une femme|女性
+un enfant|子供
+un bébé|赤ちゃん
+un garçon|男の子
+une fille|女の子
+un adulte|大人
+un ami|男友達
+une amie|女友達
+un voisin|男性の隣人
+une voisine|女性の隣人
+un père|父
+une mère|母
+un papa|パパ
+une maman|ママ
+un frère|兄弟
+une sœur|姉妹
+un fils|息子
+une famille|家族
+un parent|親・親族
+un mari|夫
+une épouse|妻
+un grand-père|祖父
+une grand-mère|祖母
+un oncle|おじ
+une tante|おば
+un cousin|男性のいとこ
+une cousine|女性のいとこ
+un ami proche|親友
+un couple|カップル
+un invité|招待客
+un collègue|同僚
+un chef|上司・長
+un client|男性の客
+une cliente|女性の客
+un professeur|先生
+un médecin|医師
+un infirmier|男性看護師
+une infirmière|女性看護師
+un étudiant|男子学生
+une étudiante|女子学生
+un élève|生徒
+un voisinage|近所
+un nom|名前
+un prénom|下の名前
+un âge|年齢
+une voix|声
+un corps|身体
+une tête|頭
+un visage|顔
+un œil|目
+un nez|鼻
+une bouche|口
+une oreille|耳
+un cheveu|髪の毛1本
+des cheveux|髪の毛
+une dent|歯
+une langue|舌・言語
+un cou|首
+une épaule|肩
+un bras|腕
+une main|手
+un doigt|指
+un pouce|親指
+une poitrine|胸
+un dos|背中
+un ventre|おなか
+une jambe|脚
+un genou|膝
+un pied|足
+un orteil|足の指
+un cœur|心臓・心
+le sang|血液
+un os|骨
+une peau|皮膚
+un cerveau|脳
+la santé|健康
+une maladie|病気
+une douleur|痛み
+de la fièvre|熱・発熱
+un rhume|風邪
+une toux|せき
+un médicament|薬
+un hôpital|病院
+une pharmacie|薬局
+la fatigue|疲労
+la faim|空腹
+la soif|のどの渇き
+le sommeil|睡眠
+un sourire|笑顔
+une larme|涙
+un rire|笑い
+un sentiment|感情
+une peur|恐れ
+une joie|喜び
+une colère|怒り
+une tristesse|悲しみ
+l’amour|愛
+une amitié|友情
+### 4 家と暮らし
+une maison|家
+un appartement|アパートの一室
+une chambre|部屋・寝室
+un salon|居間
+une cuisine|台所
+une salle de bains|浴室
+les toilettes|トイレ
+une entrée|玄関・入り口
+un couloir|廊下
+un balcon|ベランダ
+un jardin|庭
+un toit|屋根
+un mur|壁
+un sol|床
+un plafond|天井
+une porte|ドア
+une fenêtre|窓
+un escalier|階段
+un ascenseur|エレベーター
+une clé|鍵
+une serrure|鍵穴・錠
+une table|テーブル
+une chaise|椅子
+un canapé|ソファ
+un lit|ベッド
+un oreiller|枕
+une couverture|毛布
+un drap|シーツ
+une armoire|たんす
+une étagère|棚
+un bureau|机・オフィス
+une lampe|ランプ
+une lumière|明かり
+une ampoule|電球
+un miroir|鏡
+un rideau|カーテン
+un tapis|じゅうたん
+une horloge|掛け時計
+une montre|腕時計
+un réveil|目覚まし時計
+un téléphone|電話
+un portable|携帯電話
+un ordinateur|パソコン
+un écran|画面
+un clavier|キーボード
+une souris|マウス
+une télévision|テレビ
+une radio|ラジオ
+un appareil photo|カメラ
+une photo|写真
+une vidéo|動画
+une prise|コンセント
+un câble|ケーブル
+une batterie|バッテリー
+un chargeur|充電器
+une boîte|箱
+un sac|かばん
+un portefeuille|財布
+une valise|スーツケース
+un parapluie|傘
+une serviette|タオル
+un savon|石けん
+un shampooing|シャンプー
+une brosse|ブラシ
+une brosse à dents|歯ブラシ
+un dentifrice|歯磨き粉
+un peigne|くし
+un vêtement|衣服
+une chemise|シャツ
+un tee-shirt|Tシャツ
+un pantalon|ズボン
+une jupe|スカート
+une robe|ワンピース
+un manteau|コート
+une veste|上着
+un pull|セーター
+une chaussure|靴
+une chaussette|靴下
+un chapeau|帽子
+une casquette|キャップ
+une ceinture|ベルト
+une poche|ポケット
+un bouton|ボタン
+une fermeture éclair|ファスナー
+une bague|指輪
+un couteau|ナイフ
+un collier|ネックレス
+une poubelle|ごみ箱
+un déchet|ごみ
+un balai|ほうき
+un aspirateur|掃除機
+une machine à laver|洗濯機
+un réfrigérateur|冷蔵庫
+un four|オーブン
+un micro-ondes|電子レンジ
+une assiette|皿
+un verre|グラス
+une tasse|カップ
+une cuillère|スプーン
+une fourchette|フォーク
+### 5 食べ物・買い物
+un repas|食事
+un petit-déjeuner|朝食
+un déjeuner|昼食
+un dîner|夕食
+un restaurant|レストラン
+un café|コーヒー・カフェ
+un thé|お茶
+de l'eau|水
+du lait|牛乳
+un jus|ジュース
+un jus d'orange|オレンジジュース
+du chocolat|チョコレート
+un chocolat chaud|ホットチョコレート
+du pain|パン
+une baguette|バゲット
+un croissant|クロワッサン
+du beurre|バター
+de la confiture|ジャム
+du miel|蜂蜜
+du fromage|チーズ
+un œuf|卵
+de la viande|肉
+du bœuf|牛肉
+du porc|豚肉
+du poulet|鶏肉
+un poisson|魚
+une crevette|エビ
+du jambon|ハム
+une saucisse|ソーセージ
+du riz|米・ご飯
+des pâtes|パスタ
+une pomme de terre|じゃがいも
+des frites|フライドポテト
+une soupe|スープ
+une salade|サラダ
+un sandwich|サンドイッチ
+une pizza|ピザ
+une sauce|ソース
+du sel|塩
+du poivre|こしょう
+du sucre|砂糖
+de l'huile|油
+du vinaigre|酢
+de la farine|小麦粉
+un fruit|果物
+une pomme|りんご
+une banane|バナナ
+une orange|オレンジ
+un citron|レモン
+une fraise|いちご
+du raisin|ぶどう
+une poire|洋梨
+une pêche|桃
+une cerise|さくらんぼ
+une pastèque|スイカ
+un melon|メロン
+un ananas|パイナップル
+une mangue|マンゴー
+une tomate|トマト
+une carotte|にんじん
+un oignon|玉ねぎ
+de l'ail|にんにく
+un concombre|きゅうり
+une laitue|レタス
+un chou|キャベツ
+un brocoli|ブロッコリー
+un champignon|きのこ
+un légume|野菜
+un haricot|豆
+un pois|えんどう豆
+du maïs|とうもろこし
+un gâteau|ケーキ
+un biscuit|ビスケット
+une glace|アイスクリーム
+un dessert|デザート
+une boisson|飲み物
+une bouteille|ボトル
+une canette|缶
+une carafe|水差し
+une addition|お勘定
+un prix|値段
+un euro|ユーロ
+une monnaie|小銭・通貨
+un billet|紙幣・チケット
+une carte bancaire|銀行カード
+une caisse|レジ
+un magasin|店
+un marché|市場
+un supermarché|スーパー
+une boulangerie|パン屋
+une pâtisserie|菓子店
+une boucherie|肉屋
+une poissonnerie|魚屋
+une épicerie|食料品店
+une librairie|書店
+une taille|サイズ
+une réduction|割引
+une promotion|特売
+un reçu|レシート
+un achat|買い物・購入
+### 6 時間・自然
+un temps|時間・天気
+une heure|時間・時刻
+une minute|分
+une seconde|秒
+un jour|日
+une journée|一日
+une nuit|夜
+un matin|朝
+un midi|正午
+un après-midi|午後
+un soir|夕方・夜
+une semaine|週
+un mois|月（期間）
+une année|年
+un an|年
+une date|日付
+un calendrier|カレンダー
+lundi|月曜日
+mardi|火曜日
+mercredi|水曜日
+jeudi|木曜日
+vendredi|金曜日
+samedi|土曜日
+dimanche|日曜日
+janvier|1月
+février|2月
+mars|3月
+avril|4月
+mai|5月
+juin|6月
+juillet|7月
+août|8月
+septembre|9月
+octobre|10月
+novembre|11月
+décembre|12月
+aujourd'hui|今日
+hier|昨日
+demain|明日
+maintenant|今
+bientôt|まもなく
+toujours|いつも
+souvent|しばしば
+parfois|ときどき
+jamais|決して〜ない
+déjà|すでに
+ensuite|それから
+avant|前に
+après|後で
+pendant|〜の間
+une saison|季節
+le printemps|春
+l'été|夏
+l'automne|秋
+l'hiver|冬
+le soleil|太陽
+la lune|月（天体）
+une étoile|星
+le ciel|空
+un nuage|雲
+la pluie|雨
+la neige|雪
+le vent|風
+un orage|雷雨
+le tonnerre|雷鳴
+un éclair|稲妻
+du brouillard|霧
+une température|気温
+une chaleur|暑さ・熱
+le froid|寒さ
+la météo|天気予報
+la nature|自然
+un arbre|木
+une fleur|花
+de l'herbe|草
+une feuille|葉
+une branche|枝
+une racine|根
+une forêt|森
+une montagne|山
+une colline|丘
+une vallée|谷
+une rivière|川
+un fleuve|大河
+un lac|湖
+une mer|海
+un océan|大洋
+une plage|浜辺
+une île|島
+un désert|砂漠
+une terre|地面・地球
+une pierre|石
+un rocher|岩
+du sable|砂
+un feu|火
+une fumée|煙
+de l'air|空気
+une ombre|影
+une couleur|色
+un bruit|音・騒音
+### 7 街・旅行
+une ville|都市
+un village|村
+un pays|国
+une région|地域
+une capitale|首都
+un quartier|地区
+une rue|通り
+une avenue|大通り
+une route|道
+un chemin|小道
+un trottoir|歩道
+une place|広場・場所
+un carrefour|交差点
+un pont|橋
+un tunnel|トンネル
+un bâtiment|建物
+un immeuble|集合住宅
+une adresse|住所
+un numéro|番号
+un code postal|郵便番号
+une gare|駅
+un quai|ホーム・岸壁
+un train|列車
+un métro|地下鉄
+un tramway|路面電車
+un autobus|バス
+un bus|バス（略称）
+un taxi|タクシー
+une voiture|自動車
+un vélo|自転車
+une moto|オートバイ
+un scooter|スクーター
+un camion|トラック
+un bateau|船
+un avion|飛行機
+un hélicoptère|ヘリコプター
+un aéroport|空港
+un port|港
+une station|停留所・駅
+un arrêt|停留所
+un trajet|道のり
+un voyage|旅行
+un départ|出発
+une arrivée|到着
+une destination|目的地
+un billet aller-retour|往復チケット
+un ticket|乗車券
+une réservation|予約
+un passeport|パスポート
+une carte d'identité|身分証明書
+un visa|ビザ
+un bagage|手荷物
+un siège|座席
+une ceinture de sécurité|シートベルト
+un hublot|飛行機の窓
+un plan|地図・計画
+une carte|地図・カード
+une direction|方向
+à gauche|左
+à droite|右
+le nord|北
+le sud|南
+l'est|東
+l'ouest|西
+un centre|中心
+un coin|角
+une distance|距離
+une vitesse|速度
+un kilomètre|キロメートル
+un mètre|メートル
+un feu rouge|赤信号
+un passage piéton|横断歩道
+un parking|駐車場
+une station-service|ガソリンスタンド
+un hôtel|ホテル
+une auberge|宿屋
+une réception|受付
+une chambre simple|シングルルーム
+une chambre double|ダブルルーム
+une nuitée|宿泊一泊
+un musée|博物館
+un cinéma|映画館
+un théâtre|劇場
+un parc|公園
+un zoo|動物園
+un château|城
+une église|教会
+une mairie|市役所
+la poste|郵便局
+une banque|銀行
+un distributeur|ATM・自動販売機
+un commissariat|警察署
+la police|警察
+une bibliothèque|図書館
+un stade|競技場
+une piscine|プール
+une salle de sport|スポーツジム
+un monument|記念碑
+un touriste|観光客
+un guide|案内人・ガイド
+### 8 形容詞・副詞
+bon|良い（男性形）
+bonne|良い（女性形）
+mauvais|悪い（男性形）
+mauvaise|悪い（女性形）
+grand|大きい・背が高い（男性形）
+grande|大きい・背が高い（女性形）
+petit|小さい（男性形）
+petite|小さい（女性形）
+long|長い
+court|短い
+large|幅広い
+étroit|狭い
+haut|高い
+bas|低い
+jeune|若い
+vieux|年老いた（男性形）
+vieille|年老いた（女性形）
+nouveau|新しい（男性形）
+nouvelle|新しい（女性形）
+ancien|古い・以前の
+moderne|現代的な
+facile|簡単な
+difficile|難しい
+simple|単純な
+compliqué|複雑な
+important|重要な
+nécessaire|必要な
+possible|可能な
+impossible|不可能な
+vrai|本当の
+faux|間違った・偽の
+correct|正しい
+libre|自由な・空いている
+occupé|忙しい・使用中の
+prêt|準備ができた
+fatigué|疲れた
+malade|病気の
+en bonne santé|健康で
+heureux|幸せな
+heureuse|幸せな（女性形）
+triste|悲しい
+content|満足した
+contente|満足した（女性形）
+fâché|怒った
+calme|落ち着いた
+gentil|親切な
+méchant|意地悪な
+poli|礼儀正しい
+timide|恥ずかしがりの
+courageux|勇敢な
+intelligent|賢い
+stupide|愚かな
+sérieux|真面目な
+drôle|面白い・滑稽な
+intéressant|興味深い
+ennuyeux|退屈な
+beau|美しい（男性形）
+belle|美しい（女性形）
+joli|きれいな
+laid|醜い
+propre|清潔な
+sale|汚れた
+chaud|熱い・暖かい
+frais|涼しい・新鮮な
+sec|乾いた
+humide|湿った
+plein|いっぱいの
+vide|空の
+lourd|重い
+léger|軽い
+rapide|速い
+lent|遅い
+fort|強い
+faible|弱い
+dur|硬い・厳しい
+mou|柔らかい
+cher|値段が高い
+bon marché|安価な
+riche|裕福な
+pauvre|貧しい
+sûr|確かな・安全な
+dangereux|危険な
+seul|ひとりの
+même|同じ
+meilleur|より良い（男性形）
+premier|最初の
+dernier|最後の
+chaque|それぞれの
+tout|すべての
+beaucoup|たくさん
+peu|少し
+assez|十分に
+trop|〜すぎる
+presque|ほとんど
+seulement|〜だけ
+vraiment|本当に
+probablement|おそらく
+certainement|確かに
+exactement|正確に
+rapidement|素早く
+### 9 学校・仕事・趣味
+une école|学校
+un collège|中学校
+un lycée|高校
+une université|大学
+une classe|クラス・教室
+une salle|部屋・ホール
+un cours|授業
+une leçon|学課
+un exercice|練習問題
+un devoir|宿題
+un examen|試験
+une question|質問
+une réponse|答え
+une note|成績・メモ
+un résultat|結果
+une erreur|誤り
+une faute|間違い
+une correction|訂正
+un mot|単語
+une phrase|文
+une lettre|文字・手紙
+un alphabet|アルファベット
+une grammaire|文法
+une prononciation|発音
+une traduction|翻訳
+un dictionnaire|辞書
+un livre|本
+un cahier|ノート
+un carnet|手帳
+un papier|紙
+un stylo|ペン
+un crayon|鉛筆
+une gomme|消しゴム
+une règle|定規・規則
+un tableau|黒板・表
+une page|ページ
+un chapitre|章
+un titre|題名
+une histoire|物語・歴史
+la géographie|地理
+la science|科学
+les mathématiques|数学
+la physique|物理学
+la chimie|化学
+la biologie|生物学
+l'informatique|情報科学
+un emploi|仕事・雇用
+un métier|職業
+une entreprise|会社
+une société|企業・社会
+un patron|社長・雇い主
+un employé|従業員
+un salaire|給料
+un contrat|契約
+une réunion|会議
+un projet|計画・プロジェクト
+une tâche|作業
+un objectif|目標
+un problème|問題
+une solution|解決策
+une idée|考え
+un conseil|助言
+une décision|決定
+une responsabilité|責任
+un effort|努力
+une pause|休憩
+les vacances|休暇
+un week-end|週末
+un loisir|余暇
+un sport|スポーツ
+le football|サッカー
+le tennis|テニス
+le basket-ball|バスケットボール
+le baseball|野球
+le badminton|バドミントン
+le judo|柔道
+le karaté|空手
+une course|競走
+une promenade|散歩
+une randonnée|ハイキング
+la musique|音楽
+une chanson|歌
+un instrument|楽器
+une guitare|ギター
+un piano|ピアノ
+un violon|バイオリン
+un concert|コンサート
+un film|映画
+une série|シリーズ・ドラマ
+un dessin|絵・スケッチ
+une peinture|絵画・塗料
+l'art|芸術
+un jeu|ゲーム・遊び
+un jouet|おもちゃ
+un puzzle|パズル
+un roman|小説
+un journal|新聞・日記
+un magazine|雑誌
+une fête|パーティー・祭り
+un cadeau|贈り物
+### 10 生活動作・抽象語
+se promener|散歩する
+se reposer|休む
+se dépêcher|急ぐ
+se laver|体を洗う
+s'habiller|服を着る
+se déshabiller|服を脱ぐ
+se brosser|ブラシをかける
+se doucher|シャワーを浴びる
+se baigner|水浴びをする
+respirer|呼吸する
+toucher|触れる
+sentir|感じる・におう
+goûter|味見する
+couper|切る
+casser|壊す
+réparer|修理する
+construire|建てる
+détruire|破壊する
+jeter|捨てる
+garder|保つ・預かる
+partager|分け合う
+ajouter|加える
+enlever|取り除く
+remplir|満たす
+vider|空にする
+lever|持ち上げる
+baisser|下げる
+pousser|押す
+tirer|引く
+lancer|投げる
+attraper|捕まえる
+sauter|跳ぶ
+traverser|横切る
+tourner|曲がる
+avancer|進む
+reculer|後退する
+quitter|離れる
+rejoindre|合流する
+rentrer|帰宅する
+se perdre|道に迷う
+rencontrer|会う
+présenter|紹介する
+inviter|招待する
+accepter|受け入れる
+refuser|断る
+proposer|提案する
+promettre|約束する
+remercier|感謝する
+s'excuser|謝る
+féliciter|祝福する
+respecter|尊重する
+décider|決める
+espérer|希望する
+imaginer|想像する
+rêver|夢を見る
+l'avenir|未来
+le passé|過去
+le présent|現在
+un souvenir|記憶・思い出
+un rêve|夢
+un espoir|希望
+une chance|運・幸運
+un choix|選択
+une raison|理由
+un sens|意味・方向
+une vérité|真実
+un mensonge|うそ
+la liberté|自由
+la paix|平和
+une guerre|戦争
+la sécurité|安全
+un danger|危険
+un changement|変化
+une différence|違い
+une habitude|習慣
+une expérience|経験
+une occasion|機会
+une possibilité|可能性
+un exemple|例
+une explication|説明
+un accord|合意
+un désaccord|意見の不一致
+un secret|秘密
+la confiance|信頼
+la patience|忍耐
+le courage|勇気
+le respect|尊敬
+une réussite|成功
+un échec|失敗
+un début|始まり
+une fin|終わり
+un milieu|真ん中
+une partie|部分
+un ensemble|全体
+une qualité|質・長所
+un défaut|欠点
+une quantité|量
+une valeur|価値
+un besoin|必要
+un désir|願望

@@ -8,6 +8,7 @@ assert len(set(x['fr'].casefold() for x in words))==1000
 assert all(x['lesson']==i//100+1 for i,x in enumerate(words))
 assert all(x['ja'] and x['fr'] for x in words)
 audio=root/'app/src/main/assets/audio'
-assert len(list(audio.glob('*.ogg')))==1000
+clips=list(audio.glob('*.ogg'))
+assert len(clips)==1000,(len(clips),'Missing audio')
 assert all((audio/f"{x['id']:04d}.ogg").stat().st_size>400 for x in words)
-print('PASS: 1000 words, 1000 offline audio clips.')
+print('PASS: 1000 unique, sequential, translated entries and 1000 local audio files.')

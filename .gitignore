@@ -1,6 +1,10 @@
-/.gradle/
-/build/
-/app/build/
-*.apk
-/app/src/main/assets/audio/
-/app/src/main/assets/words.json
+.gradle/
+build/
+app/build/
+.idea/
+local.properties
+*.iml
+.DS_Store
+
+# Offline audio is generated in GitHub Actions before compiling the APK.
+app/src/main/assets/audio/
