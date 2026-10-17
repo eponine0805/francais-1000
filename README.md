@@ -16,9 +16,9 @@
 
 このワークフローは、**有効なGoogle Cloud プロジェクト・Cloud Text-to-Speech API・請求設定、およびAPIの認証情報**が必要です。料金が発生する場合があるため、こちらから自動的に有効化しません。GitHub リポジトリの [Actions secrets](https://github.com/eponine0805/francais-1000/settings/secrets/actions) に、Cloud Text-to-Speech API に限定したAPIキーを `GOOGLE_TTS_API_KEY` の名前で登録します。サービスアカウントを使う場合は、代わりに `GOOGLE_TTS_SERVICE_ACCOUNT_JSON` を登録できます。**JSONキーやAPIキーをチャット・ソースコード・READMEに貼らないでください。**
 
-1. [Actions → Premium French audio - audition and build](https://github.com/eponine0805/francais-1000/actions/workflows/premium-french-audio.yml) から `mode = samples` を実行。
-2. `oui`, `non`, `je suis`, `bonjour`, `merci` の試聴用 Ogg ファイルを Artifacts で取得して、余計な音が入らないか確認。
-3. 問題がなければ `mode = full` を実行。`fr-FR-Chirp3-HD-Aoede`（女性）を全1000項目に使い、APK v1.4.1を公開します。
+1. [Actions → Premium French audio - audition and build](https://github.com/eponine0805/francais-1000/actions/workflows/premium-french-audio.yml) から `mode = samples` を実行。Aoede・Leda・Kore のフランス語女性声3種を比較します。
+2. `oui`, `non`, `je suis`, `bonjour`, `merci` の試聴用 Ogg ファイル計15件を Artifacts で取得して、余計な音が入らないか比較。
+3. 問題がなければ `mode = full` と気に入った `voice` を選び、1000項目に生成してAPK v1.4.1を公開します。
 
 Google Cloudの1か月の無料使用枠・価格は変更されるため、使用前に必ず https://cloud.google.com/text-to-speech/pricing を確認してください。クラウド音声の完璧な発音は保証できません。販売前には合成音声の品質・ライセンス条件を確認してください。
 

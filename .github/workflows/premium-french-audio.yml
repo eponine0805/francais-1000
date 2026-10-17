@@ -10,6 +10,15 @@ on:
         options:
           - samples
           - full
+      voice:
+        description: 'Voice to use for the full batch; samples always compare three voices'
+        type: choice
+        required: true
+        default: fr-FR-Chirp3-HD-Aoede
+        options:
+          - fr-FR-Chirp3-HD-Aoede
+          - fr-FR-Chirp3-HD-Leda
+          - fr-FR-Chirp3-HD-Kore
 permissions:
   contents: write
 jobs:
@@ -19,6 +28,7 @@ jobs:
     env:
       GOOGLE_TTS_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_TTS_SERVICE_ACCOUNT_JSON }}
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+      FRENCH_TTS_VOICE: ${{ inputs.voice }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4

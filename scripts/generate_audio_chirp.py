@@ -25,6 +25,7 @@ VOICE=os.environ.get('FRENCH_TTS_VOICE','fr-FR-Chirp3-HD-Aoede')
 API_URL='https://texttospeech.googleapis.com/v1/text:synthesize'
 SCOPES=['https://www.googleapis.com/auth/cloud-platform']
 SAMPLE={'oui','non','je suis','bonjour','merci'}
+SAMPLE_VOICES=('fr-FR-Chirp3-HD-Aoede','fr-FR-Chirp3-HD-Leda','fr-FR-Chirp3-HD-Kore')
 
 
 def auth():
@@ -41,10 +42,10 @@ def auth():
     return credentials
 
 
-def obtain_audio(session,credentials,word):
+def obtain_audio(session,credentials,word,voice):
     payload={
       'input':{'text':word},
-      'voice':{'languageCode':'fr-FR','name':VOICE,'ssmlGender':'FEMALE'},
+      'voice':{'languageCode':'fr-FR','name':voice,'ssmlGender':'FEMALE'},
       'audioConfig':{'audioEncoding':'MP3','speakingRate':0.92},
     }
     for attempt in range(7):
@@ -99,15 +100,19 @@ def main():
     dest.mkdir(parents=True,exist_ok=True)
     credentials=auth()
     session=requests.Session()
-    for idx,item in enumerate(selection,1):
-        target=dest/f"{item['id']:04d}.ogg"
-        mp3=obtain_audio(session,credentials,item['fr'])
-        duration=convert(mp3,target)
-        if idx<=12 or idx%50==0:print(f'{idx}/{len(selection)}  #{item["id"]:04d}  {item["fr"]}  {duration:.2f}s',flush=True)
-        time.sleep(0.7)  # Cap throughput under typical provider request quotas.
-    if len(list(dest.glob('*.ogg')))!=len(selection):
+    voices=SAMPLE_VOICES if args.mode=='samples' else (VOICE,)
+    for voice in voices:
+        print(f'Generating {voice}: {len(selection)} items',flush=True)
+        for idx,item in enumerate(selection,1):
+            basename=f"{item['id']:04d}.ogg" if args.mode=='full' else f"{voice.split('-')[-1]}_{item['id']:04d}.ogg"
+            target=dest/basename
+            mp3=obtain_audio(session,credentials,item['fr'],voice)
+            duration=convert(mp3,target)
+            if idx<=12 or idx%50==0:print(f'{idx}/{len(selection)}  #{item["id"]:04d}  {item["fr"]}  {duration:.2f}s',flush=True)
+            time.sleep(0.7)  # Cap throughput under typical provider request quotas.
+    if len(list(dest.glob('*.ogg')))!=len(selection)*len(voices):
         raise RuntimeError('Audio output count does not match word count')
-    manifest={'voice':VOICE,'mode':args.mode,'word_count':len(selection),'engine':'Google Cloud Chirp 3: HD','notes':'Needs human review of isolated words before commercial use'}
+    manifest={'voice':VOICE,'sample_voices':list(voices),'mode':args.mode,'word_count':len(selection),'engine':'Google Cloud Chirp 3: HD','notes':'Needs human review of isolated words before commercial use'}
     (dest/'voice_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2),encoding='utf8')
     print('Generation complete; quality approval is still a separate step.')
 
