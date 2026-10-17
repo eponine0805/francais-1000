@@ -1,4 +1,4 @@
-name: Build Android APK
+name: Build Android APK (Supertonic 3)
 on:
   workflow_dispatch:
   push:
@@ -8,7 +8,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 165
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -26,37 +26,36 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.9'
-      - name: Install neural speech dependencies
+      - name: Install speech generator for offline build
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq --no-install-recommends espeak-ng ffmpeg
+          sudo apt-get install -y -qq --no-install-recommends ffmpeg
           python -m pip install -r scripts/requirements-audio.txt
           sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
-      - name: Download Kokoro offline build models
-        run: |
-          mkdir -p models
-          curl -fLsS --retry 4 --retry-delay 5 -o models/kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx
-          curl -fLsS --retry 4 --retry-delay 5 -o models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin
-          test "$(stat -c%s models/kokoro-v1.0.onnx)" -gt 100000000
-          test "$(stat -c%s models/voices-v1.0.bin)" -gt 100000
-      - name: Prepare offline French female audio
+      - name: Generate 1000 French female audio clips
         run: |
           python scripts/prepare_vocabulary.py
           python scripts/generate_audio.py
           python scripts/validate.py
-      - name: Build APK
+      - name: Save pronunciation QA samples
+        uses: actions/upload-artifact@v4
+        with:
+          name: French-Female-Audio-QA
+          path: quality-previews/
+          retention-days: 90
+      - name: Build offline APK
         run: gradle --no-daemon :app:assembleDebug
       - uses: actions/upload-artifact@v4
         with:
           name: Francais1000-Android-APK
           path: app/build/outputs/apk/debug/app-debug.apk
-      - name: Publish APK release
+      - name: Publish Android APK
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp app/build/outputs/apk/debug/app-debug.apk Francais1000.apk
-          if gh release view v1.4.0 >/dev/null 2>&1; then
-            gh release upload v1.4.0 Francais1000.apk --clobber
+          if gh release view v1.5.0 >/dev/null 2>&1; then
+            gh release upload v1.5.0 Francais1000.apk --clobber
           else
-            gh release create v1.4.0 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.4.0' --notes 'Redesigned flashcards: larger audio and bottom navigation, corner bookmark, randomized lessons, reduced copy. Audio still uses Kokoro; separate premium voice workflow is opt-in and needs credentials.'
+            gh release create v1.5.0 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.5.0 — Supertonic 3' --notes 'New French female Supertonic 3 F2 neural voice; 1000 bundled offline clips. No API keys or accounts. Model OpenRAIL-M; speech is AI-generated. Native-speaker review recommended for sale.'
           fi
