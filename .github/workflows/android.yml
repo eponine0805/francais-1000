@@ -53,8 +53,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           cp app/build/outputs/apk/debug/app-debug.apk Francais1000.apk
-          if gh release view v1.6.0 >/dev/null 2>&1; then
-            gh release upload v1.6.0 Francais1000.apk --clobber
+          if gh release view v1.6.1 >/dev/null 2>&1; then
+            echo "ERROR: v1.6.1 is already published. Bump the version instead of overwriting it." >&2
+            exit 1
           else
-            gh release create v1.6.0 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.6.0 — One-tap cards + original mascot' --notes 'Tap the same card to reveal Japanese, then tap again to advance. 10-card sprint mode, mini progress, and an app icon extracted from the user-provided hand sketch on the French flag. Existing offline Supertonic 3 voice and quiz features preserved. AI-generated audio is subject to Supertonic 3 licensing.'
+            gh release create v1.6.1 Francais1000.apk --target "$GITHUB_SHA" --title 'Français 1000 v1.6.1 — Integrity fixes' --notes 'Audit: corrected legacy-progress migration, review resolution, meaning-aware distractors, quiz/card session restore, and accurate retry labels. Existing learning flow and offline audio preserved.'
           fi

@@ -99,7 +99,7 @@ public final class MainActivity extends Activity {
             JSONArray arr=new JSONArray(new String(bytes.toByteArray(),StandardCharsets.UTF_8));
             for(int i=0;i<arr.length();i++)words.add(new Word(arr.getJSONObject(i)));
             if(words.size()!=1000)throw new IllegalStateException("Expected 1000 words");
-            readProgress();if(migrateOldProgress)saveProgress();showHome();
+            readProgress();if(migrateOldProgress)saveProgress();if(!restoreSession(bundle))showHome();
         }catch(Exception e){TextView t=new TextView(this);t.setPadding(dp(24),dp(30),dp(24),dp(30));t.setText("単語データを読み込めませんでした。\n"+e.getMessage());setContentView(t);}
     }
 
@@ -340,7 +340,7 @@ public final class MainActivity extends Activity {
     }
     private void markCard(boolean mastered){
         int id=flashIds.get(cardIndex);seen.add(id);
-        if(mastered){known.add(id);if(reviewing){review.remove(id);flashIds.remove(cardIndex);if(cardIndex>=flashIds.size())cardIndex=Math.max(0,flashIds.size()-1);}}
+        if(mastered){known.add(id);review.remove(id);if(reviewing){flashIds.remove(cardIndex);if(cardIndex>=flashIds.size())cardIndex=Math.max(0,flashIds.size()-1);}}
         else { known.remove(id);review.add(id); }
         saveProgress();
         if(flashIds.isEmpty()){Toast.makeText(this,"復習完了！",Toast.LENGTH_LONG).show();showHome();return;}
@@ -397,6 +397,17 @@ public final class MainActivity extends Activity {
         if(ids.size()>100)ids=new ArrayList<>(ids.subList(0,100));
         beginTest(ids,true);
     }
+    /** Avoid overlapping Japanese meanings such as ありがとう / どうもありがとう. */
+    private boolean tooSimilarMeaning(String a,String b){
+        if(a.equals(b))return true;
+        String left=a.replaceAll("（[^）]*）","").replace('・','/').replace('、','/').replace('／','/');
+        String right=b.replaceAll("（[^）]*）","").replace('・','/').replace('、','/').replace('／','/');
+        for(String x:left.split("/"))for(String y:right.split("/")){
+            x=x.trim();y=y.trim();
+            if(x.length()>=2&&y.length()>=2&&(x.contains(y)||y.contains(x)))return true;
+        }
+        return false;
+    }
     private void showQuestion(){
         if(questionIndex>=testIds.size()){showResults();return;}
         int id=testIds.get(questionIndex);Word w=words.get(id-1);
@@ -411,7 +422,12 @@ public final class MainActivity extends Activity {
         for(int i=1;i<=1000;i++)if(i!=id&&words.get(i-1).lesson==w.lesson&&!words.get(i-1).ja.equals(w.ja))distractors.add(i);
         Collections.shuffle(distractors,random);
         ArrayList<String> picked=new ArrayList<>();picked.add(w.ja);
-        for(int cid:distractors){String a=words.get(cid-1).ja;if(!picked.contains(a)){picked.add(a);if(picked.size()==4)break;}}
+        for(int cid:distractors){
+            String a=words.get(cid-1).ja;
+            boolean ambiguous=false;
+            for(String existing:picked)if(tooSimilarMeaning(existing,a)){ambiguous=true;break;}
+            if(!ambiguous){picked.add(a);if(picked.size()==4)break;}
+        }
         if(picked.size()<4)throw new IllegalStateException("選択肢が不足しています");
         Collections.shuffle(picked,random);
         for(String meaning:picked){
@@ -456,7 +472,7 @@ public final class MainActivity extends Activity {
         gap(summary,9);TextView wrong=text("間違い "+lastWrongIds.size()+" 語",14,MUTED,false);wrong.setGravity(Gravity.CENTER);add(summary,wrong);
         gap(body,16);
         if(!lastWrongIds.isEmpty()){
-            add(body,button("今回の間違いだけ再テスト（"+lastWrongIds.size()+"）",true,()->startWrongTest(true)));
+            add(body,button("今回の間違いから再テスト（最大100問・対象"+lastWrongIds.size()+"語）",true,()->startWrongTest(true)));
             gap(body,9);add(body,button("間違えた単語のカードを開く",false,this::startReview));gap(body,18);
         }
         heading("答え合わせ", "間違えた問題を先に表示します。発音も再確認できます。");
@@ -557,7 +573,7 @@ public final class MainActivity extends Activity {
             gap(body,8);
         }
         gap(body,18);add(body,button("苦手カードを開く",true,this::startReview));gap(body,10);
-        add(body,button("間違い履歴すべてで再テスト",false,()->{
+        add(body,button("間違い履歴から再テスト（最大100問）",false,()->{
             ArrayList<Integer> all=new ArrayList<>(wrongCounts.keySet());Collections.shuffle(all,random);
             if(all.size()>100)all=new ArrayList<>(all.subList(0,100));beginTest(all,true);
         }));gap(body,16);
@@ -574,6 +590,55 @@ public final class MainActivity extends Activity {
         }catch(Exception ex){stopAudio();Toast.makeText(this,"音声を再生できません",Toast.LENGTH_SHORT).show();}
     }
     private void stopAudio(){if(player!=null){MediaPlayer p=player;player=null;try{p.reset();p.release();}catch(Exception ignored){}}}
+    /** Keep an in-progress quiz/card deck when Android recreates the Activity. */
+    private boolean restoreSession(Bundle state){
+        if(state==null)return false;
+        int destination=state.getInt("restore_screen",0);
+        if(destination==3){
+            ArrayList<Integer> ids=state.getIntegerArrayList("restore_questions");
+            ArrayList<String> answers=state.getStringArrayList("restore_answers");
+            int index=state.getInt("restore_index",-1);
+            if(ids==null||ids.isEmpty()||answers==null||index<0||index>=ids.size()||answers.size()!=index)return false;
+            for(int id:ids)if(id<1||id>1000)return false;
+            testIds=new ArrayList<>(ids);testAnswers.clear();testAnswers.addAll(answers);
+            questionIndex=index;wrongOnlyTest=state.getBoolean("restore_wrong_only");
+            quizStart=state.getLong("restore_quiz_start",System.currentTimeMillis());
+            startLesson=state.getInt("restore_start",1);endLesson=state.getInt("restore_end",1);
+            showQuestion();return true;
+        }
+        if(destination==1){
+            ArrayList<Integer> ids=state.getIntegerArrayList("restore_cards");
+            int index=state.getInt("restore_card_index",-1);
+            if(ids==null||ids.isEmpty()||index<0||index>=ids.size())return false;
+            for(int id:ids)if(id<1||id>1000)return false;
+            flashIds=new ArrayList<>(ids);cardIndex=index;
+            revealed=state.getBoolean("restore_revealed");reviewing=state.getBoolean("restore_reviewing");
+            shortSession=state.getBoolean("restore_short_session");
+            lastLesson=state.getInt("restore_last_lesson",1);
+            showFlash();return true;
+        }
+        return false;
+    }
+    @Override protected void onSaveInstanceState(Bundle state){
+        super.onSaveInstanceState(state);
+        state.putInt("restore_screen",screen);
+        if(screen==3){
+            state.putIntegerArrayList("restore_questions",new ArrayList<>(testIds));
+            state.putStringArrayList("restore_answers",new ArrayList<>(testAnswers));
+            state.putInt("restore_index",questionIndex);
+            state.putBoolean("restore_wrong_only",wrongOnlyTest);
+            state.putLong("restore_quiz_start",quizStart);
+            state.putInt("restore_start",startLesson);
+            state.putInt("restore_end",endLesson);
+        }else if(screen==1){
+            state.putIntegerArrayList("restore_cards",new ArrayList<>(flashIds));
+            state.putInt("restore_card_index",cardIndex);
+            state.putBoolean("restore_revealed",revealed);
+            state.putBoolean("restore_reviewing",reviewing);
+            state.putBoolean("restore_short_session",shortSession);
+            state.putInt("restore_last_lesson",lastLesson);
+        }
+    }
     @Override protected void onPause(){super.onPause();stopAudio();}
     @Override protected void onDestroy(){stopAudio();super.onDestroy();}
     @Override public void onBackPressed(){if(screen==0)super.onBackPressed();else if(screen==3)confirmLeaveQuiz();else showHome();}
