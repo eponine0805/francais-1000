@@ -1,0 +1,6 @@
+/.gradle/
+/build/
+/app/build/
+*.apk
+/app/src/main/assets/audio/
+/app/src/main/assets/words.json
